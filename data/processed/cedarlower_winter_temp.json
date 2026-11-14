@@ -1,0 +1,131 @@
+{
+  "region": "cedarlower",
+  "variable": "winter_temp",
+  "label": "Winter temperature",
+  "units": "deg C",
+  "source": "NLDAS 2",
+  "definition": "Average air temperature from November to March. It decides whether precipitation falls as rain or snow.",
+  "series": [
+    {
+      "year": 2001,
+      "value": 4.1848
+    },
+    {
+      "year": 2002,
+      "value": 4.1994
+    },
+    {
+      "year": 2003,
+      "value": 5.6429
+    },
+    {
+      "year": 2004,
+      "value": 4.9209
+    },
+    {
+      "year": 2005,
+      "value": 5.6278
+    },
+    {
+      "year": 2006,
+      "value": 4.1792
+    },
+    {
+      "year": 2007,
+      "value": 3.6665
+    },
+    {
+      "year": 2008,
+      "value": 2.65
+    },
+    {
+      "year": 2009,
+      "value": 3.3665
+    },
+    {
+      "year": 2010,
+      "value": 4.1528
+    },
+    {
+      "year": 2011,
+      "value": 2.9723
+    },
+    {
+      "year": 2012,
+      "value": 2.9293
+    },
+    {
+      "year": 2013,
+      "value": 4.2511
+    },
+    {
+      "year": 2014,
+      "value": 3.5709
+    },
+    {
+      "year": 2015,
+      "value": 6.0584
+    },
+    {
+      "year": 2016,
+      "value": 4.7476
+    },
+    {
+      "year": 2017,
+      "value": 1.662
+    },
+    {
+      "year": 2018,
+      "value": 4.1173
+    },
+    {
+      "year": 2019,
+      "value": 4.2169
+    },
+    {
+      "year": 2020,
+      "value": 4.8278
+    },
+    {
+      "year": 2021,
+      "value": 4.1177
+    },
+    {
+      "year": 2022,
+      "value": 4.0376
+    },
+    {
+      "year": 2023,
+      "value": 2.8086
+    },
+    {
+      "year": 2024,
+      "value": 4.5291
+    },
+    {
+      "year": 2025,
+      "value": 3.5243
+    },
+    {
+      "year": 2026,
+      "value": 5.0523
+    }
+  ],
+  "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 26,
+    "first_year": 2001,
+    "last_year": 2026,
+    "mean": 4.077457869230792,
+    "slope_per_decade": -0.05830424999997752,
+    "pct_of_mean_per_decade": -1.4299166752880894,
+    "intercept": 4.238847112499996,
+    "ci_low": -0.7441744444444491,
+    "ci_high": 0.39424799999999643,
+    "p_value": 0.537126940170827,
+    "years_to_detect": 90.9,
+    "q_value": 0.9604907831348456,
+    "verdict": "no_trend"
+  },
+  "by_month": []
+}

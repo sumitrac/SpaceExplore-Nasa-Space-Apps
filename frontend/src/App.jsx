@@ -2,6 +2,7 @@ import Hero from "./components/Hero.jsx";
 import WaterPath from "./components/WaterPath.jsx";
 import WinterTimeline from "./components/WinterTimeline.jsx";
 import SnowBank from "./components/SnowBank.jsx";
+import Trends from "./components/Trends.jsx";
 import DataSources from "./components/DataSources.jsx";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
           <a href="#path">Snow to tap</a>
           <a href="#winter">Last winter</a>
           <a href="#snow-bank">Snow bank</a>
+          <a href="#trends">Trends</a>
           <a href="#data">Data</a>
         </nav>
       </header>
@@ -27,6 +29,7 @@ export default function App() {
         <WaterPath />
         <WinterTimeline />
         <SnowBank />
+        <Trends />
         <DataSources />
       </main>
 

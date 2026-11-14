@@ -1,0 +1,131 @@
+{
+  "region": "cedarupper",
+  "variable": "peak_swe",
+  "label": "Peak snowpack",
+  "units": "mm",
+  "source": "NLDAS 2 Noah",
+  "definition": "The most water stored in the snow during the winter. This is the water that melts into rivers and reservoirs through summer.",
+  "series": [
+    {
+      "year": 2001,
+      "value": 95.3573
+    },
+    {
+      "year": 2002,
+      "value": 284.9666
+    },
+    {
+      "year": 2003,
+      "value": 52.2377
+    },
+    {
+      "year": 2004,
+      "value": 147.8843
+    },
+    {
+      "year": 2005,
+      "value": 34.8648
+    },
+    {
+      "year": 2006,
+      "value": 131.5312
+    },
+    {
+      "year": 2007,
+      "value": 239.3141
+    },
+    {
+      "year": 2008,
+      "value": 566.334
+    },
+    {
+      "year": 2009,
+      "value": 319.8981
+    },
+    {
+      "year": 2010,
+      "value": 50.3366
+    },
+    {
+      "year": 2011,
+      "value": 346.5353
+    },
+    {
+      "year": 2012,
+      "value": 326.435
+    },
+    {
+      "year": 2013,
+      "value": 198.5464
+    },
+    {
+      "year": 2014,
+      "value": 115.8696
+    },
+    {
+      "year": 2015,
+      "value": 19.1713
+    },
+    {
+      "year": 2016,
+      "value": 172.1745
+    },
+    {
+      "year": 2017,
+      "value": 316.5845
+    },
+    {
+      "year": 2018,
+      "value": 140.3311
+    },
+    {
+      "year": 2019,
+      "value": 73.852
+    },
+    {
+      "year": 2020,
+      "value": 135.222
+    },
+    {
+      "year": 2021,
+      "value": 252.3847
+    },
+    {
+      "year": 2022,
+      "value": 250.5375
+    },
+    {
+      "year": 2023,
+      "value": 243.374
+    },
+    {
+      "year": 2024,
+      "value": 61.8507
+    },
+    {
+      "year": 2025,
+      "value": 66.0632
+    },
+    {
+      "year": 2026,
+      "value": 38.5278
+    }
+  ],
+  "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 26,
+    "first_year": 2001,
+    "last_year": 2026,
+    "mean": 180.0070809423077,
+    "slope_per_decade": -19.805973333333334,
+    "pct_of_mean_per_decade": -11.00288568074783,
+    "intercept": 168.86512516666667,
+    "ci_low": -90.46329999999999,
+    "ci_high": 46.8919372,
+    "p_value": 0.4806051289858302,
+    "years_to_detect": 40.3,
+    "q_value": 0.9604907831348456,
+    "verdict": "no_trend"
+  },
+  "by_month": []
+}

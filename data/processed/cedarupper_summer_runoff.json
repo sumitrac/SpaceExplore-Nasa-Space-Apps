@@ -1,0 +1,192 @@
+{
+  "region": "cedarupper",
+  "variable": "summer_runoff",
+  "label": "Summer runoff",
+  "units": "mm",
+  "source": "NLDAS 2 Noah",
+  "definition": "Water flowing off the land in July to September, when the city needs it most.",
+  "series": [
+    {
+      "year": 2001,
+      "value": 79.4635
+    },
+    {
+      "year": 2002,
+      "value": 72.8755
+    },
+    {
+      "year": 2003,
+      "value": 21.9131
+    },
+    {
+      "year": 2004,
+      "value": 281.0517
+    },
+    {
+      "year": 2005,
+      "value": 77.3837
+    },
+    {
+      "year": 2006,
+      "value": 38.0055
+    },
+    {
+      "year": 2007,
+      "value": 49.4509
+    },
+    {
+      "year": 2008,
+      "value": 78.8871
+    },
+    {
+      "year": 2009,
+      "value": 39.3206
+    },
+    {
+      "year": 2010,
+      "value": 141.8153
+    },
+    {
+      "year": 2011,
+      "value": 74.434
+    },
+    {
+      "year": 2012,
+      "value": 91.7138
+    },
+    {
+      "year": 2013,
+      "value": 66.5387
+    },
+    {
+      "year": 2014,
+      "value": 95.6773
+    },
+    {
+      "year": 2015,
+      "value": 10.6387
+    },
+    {
+      "year": 2016,
+      "value": 80.2407
+    },
+    {
+      "year": 2017,
+      "value": 39.7302
+    },
+    {
+      "year": 2018,
+      "value": 24.6733
+    },
+    {
+      "year": 2019,
+      "value": 48.2434
+    },
+    {
+      "year": 2020,
+      "value": 100.255
+    },
+    {
+      "year": 2021,
+      "value": 36.0011
+    },
+    {
+      "year": 2022,
+      "value": 49.4848
+    },
+    {
+      "year": 2023,
+      "value": 36.9772
+    },
+    {
+      "year": 2024,
+      "value": 65.5491
+    },
+    {
+      "year": 2025,
+      "value": 33.3125
+    },
+    {
+      "year": 2026,
+      "value": 45.9868
+    }
+  ],
+  "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 26,
+    "first_year": 2001,
+    "last_year": 2026,
+    "mean": 68.4470571453092,
+    "slope_per_decade": -11.110212454749997,
+    "pct_of_mean_per_decade": -16.231833650880926,
+    "intercept": 71.4047106666375,
+    "ci_low": -30.126376296687496,
+    "ci_high": 5.011113026666626,
+    "p_value": 0.05470234850055822,
+    "years_to_detect": 12.0,
+    "q_value": 0.4558529041713185,
+    "verdict": "cant_tell_yet"
+  },
+  "by_month": [
+    {
+      "month": 1,
+      "slope_per_decade": -21.236586117647057,
+      "p_value": 0.5968073797467659
+    },
+    {
+      "month": 2,
+      "slope_per_decade": -11.00400316666665,
+      "p_value": 0.7913957365052897
+    },
+    {
+      "month": 3,
+      "slope_per_decade": 15.932948000000025,
+      "p_value": 0.4806051289858302
+    },
+    {
+      "month": 4,
+      "slope_per_decade": -9.017469333333375,
+      "p_value": 0.7913957365052897
+    },
+    {
+      "month": 5,
+      "slope_per_decade": -13.065185470909086,
+      "p_value": 0.7243397423849234
+    },
+    {
+      "month": 6,
+      "slope_per_decade": -8.413402011111105,
+      "p_value": 0.5968073797467659
+    },
+    {
+      "month": 7,
+      "slope_per_decade": -2.7360286595341106,
+      "p_value": 0.37795959996135187
+    },
+    {
+      "month": 8,
+      "slope_per_decade": -2.4511018041666666,
+      "p_value": 0.17175819814532312
+    },
+    {
+      "month": 9,
+      "slope_per_decade": -1.66562836625,
+      "p_value": 0.4274889995990474
+    },
+    {
+      "month": 10,
+      "slope_per_decade": -23.107053706250014,
+      "p_value": 0.4536084832864735
+    },
+    {
+      "month": 11,
+      "slope_per_decade": 5.956563089473682,
+      "p_value": 0.8947871042097533
+    },
+    {
+      "month": 12,
+      "slope_per_decade": 33.671122913333335,
+      "p_value": 0.2517286908429268
+    }
+  ]
+}

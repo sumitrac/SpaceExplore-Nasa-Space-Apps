@@ -7,194 +7,125 @@
   "definition": "The share of winter precipitation that falls as rain instead of snow. Higher means less water saved in the mountains.",
   "series": [
     {
-      "year": 1980,
-      "value": 0.6775
-    },
-    {
-      "year": 1981,
-      "value": 0.7173
-    },
-    {
-      "year": 1982,
-      "value": 0.7202
-    },
-    {
-      "year": 1983,
-      "value": 0.7602
-    },
-    {
-      "year": 1984,
-      "value": 0.7405
-    },
-    {
-      "year": 1985,
-      "value": 0.7374
-    },
-    {
-      "year": 1986,
-      "value": 0.7085
-    },
-    {
-      "year": 1987,
-      "value": 0.7297
-    },
-    {
-      "year": 1988,
-      "value": 0.6919
-    },
-    {
-      "year": 1989,
-      "value": 0.7403
-    },
-    {
-      "year": 1990,
-      "value": 0.7196
-    },
-    {
-      "year": 1991,
-      "value": 0.7531
-    },
-    {
-      "year": 1992,
-      "value": 0.7243
-    },
-    {
-      "year": 1993,
-      "value": 0.7363
-    },
-    {
-      "year": 1994,
-      "value": 0.7493
-    },
-    {
-      "year": 1995,
-      "value": 0.8075
-    },
-    {
-      "year": 1996,
-      "value": 0.7153
-    },
-    {
-      "year": 1997,
-      "value": 0.7819
-    },
-    {
-      "year": 1998,
-      "value": 0.7876
-    },
-    {
-      "year": 1999,
-      "value": 0.7535
-    },
-    {
-      "year": 2000,
-      "value": 0.7442
-    },
-    {
       "year": 2001,
-      "value": 0.7807
-    },
-    {
-      "year": 2002,
-      "value": 0.7594
-    },
-    {
-      "year": 2003,
-      "value": 0.7886
-    },
-    {
-      "year": 2004,
       "value": 0.7682
     },
     {
+      "year": 2002,
+      "value": 0.8063
+    },
+    {
+      "year": 2003,
+      "value": 0.913
+    },
+    {
+      "year": 2004,
+      "value": 0.8311
+    },
+    {
       "year": 2005,
-      "value": 0.7705
+      "value": 0.8965
     },
     {
       "year": 2006,
-      "value": 0.7836
+      "value": 0.8761
     },
     {
       "year": 2007,
-      "value": 0.7779
+      "value": 0.8598
     },
     {
       "year": 2008,
-      "value": 0.7665
+      "value": 0.5086
     },
     {
       "year": 2009,
-      "value": 0.7876
+      "value": 0.7367
     },
     {
       "year": 2010,
-      "value": 0.7849
+      "value": 0.9065
     },
     {
       "year": 2011,
-      "value": 0.8092
+      "value": 0.814
     },
     {
       "year": 2012,
-      "value": 0.8205
+      "value": 0.7639
     },
     {
       "year": 2013,
-      "value": 0.8126
+      "value": 0.7868
     },
     {
       "year": 2014,
-      "value": 0.8141
+      "value": 0.9044
     },
     {
       "year": 2015,
-      "value": 0.83
+      "value": 0.9663
     },
     {
       "year": 2016,
-      "value": 0.7859
+      "value": 0.8737
     },
     {
       "year": 2017,
-      "value": 0.8031
+      "value": 0.7375
     },
     {
       "year": 2018,
-      "value": 0.8067
+      "value": 0.8529
     },
     {
       "year": 2019,
-      "value": 0.8073
+      "value": 0.8517
     },
     {
       "year": 2020,
-      "value": 0.7963
+      "value": 0.8649
     },
     {
       "year": 2021,
-      "value": 0.8207
-    },
-    {
-      "year": 2022,
       "value": 0.823
     },
     {
+      "year": 2022,
+      "value": 0.8078
+    },
+    {
       "year": 2023,
-      "value": 0.8284
+      "value": 0.718
     },
     {
       "year": 2024,
-      "value": 0.7245
+      "value": 0.8702
+    },
+    {
+      "year": 2025,
+      "value": 0.8767
+    },
+    {
+      "year": 2026,
+      "value": 0.9259
     }
   ],
   "trend": {
-    "slope_per_decade": 0.025821803293375814,
-    "ci_low": 0.020342374977277162,
-    "ci_high": 0.03074135741535284,
-    "p_value": 0.0,
-    "years_to_detect": 0.0,
-    "q_value": 0.0,
-    "verdict": "real_trend"
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 26,
+    "first_year": 2001,
+    "last_year": 2026,
+    "mean": 0.8284825185065767,
+    "slope_per_decade": 0.009365456006205086,
+    "pct_of_mean_per_decade": 1.130434957527802,
+    "intercept": 0.8406041651780687,
+    "ci_low": -0.028326067119921406,
+    "ci_high": 0.05223961077559025,
+    "p_value": 0.6277372683701175,
+    "years_to_detect": 56.5,
+    "q_value": 0.9604907831348456,
+    "verdict": "no_trend"
   },
   "by_month": []
 }

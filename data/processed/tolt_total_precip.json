@@ -1,0 +1,131 @@
+{
+  "region": "tolt",
+  "variable": "total_precip",
+  "label": "Total precipitation",
+  "units": "mm",
+  "source": "NLDAS 2",
+  "definition": "All the rain and snow that fell in the water year (October to September), added up as water depth.",
+  "series": [
+    {
+      "year": 2001,
+      "value": 1461.4366
+    },
+    {
+      "year": 2002,
+      "value": 2746.7613
+    },
+    {
+      "year": 2003,
+      "value": 2039.3778
+    },
+    {
+      "year": 2004,
+      "value": 2815.0535
+    },
+    {
+      "year": 2005,
+      "value": 2165.2267
+    },
+    {
+      "year": 2006,
+      "value": 2424.6583
+    },
+    {
+      "year": 2007,
+      "value": 2767.3681
+    },
+    {
+      "year": 2008,
+      "value": 2448.9041
+    },
+    {
+      "year": 2009,
+      "value": 2291.7033
+    },
+    {
+      "year": 2010,
+      "value": 2440.5517
+    },
+    {
+      "year": 2011,
+      "value": 2921.5916
+    },
+    {
+      "year": 2012,
+      "value": 2649.802
+    },
+    {
+      "year": 2013,
+      "value": 2621.3821
+    },
+    {
+      "year": 2014,
+      "value": 2481.8847
+    },
+    {
+      "year": 2015,
+      "value": 1929.3049
+    },
+    {
+      "year": 2016,
+      "value": 2605.4817
+    },
+    {
+      "year": 2017,
+      "value": 2537.9542
+    },
+    {
+      "year": 2018,
+      "value": 2619.9262
+    },
+    {
+      "year": 2019,
+      "value": 1952.0467
+    },
+    {
+      "year": 2020,
+      "value": 3072.8404
+    },
+    {
+      "year": 2021,
+      "value": 2874.3654
+    },
+    {
+      "year": 2022,
+      "value": 3095.6336
+    },
+    {
+      "year": 2023,
+      "value": 2154.192
+    },
+    {
+      "year": 2024,
+      "value": 2569.4051
+    },
+    {
+      "year": 2025,
+      "value": 2091.3569
+    },
+    {
+      "year": 2026,
+      "value": 2604.8365
+    }
+  ],
+  "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 26,
+    "first_year": 2001,
+    "last_year": 2026,
+    "mean": 2476.270983424459,
+    "slope_per_decade": 98.94457372557756,
+    "pct_of_mean_per_decade": 3.9957086436778484,
+    "intercept": 2429.9989433869478,
+    "ci_low": -100.91397873499969,
+    "ci_high": 327.2779672153998,
+    "p_value": 0.18187262474689225,
+    "years_to_detect": 6.7,
+    "q_value": 0.9604907831348456,
+    "verdict": "cant_tell_yet"
+  },
+  "by_month": []
+}
