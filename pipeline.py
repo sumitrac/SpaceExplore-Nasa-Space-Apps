@@ -46,6 +46,8 @@ CATALOG = {
 # ---------- loading ----------
 def load_long(path):
     df = pd.read_csv(path, parse_dates=["date"])
+    if df.empty:
+        raise SystemExit("long.csv has no rows: put files in data/raw/giovanni/ and run build_long.py first")
     return add_wy(df)
 
 
@@ -112,6 +114,8 @@ def sen_ci(y, z=1.96):
 def analyze(s):
     y = s.values.astype(float)
     r = mk.hamed_rao_modification_test(y)  # autocorrelation aware Mann Kendall
+    r0 = mk.original_test(y)
+    p = max(r.p, r0.p)  # conservative: the correction must never make us MORE confident
     lo, hi = sen_ci(y)
     t = np.arange(len(y))
     resid = y - (r.slope * t + r.intercept)
@@ -121,11 +125,11 @@ def analyze(s):
         n_star = ((3.3 * resid.std() / abs(r.slope)) * np.sqrt((1 + phi) / (1 - phi))) ** (2 / 3)
         more = round(max(0.0, n_star - len(y)), 1)
     return {"slope_per_decade": float(r.slope * 10), "ci_low": float(lo * 10),
-            "ci_high": float(hi * 10), "p_value": float(r.p), "years_to_detect": more}
+            "ci_high": float(hi * 10), "p_value": float(p), "years_to_detect": more}
 
 
-def verdict(q, more):
-    if q < 0.05:
+def verdict(q, more, lo, hi):
+    if q < 0.05 and (lo > 0 or hi < 0):  # significant AND the slope range excludes zero
         return "real_trend"
     if more is not None and more <= 30:
         return "cant_tell_yet"
@@ -146,7 +150,7 @@ def run(df):
     index = []
     for (region, var, s, trend, months), q in zip(results, qs):
         trend["q_value"] = float(q)
-        trend["verdict"] = verdict(q, trend["years_to_detect"])
+        trend["verdict"] = verdict(q, trend["years_to_detect"], trend["ci_low"], trend["ci_high"])
         doc = {"region": region, "variable": var, **CATALOG[var],
                "series": [{"year": int(y), "value": round(float(v), 4)} for y, v in s.items()],
                "trend": trend, "by_month": months}
