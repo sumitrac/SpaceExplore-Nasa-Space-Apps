@@ -7,6 +7,90 @@
   "definition": "The most water stored in the snow during the winter. This is the water that melts into rivers and reservoirs through summer.",
   "series": [
     {
+      "year": 1980,
+      "value": 13.4606
+    },
+    {
+      "year": 1981,
+      "value": 0.9608
+    },
+    {
+      "year": 1982,
+      "value": 10.359
+    },
+    {
+      "year": 1983,
+      "value": 0.1585
+    },
+    {
+      "year": 1984,
+      "value": 2.4431
+    },
+    {
+      "year": 1985,
+      "value": 16.1565
+    },
+    {
+      "year": 1986,
+      "value": 22.6839
+    },
+    {
+      "year": 1987,
+      "value": 0.5509
+    },
+    {
+      "year": 1988,
+      "value": 2.0731
+    },
+    {
+      "year": 1989,
+      "value": 3.195
+    },
+    {
+      "year": 1990,
+      "value": 3.2076
+    },
+    {
+      "year": 1991,
+      "value": 4.7947
+    },
+    {
+      "year": 1992,
+      "value": 0.2698
+    },
+    {
+      "year": 1993,
+      "value": 5.2174
+    },
+    {
+      "year": 1994,
+      "value": 0.5568
+    },
+    {
+      "year": 1995,
+      "value": 1.3651
+    },
+    {
+      "year": 1996,
+      "value": 6.0212
+    },
+    {
+      "year": 1997,
+      "value": 26.9437
+    },
+    {
+      "year": 1998,
+      "value": 1.2573
+    },
+    {
+      "year": 1999,
+      "value": 1.7231
+    },
+    {
+      "year": 2000,
+      "value": 1.16
+    },
+    {
       "year": 2001,
       "value": 0.4647
     },
@@ -105,26 +189,22 @@
     {
       "year": 2025,
       "value": 3.785
-    },
-    {
-      "year": 2026,
-      "value": 0.2149
     }
   ],
   "trend": {
     "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
-    "n_years": 26,
-    "first_year": 2001,
-    "last_year": 2026,
-    "mean": 5.992390066311539,
-    "slope_per_decade": 0.27681708399999994,
-    "pct_of_mean_per_decade": 4.619477052340612,
-    "intercept": 0.9506359385,
-    "ci_low": -0.5029015250000002,
-    "ci_high": 1.6960406325000001,
-    "p_value": 0.3641129870496931,
-    "years_to_detect": 225.5,
-    "q_value": 0.9604907831348456,
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 6.0901171161108705,
+    "slope_per_decade": -0.12444570625000012,
+    "pct_of_mean_per_decade": -2.043404155903503,
+    "intercept": 2.1935142340625005,
+    "ci_low": -0.703275296153846,
+    "ci_high": 0.4151494242857143,
+    "p_value": 0.6646250221225816,
+    "years_to_detect": 321.5,
+    "q_value": 0.9165173731833084,
     "verdict": "no_trend"
   },
   "by_month": []

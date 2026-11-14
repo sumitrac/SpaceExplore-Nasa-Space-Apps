@@ -1,103 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
+import TrendChart from "./TrendChart.jsx";
+import ZoneMap from "./ZoneMap.jsx";
+import Validation from "./Validation.jsx";
+import { TOURS, TourPanel, buildSteps } from "./Tours.jsx";
+import {
+  DATA_URL, REGIONS, REGION_ORDER, TOPICS, VAR_ORDER, VERDICTS,
+  fmtP, fmtSlope, regionName, sentence,
+} from "../lib/trends.js";
 
 // Everything in this section is read from the pipeline output (data/processed -> public/data).
 // Nothing here is hard-coded: if a region or variable is missing from index.json it is not shown.
-
-const DATA_URL = `${import.meta.env.BASE_URL}data/`;
-
-const REGIONS = {
-  cedar: { name: "Cedar River", note: "Whole watershed box (upper + lower, 8 grid cells)" },
-  cedarupper: { name: "Upper Cedar", note: "High, snowy zone east of Chester Morse Lake (6 grid cells)" },
-  cedarlower: { name: "Lower Cedar", note: "Lower, rainier zone toward Landsburg (2 grid cells)" },
-  tolt: { name: "South Fork Tolt", note: "Only 2 grid cells: treat as a rough signal" },
-  seattle: { name: "Seattle city", note: "City box, for a city vs mountains contrast (4 grid cells)" },
-};
-const REGION_ORDER = ["cedar", "cedarupper", "cedarlower", "tolt", "seattle"];
-const VAR_ORDER = ["peak_swe", "rain_fraction", "winter_temp", "total_precip", "winter_runoff",
-  "summer_runoff", "snow_cover_days", "max_1day_rain", "heavy_rain_days"];
-
-const VERDICTS = {
-  real_trend: { badge: "Real trend", cls: "is-real" },
-  borderline: { badge: "Borderline", cls: "is-borderline" },
-  cant_tell_yet: { badge: "Can’t tell yet", cls: "is-cant-tell" },
-  no_trend: { badge: "No clear trend", cls: "is-none" },
-};
-
-const regionName = (r) => REGIONS[r]?.name ?? r;
-const sign = (x) => (x > 0 ? "+" : x < 0 ? "−" : "±");
-
-// Shares (0-1) are shown as percent; slopes of shares as percentage points.
-function fmtValue(v, units) {
-  if (units === "share") return `${(v * 100).toFixed(0)}%`;
-  const digits = Math.abs(v) < 10 ? 1 : 0;
-  return `${v.toFixed(digits)} ${units === "deg C" ? "°C" : units}`;
-}
-function fmtSlope(v, units) {
-  if (units === "share") return `${sign(v)}${Math.abs(v * 100).toFixed(1)} percentage points`;
-  const u = units === "deg C" ? "°C" : ` ${units}`;
-  const digits = Math.abs(v) < 1 ? 2 : Math.abs(v) < 10 ? 1 : 0;
-  return `${sign(v)}${Math.abs(v).toFixed(digits)}${u}`;
-}
-const fmtP = (p) => (p < 0.001 ? "< 0.001" : p.toFixed(3));
-
-function sentence(d) {
-  const t = d.trend;
-  const what = `${d.label} changed by ${fmtSlope(t.slope_per_decade, d.units)} per decade`;
-  const pct = t.pct_of_mean_per_decade != null && d.units !== "share"
-    ? ` (${sign(t.pct_of_mean_per_decade)}${Math.abs(t.pct_of_mean_per_decade).toFixed(0)}% of its average)`
-    : "";
-  switch (t.verdict) {
-    case "real_trend":
-      return `${what}${pct}, ${t.first_year}–${t.last_year}. That is statistically significant (q = ${fmtP(t.q_value)}).`;
-    case "borderline":
-      return `${what}${pct}. It is on the edge: the change looks big enough to detect, but after correcting for testing many things at once it does not pass (q = ${fmtP(t.q_value)}).`;
-    case "cant_tell_yet":
-      return `${what}${pct}, but that is not significant yet (q = ${fmtP(t.q_value)}). If it keeps going at this rate, roughly ${Math.ceil(t.years_to_detect)} more years of data would settle it.`;
-    default:
-      return `${what}${pct}. That is small next to the normal year-to-year swings, so the data shows no clear trend (q = ${fmtP(t.q_value)}).`;
-  }
-}
-
-function TrendChart({ doc, height = 180 }) {
-  const { series, trend, units } = doc;
-  const W = 520, H = height, pad = { l: 52, r: 12, t: 12, b: 26 };
-  const ys = series.map((s) => s.value);
-  const x0 = series[0].year, x1 = series[series.length - 1].year;
-  const perYear = trend.slope_per_decade / 10;
-  const sen = (yr) => trend.intercept + perYear * (yr - trend.first_year);
-  let lo = Math.min(...ys, sen(x0), sen(x1));
-  let hi = Math.max(...ys, sen(x0), sen(x1));
-  if (units !== "deg C" && lo >= 0) lo = 0;
-  if (hi === lo) hi = lo + 1;
-  const sx = (yr) => pad.l + ((yr - x0) / Math.max(1, x1 - x0)) * (W - pad.l - pad.r);
-  const sy = (v) => pad.t + (1 - (v - lo) / (hi - lo)) * (H - pad.t - pad.b);
-  const ticks = [lo, (lo + hi) / 2, hi];
-  const yearTicks = [x0, Math.round((x0 + x1) / 2), x1];
-  const line = series.map((s, i) => `${i ? "L" : "M"}${sx(s.year).toFixed(1)},${sy(s.value).toFixed(1)}`).join("");
-
-  return (
-    <svg className="trend-chart" viewBox={`0 0 ${W} ${H}`} role="img"
-      aria-label={`${doc.label} each water year ${x0} to ${x1}, with the Sen's slope trend line`}>
-      {ticks.map((v) => (
-        <g key={v}>
-          <line className="tc-grid" x1={pad.l} x2={W - pad.r} y1={sy(v)} y2={sy(v)} />
-          <text className="tc-axis" x={pad.l - 6} y={sy(v) + 4} textAnchor="end">{fmtValue(v, units)}</text>
-        </g>
-      ))}
-      {yearTicks.map((yr, i) => (
-        <text key={yr} className="tc-axis" x={sx(yr)} y={H - 6}
-          textAnchor={i === 0 ? "start" : i === yearTicks.length - 1 ? "end" : "middle"}>{yr}</text>
-      ))}
-      <path className="tc-line" d={line} />
-      {series.map((s) => (
-        <circle key={s.year} className="tc-dot" cx={sx(s.year)} cy={sy(s.value)} r="3">
-          <title>{`Water year ${s.year}: ${fmtValue(s.value, units)}`}</title>
-        </circle>
-      ))}
-      <line className={`tc-sen ${VERDICTS[trend.verdict]?.cls ?? ""}`} x1={sx(x0)} y1={sy(sen(x0))} x2={sx(x1)} y2={sy(sen(x1))} />
-    </svg>
-  );
-}
 
 function Badge({ verdict, years }) {
   const v = VERDICTS[verdict] ?? { badge: verdict, cls: "" };
@@ -112,7 +24,7 @@ function Badge({ verdict, years }) {
 function TrendCard({ doc, compact = false }) {
   const t = doc.trend;
   return (
-    <article className="trend-card">
+    <article className="trend-card" id={compact ? undefined : `card-${doc.variable}`}>
       <header className="trend-card-head">
         <h3>{doc.label}</h3>
         <Badge verdict={t.verdict} years={t.years_to_detect} />
@@ -145,42 +57,60 @@ function Pair({ title, intro, a, b }) {
   );
 }
 
+async function getJson(name, optional = false) {
+  const r = await fetch(`${DATA_URL}${name}`);
+  if (!r.ok) {
+    if (optional) return null;
+    throw new Error(`${name}: HTTP ${r.status}`);
+  }
+  return r.json();
+}
+
 export default function Trends() {
   const [index, setIndex] = useState(null);
   const [docs, setDocs] = useState({});
+  const [validation, setValidation] = useState([]);
   const [error, setError] = useState(null);
   const [region, setRegion] = useState(null);
+  const [topic, setTopic] = useState(null);
+  const [tour, setTour] = useState(null); // { id, step }
 
   useEffect(() => {
     let alive = true;
-    fetch(`${DATA_URL}index.json`)
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`index.json: HTTP ${r.status}`))))
-      .then(async (idx) => {
-        const entries = await Promise.all(idx.map(async (row) => {
-          const r = await fetch(`${DATA_URL}${row.region}_${row.variable}.json`);
-          if (!r.ok) throw new Error(`${row.region}_${row.variable}.json: HTTP ${r.status}`);
-          return [`${row.region}/${row.variable}`, await r.json()];
-        }));
-        if (!alive) return;
-        setIndex(idx);
-        setDocs(Object.fromEntries(entries));
-      })
-      .catch((e) => alive && setError(e.message));
+    (async () => {
+      const idx = await getJson("index.json");
+      const entries = await Promise.all(
+        idx.map(async (row) => [`${row.region}/${row.variable}`, await getJson(`${row.region}_${row.variable}.json`)]));
+      const val = await getJson("validation.json", true);
+      if (!alive) return;
+      setIndex(idx);
+      setDocs(Object.fromEntries(entries));
+      setValidation(val ?? []);
+    })().catch((e) => alive && setError(e.message));
     return () => { alive = false; };
   }, []);
 
   const regions = useMemo(() => {
     if (!index) return [];
-    const present = [...new Set(index.map((r) => r.region))];
     const rank = (r) => (REGION_ORDER.includes(r) ? REGION_ORDER.indexOf(r) : 99);
-    return present.sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+    return [...new Set(index.map((r) => r.region))].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
   }, [index]);
-  const active = region ?? regions[0];
+
+  const tourDef = TOURS.find((t) => t.id === tour?.id);
+  const steps = useMemo(() => (tourDef ? buildSteps(tourDef, docs, validation) : []), [tourDef, docs, validation]);
+  const step = steps[tour?.step];
+  const active = step?.region ?? region ?? regions[0];
+  const activeTopic = TOPICS.find((t) => t.id === (step?.topic ?? topic ?? "all"));
+
   const regionDocs = Object.values(docs)
     .filter((d) => d.region === active)
+    .filter((d) => !activeTopic.vars || activeTopic.vars.includes(d.variable))
     .sort((a, b) => VAR_ORDER.indexOf(a.variable) - VAR_ORDER.indexOf(b.variable));
   const get = (v) => docs[`${active}/${v}`];
-  const first = regionDocs[0]?.trend;
+  const first = Object.values(docs)[0]?.trend;
+  const showValidation = Boolean(active?.startsWith("cedar")) && activeTopic.id !== "temp" && activeTopic.id !== "rain";
+
+  const pick = (fn) => (v) => { setTour(null); fn(v); };
 
   return (
     <section id="trends" className="section" aria-labelledby="trends-title">
@@ -195,18 +125,52 @@ export default function Trends() {
 
       {index && (
         <>
-          <div className="region-picker" role="tablist" aria-label="Region">
-            {regions.map((r) => (
-              <button key={r} role="tab" aria-selected={r === active} onClick={() => setRegion(r)}>
-                {regionName(r)}
+          <div className="tour-start">
+            <span>Take a guided tour:</span>
+            {TOURS.map((t) => (
+              <button key={t.id} onClick={() => setTour({ id: t.id, step: 0 })} aria-pressed={tour?.id === t.id}>
+                {t.title}
               </button>
             ))}
           </div>
-          {REGIONS[active] && <p className="region-note">{REGIONS[active].note}</p>}
 
-          <div className="trend-grid">
-            {regionDocs.map((d) => <TrendCard key={d.variable} doc={d} />)}
+          {tourDef && steps.length > 0 && (
+            <TourPanel tour={tourDef} steps={steps} index={tour.step}
+              onStep={(i) => setTour({ ...tour, step: i })} onClose={() => setTour(null)} />
+          )}
+
+          <div className="explore">
+            <div>
+              <h3 className="explore-q">What do you want to investigate?</h3>
+              <div className="region-picker" role="group" aria-label="Topic">
+                {TOPICS.map((t) => (
+                  <button key={t.id} aria-pressed={t.id === activeTopic.id} onClick={() => pick(setTopic)(t.id)}>
+                    {t.label}
+                  </button>
+                ))}
+              </div>
+              <h3 className="explore-q">Where?</h3>
+              <div className="region-picker" role="group" aria-label="Region">
+                {regions.map((r) => (
+                  <button key={r} aria-pressed={r === active} onClick={() => pick(setRegion)(r)}>
+                    {regionName(r)}
+                  </button>
+                ))}
+              </div>
+              {REGIONS[active] && <p className="region-note">{REGIONS[active].note}</p>}
+            </div>
+            <ZoneMap regions={regions} active={active} onSelect={pick(setRegion)} />
           </div>
+
+          {regionDocs.length ? (
+            <div className="trend-grid">
+              {regionDocs.map((d) => <TrendCard key={d.variable} doc={d} />)}
+            </div>
+          ) : (
+            <p className="region-note">
+              No {activeTopic.label.toLowerCase()} variables for {regionName(active)} yet. Try another place or topic.
+            </p>
+          )}
 
           {(get("winter_runoff") && get("summer_runoff")) || (get("rain_fraction") && get("peak_swe")) ? (
             <div className="opposite">
@@ -224,18 +188,24 @@ export default function Trends() {
             </div>
           ) : null}
 
+          {showValidation && <Validation items={validation} />}
+
           <aside className="methods" aria-labelledby="methods-title">
             <h3 id="methods-title">Data &amp; methods</h3>
             <ul>
               <li>
                 <strong>Data.</strong> NASA NLDAS-2 monthly (Noah land model and forcing, 0.125° grid), area-averaged
-                with NASA Giovanni{first ? `, water years ${first.first_year}–${first.last_year}` : ""}. The
-                pipeline also supports GPM IMERG daily rain and MODIS MOD10A2 snow cover; those appear here only
+                with NASA Giovanni{first ? `, water years ${first.first_year}–${first.last_year} (${first.n_years} years)` : ""}.
+                The pipeline also supports GPM IMERG daily rain and MODIS MOD10A2 snow cover; those appear here only
                 once the files are downloaded.
               </li>
               <li>
+                <strong>Ground checks.</strong> NRCS SNOTEL snow stations (Olallie Meadows, Rex River, Stampede Pass) and
+                USGS river gauges 12115000 (Cedar River) and 12115500 (Rex River), both above Chester Morse Lake.
+              </li>
+              <li>
                 <strong>Seasons removed.</strong> Each variable becomes one number per water year (Oct–Sep), for example
-                the highest monthly snowpack or the Dec–Feb runoff total.
+                the highest monthly snowpack or the Jul–Sep runoff total.
               </li>
               <li>
                 <strong>Trend test.</strong> Mann-Kendall test with the Hamed-Rao correction for year-to-year
@@ -249,8 +219,9 @@ export default function Trends() {
               <li>
                 <strong>Caveats.</strong> Region boxes are approximate rectangles, not official watershed outlines.
                 NLDAS grid cells are about 12 km wide: the Tolt and Lower Cedar boxes are only 2 cells each, and model
-                cells average over big elevation ranges, so snowpack is lower than at snow stations. These are model
-                values, not direct measurements. A short record (about 25 years) makes real trends hard to detect.
+                cells average over big elevation ranges, so the model shows far less snow than the snow stations
+                measure. These are model values; the ground checks show where the model agrees with measurements and
+                where it does not.
               </li>
             </ul>
           </aside>

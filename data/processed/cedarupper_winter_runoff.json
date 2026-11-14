@@ -7,6 +7,90 @@
   "definition": "Water flowing off the land in December to February. More winter runoff means higher flood risk.",
   "series": [
     {
+      "year": 1980,
+      "value": 755.0035
+    },
+    {
+      "year": 1981,
+      "value": 888.7245
+    },
+    {
+      "year": 1982,
+      "value": 961.9356
+    },
+    {
+      "year": 1983,
+      "value": 837.5997
+    },
+    {
+      "year": 1984,
+      "value": 697.4704
+    },
+    {
+      "year": 1985,
+      "value": 295.0014
+    },
+    {
+      "year": 1986,
+      "value": 571.7073
+    },
+    {
+      "year": 1987,
+      "value": 496.19
+    },
+    {
+      "year": 1988,
+      "value": 596.1695
+    },
+    {
+      "year": 1989,
+      "value": 481.3007
+    },
+    {
+      "year": 1990,
+      "value": 716.5679
+    },
+    {
+      "year": 1991,
+      "value": 695.8606
+    },
+    {
+      "year": 1992,
+      "value": 770.6616
+    },
+    {
+      "year": 1993,
+      "value": 361.7996
+    },
+    {
+      "year": 1994,
+      "value": 564.1075
+    },
+    {
+      "year": 1995,
+      "value": 737.7976
+    },
+    {
+      "year": 1996,
+      "value": 895.1373
+    },
+    {
+      "year": 1997,
+      "value": 708.1306
+    },
+    {
+      "year": 1998,
+      "value": 487.5832
+    },
+    {
+      "year": 1999,
+      "value": 781.7449
+    },
+    {
+      "year": 2000,
+      "value": 512.9704
+    },
+    {
       "year": 2001,
       "value": 195.6727
     },
@@ -105,88 +189,84 @@
     {
       "year": 2025,
       "value": 492.1366
-    },
-    {
-      "year": 2026,
-      "value": 960.7656
     }
   ],
   "trend": {
     "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
-    "n_years": 26,
-    "first_year": 2001,
-    "last_year": 2026,
-    "mean": 641.4478552361538,
-    "slope_per_decade": 26.897514062500036,
-    "pct_of_mean_per_decade": 4.193250291966058,
-    "intercept": 610.967737961875,
-    "ci_low": -87.92191645454544,
-    "ci_high": 158.05067577777777,
-    "p_value": 0.5084542305885602,
-    "years_to_detect": 28.7,
-    "q_value": 0.9604907831348456,
-    "verdict": "cant_tell_yet"
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 641.9639696954349,
+    "slope_per_decade": -12.053259328571196,
+    "pct_of_mean_per_decade": -1.8775600964474046,
+    "intercept": 713.8792789042852,
+    "ci_low": -59.91881100882354,
+    "ci_high": 30.716006583333332,
+    "p_value": 0.5196828741010562,
+    "years_to_detect": 61.0,
+    "q_value": 0.9165173731833084,
+    "verdict": "no_trend"
   },
   "by_month": [
     {
       "month": 1,
-      "slope_per_decade": -21.236586117647057,
-      "p_value": 0.5968073797467659
+      "slope_per_decade": 11.942947285714272,
+      "p_value": 0.334168550332576
     },
     {
       "month": 2,
-      "slope_per_decade": -11.00400316666665,
-      "p_value": 0.7913957365052897
+      "slope_per_decade": -15.448507199999995,
+      "p_value": 0.10748830857067793
     },
     {
       "month": 3,
-      "slope_per_decade": 15.932948000000025,
-      "p_value": 0.4806051289858302
+      "slope_per_decade": -15.146573142857156,
+      "p_value": 0.19786133230740122
     },
     {
       "month": 4,
-      "slope_per_decade": -9.017469333333375,
-      "p_value": 0.7913957365052897
+      "slope_per_decade": 0.15868981250001468,
+      "p_value": 1.0
     },
     {
       "month": 5,
-      "slope_per_decade": -13.065185470909086,
-      "p_value": 0.7243397423849234
+      "slope_per_decade": 0.7297238878787826,
+      "p_value": 0.9245677984378258
     },
     {
       "month": 6,
-      "slope_per_decade": -8.413402011111105,
-      "p_value": 0.5968073797467659
+      "slope_per_decade": 0.8374245624999983,
+      "p_value": 0.8202405130792938
     },
     {
       "month": 7,
-      "slope_per_decade": -2.7360286595341106,
-      "p_value": 0.37795959996135187
+      "slope_per_decade": -3.461166258623256,
+      "p_value": 0.04890997825307197
     },
     {
       "month": 8,
-      "slope_per_decade": -2.4511018041666666,
-      "p_value": 0.17175819814532312
+      "slope_per_decade": -2.3235971303448273,
+      "p_value": 0.005069675177039379
     },
     {
       "month": 9,
-      "slope_per_decade": -1.66562836625,
-      "p_value": 0.4274889995990474
+      "slope_per_decade": -4.099075711538461,
+      "p_value": 0.0033341113011358114
     },
     {
       "month": 10,
-      "slope_per_decade": -23.107053706250014,
-      "p_value": 0.4536084832864735
+      "slope_per_decade": 2.482117306666666,
+      "p_value": 0.719004354873376
     },
     {
       "month": 11,
-      "slope_per_decade": 5.956563089473682,
-      "p_value": 0.8947871042097533
+      "slope_per_decade": -8.851903380952367,
+      "p_value": 0.4602010444653013
     },
     {
       "month": 12,
-      "slope_per_decade": 33.671122913333335,
-      "p_value": 0.2517286908429268
+      "slope_per_decade": -4.948138181818187,
+      "p_value": 0.5699744628597805
     }
   ]
 }

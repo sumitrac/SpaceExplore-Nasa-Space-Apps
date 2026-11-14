@@ -1,176 +1,176 @@
 [
   {
+    "region": "cedar",
+    "variable": "summer_runoff",
+    "label": "Summer runoff",
+    "verdict": "real_trend",
+    "q_value": 0.029527815619182867
+  },
+  {
     "region": "cedarlower",
     "variable": "summer_runoff",
     "label": "Summer runoff",
     "verdict": "real_trend",
-    "q_value": 0.01597367976015618
-  },
-  {
-    "region": "cedar",
-    "variable": "summer_runoff",
-    "label": "Summer runoff",
-    "verdict": "cant_tell_yet",
-    "q_value": 0.3066776437189861
+    "q_value": 0.029527815619182867
   },
   {
     "region": "cedarupper",
     "variable": "summer_runoff",
     "label": "Summer runoff",
-    "verdict": "cant_tell_yet",
-    "q_value": 0.4558529041713185
+    "verdict": "real_trend",
+    "q_value": 0.029527815619182867
+  },
+  {
+    "region": "tolt",
+    "variable": "summer_runoff",
+    "label": "Summer runoff",
+    "verdict": "real_trend",
+    "q_value": 0.0423201074738172
   },
   {
     "region": "cedar",
     "variable": "peak_swe",
     "label": "Peak snowpack",
     "verdict": "no_trend",
-    "q_value": 0.9604907831348456
+    "q_value": 0.9165173731833084
   },
   {
     "region": "cedar",
-    "variable": "rain_fraction",
-    "label": "Rain fraction",
-    "verdict": "no_trend",
-    "q_value": 0.9604907831348456
+    "variable": "total_precip",
+    "label": "Total precipitation",
+    "verdict": "cant_tell_yet",
+    "q_value": 0.9165173731833084
   },
   {
     "region": "cedar",
     "variable": "winter_runoff",
     "label": "Winter runoff",
-    "verdict": "cant_tell_yet",
-    "q_value": 0.9604907831348456
+    "verdict": "no_trend",
+    "q_value": 0.9165173731833084
   },
   {
     "region": "cedarlower",
     "variable": "peak_swe",
     "label": "Peak snowpack",
     "verdict": "no_trend",
-    "q_value": 0.9604907831348456
+    "q_value": 0.9165173731833084
   },
   {
     "region": "cedarlower",
     "variable": "rain_fraction",
     "label": "Rain fraction",
     "verdict": "no_trend",
-    "q_value": 0.9604907831348456
+    "q_value": 0.9165173731833084
   },
   {
     "region": "cedarlower",
     "variable": "total_precip",
     "label": "Total precipitation",
     "verdict": "cant_tell_yet",
-    "q_value": 0.9604907831348456
+    "q_value": 0.9165173731833084
   },
   {
     "region": "cedarlower",
     "variable": "winter_runoff",
     "label": "Winter runoff",
-    "verdict": "cant_tell_yet",
-    "q_value": 0.9604907831348456
+    "verdict": "no_trend",
+    "q_value": 0.9165173731833084
   },
   {
     "region": "cedarlower",
     "variable": "winter_temp",
     "label": "Winter temperature",
     "verdict": "no_trend",
-    "q_value": 0.9604907831348456
+    "q_value": 0.9165173731833084
   },
   {
     "region": "cedarupper",
     "variable": "peak_swe",
     "label": "Peak snowpack",
     "verdict": "no_trend",
-    "q_value": 0.9604907831348456
+    "q_value": 0.9165173731833084
   },
   {
     "region": "cedarupper",
-    "variable": "rain_fraction",
-    "label": "Rain fraction",
-    "verdict": "no_trend",
-    "q_value": 0.9604907831348456
+    "variable": "total_precip",
+    "label": "Total precipitation",
+    "verdict": "cant_tell_yet",
+    "q_value": 0.9165173731833084
   },
   {
     "region": "cedarupper",
     "variable": "winter_runoff",
     "label": "Winter runoff",
-    "verdict": "cant_tell_yet",
-    "q_value": 0.9604907831348456
+    "verdict": "no_trend",
+    "q_value": 0.9165173731833084
+  },
+  {
+    "region": "cedarupper",
+    "variable": "winter_temp",
+    "label": "Winter temperature",
+    "verdict": "no_trend",
+    "q_value": 0.9165173731833084
   },
   {
     "region": "seattle",
     "variable": "total_precip",
     "label": "Total precipitation",
     "verdict": "no_trend",
-    "q_value": 0.9604907831348456
-  },
-  {
-    "region": "tolt",
-    "variable": "total_precip",
-    "label": "Total precipitation",
-    "verdict": "cant_tell_yet",
-    "q_value": 0.9604907831348456
-  },
-  {
-    "region": "tolt",
-    "variable": "winter_runoff",
-    "label": "Winter runoff",
-    "verdict": "cant_tell_yet",
-    "q_value": 0.9604907831348456
-  },
-  {
-    "region": "tolt",
-    "variable": "summer_runoff",
-    "label": "Summer runoff",
-    "verdict": "cant_tell_yet",
-    "q_value": 0.9604907831348456
-  },
-  {
-    "region": "cedar",
-    "variable": "total_precip",
-    "label": "Total precipitation",
-    "verdict": "no_trend",
-    "q_value": 0.9773100051971507
-  },
-  {
-    "region": "cedar",
-    "variable": "winter_temp",
-    "label": "Winter temperature",
-    "verdict": "no_trend",
-    "q_value": 0.9773100051971507
-  },
-  {
-    "region": "cedarupper",
-    "variable": "total_precip",
-    "label": "Total precipitation",
-    "verdict": "no_trend",
-    "q_value": 0.9773100051971507
+    "q_value": 0.9165173731833084
   },
   {
     "region": "tolt",
     "variable": "rain_fraction",
     "label": "Rain fraction",
     "verdict": "no_trend",
-    "q_value": 0.9773100051971507
+    "q_value": 0.9165173731833084
   },
   {
-    "region": "cedarupper",
+    "region": "tolt",
+    "variable": "winter_runoff",
+    "label": "Winter runoff",
+    "verdict": "no_trend",
+    "q_value": 0.9165173731833084
+  },
+  {
+    "region": "tolt",
+    "variable": "winter_temp",
+    "label": "Winter temperature",
+    "verdict": "cant_tell_yet",
+    "q_value": 0.9165173731833084
+  },
+  {
+    "region": "cedar",
     "variable": "winter_temp",
     "label": "Winter temperature",
     "verdict": "no_trend",
-    "q_value": 1.0
+    "q_value": 0.9636343736208991
+  },
+  {
+    "region": "cedarupper",
+    "variable": "rain_fraction",
+    "label": "Rain fraction",
+    "verdict": "no_trend",
+    "q_value": 0.9636343736208991
   },
   {
     "region": "tolt",
     "variable": "peak_swe",
     "label": "Peak snowpack",
     "verdict": "no_trend",
-    "q_value": 1.0
+    "q_value": 0.9636343736208991
   },
   {
     "region": "tolt",
-    "variable": "winter_temp",
-    "label": "Winter temperature",
+    "variable": "total_precip",
+    "label": "Total precipitation",
+    "verdict": "no_trend",
+    "q_value": 0.9636343736208991
+  },
+  {
+    "region": "cedar",
+    "variable": "rain_fraction",
+    "label": "Rain fraction",
     "verdict": "no_trend",
     "q_value": 1.0
   }

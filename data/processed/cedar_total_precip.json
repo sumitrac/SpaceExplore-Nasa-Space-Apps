@@ -7,6 +7,90 @@
   "definition": "All the rain and snow that fell in the water year (October to September), added up as water depth.",
   "series": [
     {
+      "year": 1980,
+      "value": 2134.401
+    },
+    {
+      "year": 1981,
+      "value": 2419.002
+    },
+    {
+      "year": 1982,
+      "value": 2461.2756
+    },
+    {
+      "year": 1983,
+      "value": 2330.9127
+    },
+    {
+      "year": 1984,
+      "value": 2498.523
+    },
+    {
+      "year": 1985,
+      "value": 1942.2242
+    },
+    {
+      "year": 1986,
+      "value": 2265.4721
+    },
+    {
+      "year": 1987,
+      "value": 1973.4792
+    },
+    {
+      "year": 1988,
+      "value": 2001.5558
+    },
+    {
+      "year": 1989,
+      "value": 2156.5791
+    },
+    {
+      "year": 1990,
+      "value": 2263.5387
+    },
+    {
+      "year": 1991,
+      "value": 2578.3537
+    },
+    {
+      "year": 1992,
+      "value": 1998.0508
+    },
+    {
+      "year": 1993,
+      "value": 2015.9801
+    },
+    {
+      "year": 1994,
+      "value": 1640.119
+    },
+    {
+      "year": 1995,
+      "value": 1950.2981
+    },
+    {
+      "year": 1996,
+      "value": 2689.4975
+    },
+    {
+      "year": 1997,
+      "value": 2589.7394
+    },
+    {
+      "year": 1998,
+      "value": 1511.1657
+    },
+    {
+      "year": 1999,
+      "value": 2356.5855
+    },
+    {
+      "year": 2000,
+      "value": 2239.9203
+    },
+    {
       "year": 2001,
       "value": 1404.554
     },
@@ -105,27 +189,23 @@
     {
       "year": 2025,
       "value": 1670.7396
-    },
-    {
-      "year": 2026,
-      "value": 2413.8567
     }
   ],
   "trend": {
     "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
-    "n_years": 26,
-    "first_year": 2001,
-    "last_year": 2026,
-    "mean": 2123.440896110566,
-    "slope_per_decade": 9.949381796528769,
-    "pct_of_mean_per_decade": 0.46854997540796695,
-    "intercept": 2185.176121315075,
-    "ci_low": -183.76056783801656,
-    "ci_high": 207.58835694025265,
-    "p_value": 0.8228970004536333,
-    "years_to_detect": 104.5,
-    "q_value": 0.9773100051971507,
-    "verdict": "no_trend"
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 2148.0930464067333,
+    "slope_per_decade": -34.67586509852658,
+    "pct_of_mean_per_decade": -1.6142627134579361,
+    "intercept": 2275.633545032421,
+    "ci_low": -107.88766937642698,
+    "ci_high": 39.0136226540644,
+    "p_value": 0.36338043937464426,
+    "years_to_detect": 16.6,
+    "q_value": 0.9165173731833084,
+    "verdict": "cant_tell_yet"
   },
   "by_month": []
 }
