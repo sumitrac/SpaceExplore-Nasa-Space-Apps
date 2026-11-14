@@ -1,0 +1,120 @@
+{
+  "region": "seattle",
+  "variable": "max_1day_rain",
+  "label": "Biggest rain day",
+  "units": "mm",
+  "source": "GPM IMERG",
+  "definition": "The most rain that fell in a single day that year. Big rain days can overwhelm sewers.",
+  "series": [
+    {
+      "year": 2000,
+      "value": 30.903
+    },
+    {
+      "year": 2001,
+      "value": 43.1391
+    },
+    {
+      "year": 2002,
+      "value": 42.7507
+    },
+    {
+      "year": 2003,
+      "value": 34.6276
+    },
+    {
+      "year": 2004,
+      "value": 30.5992
+    },
+    {
+      "year": 2005,
+      "value": 27.3041
+    },
+    {
+      "year": 2006,
+      "value": 34.7253
+    },
+    {
+      "year": 2007,
+      "value": 31.5858
+    },
+    {
+      "year": 2008,
+      "value": 38.9588
+    },
+    {
+      "year": 2009,
+      "value": 38.5868
+    },
+    {
+      "year": 2010,
+      "value": 34.5578
+    },
+    {
+      "year": 2011,
+      "value": 48.8319
+    },
+    {
+      "year": 2012,
+      "value": 37.267
+    },
+    {
+      "year": 2013,
+      "value": 43.0905
+    },
+    {
+      "year": 2014,
+      "value": 42.0013
+    },
+    {
+      "year": 2015,
+      "value": 35.6657
+    },
+    {
+      "year": 2016,
+      "value": 32.9736
+    },
+    {
+      "year": 2017,
+      "value": 50.7804
+    },
+    {
+      "year": 2018,
+      "value": 33.1714
+    },
+    {
+      "year": 2019,
+      "value": 42.4745
+    },
+    {
+      "year": 2020,
+      "value": 34.3848
+    },
+    {
+      "year": 2021,
+      "value": 43.86
+    },
+    {
+      "year": 2022,
+      "value": 29.1039
+    },
+    {
+      "year": 2023,
+      "value": 50.1143
+    },
+    {
+      "year": 2024,
+      "value": 39.0579
+    }
+  ],
+  "trend": {
+    "slope_per_decade": 2.2908552519428844,
+    "ci_low": -1.272363201711434,
+    "ci_high": 6.703315246577688,
+    "p_value": 0.2524605042504313,
+    "years_to_detect": 0.0,
+    "q_value": 0.2775508951844028,
+    "verdict": "cant_tell_yet"
+  },
+  "by_month": []
+}

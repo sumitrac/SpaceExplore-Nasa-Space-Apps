@@ -1,0 +1,261 @@
+{
+  "region": "tolt",
+  "variable": "summer_runoff",
+  "label": "Summer runoff",
+  "units": "mm",
+  "source": "NLDAS 2 Noah",
+  "definition": "Water flowing off the land in July to September, when the city needs it most.",
+  "series": [
+    {
+      "year": 1980,
+      "value": 202.9628
+    },
+    {
+      "year": 1981,
+      "value": 303.0367
+    },
+    {
+      "year": 1982,
+      "value": 352.9153
+    },
+    {
+      "year": 1983,
+      "value": 274.5401
+    },
+    {
+      "year": 1984,
+      "value": 224.1141
+    },
+    {
+      "year": 1985,
+      "value": 299.9568
+    },
+    {
+      "year": 1986,
+      "value": 341.9516
+    },
+    {
+      "year": 1987,
+      "value": 365.4554
+    },
+    {
+      "year": 1988,
+      "value": 248.4713
+    },
+    {
+      "year": 1989,
+      "value": 315.8048
+    },
+    {
+      "year": 1990,
+      "value": 353.3371
+    },
+    {
+      "year": 1991,
+      "value": 262.4455
+    },
+    {
+      "year": 1992,
+      "value": 370.6615
+    },
+    {
+      "year": 1993,
+      "value": 384.7126
+    },
+    {
+      "year": 1994,
+      "value": 233.4465
+    },
+    {
+      "year": 1995,
+      "value": 286.3947
+    },
+    {
+      "year": 1996,
+      "value": 316.7405
+    },
+    {
+      "year": 1997,
+      "value": 276.7877
+    },
+    {
+      "year": 1998,
+      "value": 248.728
+    },
+    {
+      "year": 1999,
+      "value": 327.0888
+    },
+    {
+      "year": 2000,
+      "value": 230.3199
+    },
+    {
+      "year": 2001,
+      "value": 259.6327
+    },
+    {
+      "year": 2002,
+      "value": 264.9701
+    },
+    {
+      "year": 2003,
+      "value": 318.2764
+    },
+    {
+      "year": 2004,
+      "value": 368.2345
+    },
+    {
+      "year": 2005,
+      "value": 338.1098
+    },
+    {
+      "year": 2006,
+      "value": 299.7973
+    },
+    {
+      "year": 2007,
+      "value": 294.851
+    },
+    {
+      "year": 2008,
+      "value": 364.7692
+    },
+    {
+      "year": 2009,
+      "value": 400.3419
+    },
+    {
+      "year": 2010,
+      "value": 391.178
+    },
+    {
+      "year": 2011,
+      "value": 272.1991
+    },
+    {
+      "year": 2012,
+      "value": 338.5939
+    },
+    {
+      "year": 2013,
+      "value": 279.3433
+    },
+    {
+      "year": 2014,
+      "value": 276.6551
+    },
+    {
+      "year": 2015,
+      "value": 281.7916
+    },
+    {
+      "year": 2016,
+      "value": 245.1512
+    },
+    {
+      "year": 2017,
+      "value": 210.2435
+    },
+    {
+      "year": 2018,
+      "value": 296.026
+    },
+    {
+      "year": 2019,
+      "value": 277.3681
+    },
+    {
+      "year": 2020,
+      "value": 284.4521
+    },
+    {
+      "year": 2021,
+      "value": 368.9911
+    },
+    {
+      "year": 2022,
+      "value": 418.7913
+    },
+    {
+      "year": 2023,
+      "value": 325.0293
+    },
+    {
+      "year": 2024,
+      "value": 329.7529
+    }
+  ],
+  "trend": {
+    "slope_per_decade": 7.0050974671935435,
+    "ci_low": -7.367499315988985,
+    "ci_high": 19.300791346142248,
+    "p_value": 0.25957464181753,
+    "years_to_detect": 1.1,
+    "q_value": 0.2775508951844028,
+    "verdict": "cant_tell_yet"
+  },
+  "by_month": [
+    {
+      "month": 1,
+      "slope_per_decade": 2.259341300497334,
+      "p_value": 0.3947350133030303
+    },
+    {
+      "month": 2,
+      "slope_per_decade": 4.6947900682671975,
+      "p_value": 0.1449603050703392
+    },
+    {
+      "month": 3,
+      "slope_per_decade": 4.595570797092825,
+      "p_value": 0.1449603050703392
+    },
+    {
+      "month": 4,
+      "slope_per_decade": -2.5453064402223466,
+      "p_value": 0.47515956936817516
+    },
+    {
+      "month": 5,
+      "slope_per_decade": 3.239083138844215,
+      "p_value": 0.4056928208369328
+    },
+    {
+      "month": 6,
+      "slope_per_decade": -0.10154673291915292,
+      "p_value": 0.9921949625764028
+    },
+    {
+      "month": 7,
+      "slope_per_decade": 1.079889502525513,
+      "p_value": 0.7766500488347059
+    },
+    {
+      "month": 8,
+      "slope_per_decade": 0.5756300167546391,
+      "p_value": 0.8219844440767774
+    },
+    {
+      "month": 9,
+      "slope_per_decade": 0.8387092626936515,
+      "p_value": 0.8988057249271526
+    },
+    {
+      "month": 10,
+      "slope_per_decade": -0.5132393342098827,
+      "p_value": 0.8679213099245016
+    },
+    {
+      "month": 11,
+      "slope_per_decade": -2.963350024936471,
+      "p_value": 0.2952341739786246
+    },
+    {
+      "month": 12,
+      "slope_per_decade": 5.85917838132175,
+      "p_value": 0.09437126749226188
+    }
+  ]
+}
