@@ -5,3 +5,4 @@ frontend/dist/
 frontend/public/data/
 check/
 data/raw/
+.DS_Store

@@ -3,6 +3,7 @@ import { useAppState } from "../state/AppState.jsx";
 import { median } from "../lib/stats.js";
 import { baselineValue, seasonalSeries } from "../lib/series.js";
 import { GALLONS_PER_CCF, WATER_BILL_FACTS } from "../data/facts.js";
+import WaterBillCard from "./WaterBillCard.jsx";
 
 const LOW_SNOW = 0.7; // a "low-snow year" peaks below 70% of normal
 const CUTS = [5, 10, 15, 20];
@@ -174,6 +175,8 @@ export default function Impact() {
             {savedSeason.toLocaleString()} gallons over the four-month peak season.
           </p>
         </div>
+
+        <WaterBillCard />
       </div>
     </section>
   );
