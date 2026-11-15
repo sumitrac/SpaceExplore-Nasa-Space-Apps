@@ -104,7 +104,7 @@ def by_month(df, var="runoff"):
         s = d[d.date.dt.month == m].groupby("wy")["value"].mean()
         if len(s) >= 10:
             r = mk.original_test(s.values)
-            rows.append({"month": m, "slope_per_decade": float(r.slope * 10), "p_value": float(max(r.p, mk.original_test(y).p))})
+            rows.append({"month": m, "slope_per_decade": float(r.slope * 10), "p_value": float(max(r.p, mk.original_test(s.values).p))})
     return rows
 
 
