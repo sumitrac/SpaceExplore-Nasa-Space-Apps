@@ -10,6 +10,31 @@ export const WATERSHED = {
   chesterMorseLakeElevationM: 474, // ~1,556 ft at the Overflow Dike, SPU 2026
 };
 
+export const TOLT = {
+  acres: 12500, // Tolt River Watershed, 8,400 acres city-owned (SPU)
+};
+
+// What a water bill is measured in.
+export const GALLONS_PER_CCF = 748; // 1 CCF = 100 cubic feet (SPU)
+
+export const WATER_BILL_FACTS = [
+  {
+    title: "Summer water costs more",
+    body:
+      "Seattle charges peak-season rates from May 16 to September 15, with three price tiers that rise as you use more.",
+  },
+  {
+    title: "The top tier came from a drought",
+    body:
+      "The third, most expensive tier was brought back during the 2001 drought to discourage extra summer use.",
+  },
+  {
+    title: "Snow isn’t the main driver of rates",
+    body:
+      "Most rate increases come from inflation, labor, construction and big capital projects. Low-snow years add pressure on summer supply rather than setting the price.",
+  },
+];
+
 // 1 acre-inch of water = 27,154 gallons
 export const GALLONS_PER_ACRE_INCH = 27154;
 
@@ -75,6 +100,9 @@ export const WINTER_2026 = [
   },
 ];
 
+export const NASA_DATA_INTRO =
+  "Snow, temperature, rain and runoff come from NASA. River flow comes from USGS stream gauges.";
+
 export const NASA_DATA = [
   {
     name: "NLDAS-2 (via Giovanni)",
@@ -87,6 +115,29 @@ export const NASA_DATA = [
   {
     name: "MODIS snow cover (via AppEEARS)",
     measures: "Where the ground is snowy, every day since 2000, at 500 m.",
+  },
+  {
+    name: "USGS stream gauges",
+    measures: "Daily river flow for the Cedar and Tolt rivers (not NASA, used to check the NASA runoff).",
+  },
+];
+
+export const METHODS = [
+  {
+    title: "Water years",
+    body: "Each year runs October to September and is named for the year it ends, so one winter’s snow stays in one year.",
+  },
+  {
+    title: "Normal",
+    body: "“Normal” is the median of 1991–2020, the standard climate period. Using the median keeps one extreme year from skewing it.",
+  },
+  {
+    title: "Is a trend real?",
+    body: "We use the Mann-Kendall test, which asks whether values rise or fall consistently over time, and call a trend real when p < 0.05. Sen’s slope gives its size. Both are standard in hydrology and robust to extreme years.",
+  },
+  {
+    title: "Limits",
+    body: "NLDAS cells are about 12 km wide, so values describe the whole watershed, not one slope. Mann-Kendall assumes years are independent; strong year-to-year memory can overstate significance.",
   },
 ];
 
@@ -106,6 +157,18 @@ export const SOURCES = [
   {
     label: "WA State Climate Office: April 2026 snowpack and drought",
     url: "https://climate.uw.edu/2026/05/12/april-2026-snowpack-and-drought-summary/",
+  },
+  {
+    label: "Seattle Public Utilities: Residential water rates",
+    url: "https://seattle.gov/utilities/your-services/accounts-and-payments/rates/water/residential-water-rates",
+  },
+  {
+    label: "Seattle Public Utilities: Peak-season and third-tier rates",
+    url: "https://www.seattle.gov/utilities/services/water/water-rates/master-meter-residential",
+  },
+  {
+    label: "NACWA 2021: Why Seattle utility rates are rising",
+    url: "https://www.nacwa.org/news-publications/news-detail/2021/05/11/seattle-council-approves-plan-to-raise-water-sewage-waste-and-drainage-rates-more-than-20-by-2026",
   },
   {
     label: "Mote et al. 2008: Has spring snowpack declined in the Washington Cascades?",

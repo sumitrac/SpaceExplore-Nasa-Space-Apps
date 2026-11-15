@@ -23,7 +23,7 @@ export default function Hero() {
   const warmingLabel = warming === 0 ? "Today’s winters" : `${warming.toFixed(1)} °C warmer`;
 
   return (
-    <section className="hero" aria-labelledby="hero-title">
+    <section id="top" className="hero" aria-labelledby="hero-title">
       <div className="hero-copy">
         <h1 id="hero-title">Seattle’s water starts as snow.</h1>
         <p className="lede">
