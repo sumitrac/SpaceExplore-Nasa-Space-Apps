@@ -1,0 +1,6302 @@
+{
+ "about": "Ski-season metrics from NRCS SNOTEL daily data near Snoqualmie Pass, with NOAA ENSO (ONI) and PDO indices and NLDAS-2 temperature. q = Benjamini-Hochberg FDR across all trends in this file.",
+ "sensor_caveat": "SNOTEL temperature sensors were replaced across the western US around 2005-2013, which adds an artificial warm jump (Oyler et al. 2015). Treat SNOTEL temperature trends with caution; compare with the NLDAS temperature in nldas_temperature.",
+ "stations": [
+  {
+   "id": "788",
+   "name": "Stampede Pass SNOTEL",
+   "metrics": {
+    "season_start": {
+     "label": "Snowpack reaches 100 mm",
+     "units": "days after Oct 1",
+     "worse": "later is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 49.0
+      },
+      {
+       "year": 1984,
+       "value": 44.0
+      },
+      {
+       "year": 1985,
+       "value": 31.0
+      },
+      {
+       "year": 1986,
+       "value": 42.0
+      },
+      {
+       "year": 1987,
+       "value": 46.0
+      },
+      {
+       "year": 1988,
+       "value": 53.0
+      },
+      {
+       "year": 1989,
+       "value": 42.0
+      },
+      {
+       "year": 1990,
+       "value": 56.0
+      },
+      {
+       "year": 1991,
+       "value": 61.0
+      },
+      {
+       "year": 1992,
+       "value": 50.0
+      },
+      {
+       "year": 1993,
+       "value": 51.0
+      },
+      {
+       "year": 1994,
+       "value": 60.0
+      },
+      {
+       "year": 1995,
+       "value": 30.0
+      },
+      {
+       "year": 1996,
+       "value": 37.0
+      },
+      {
+       "year": 1997,
+       "value": 36.0
+      },
+      {
+       "year": 1998,
+       "value": 53.0
+      },
+      {
+       "year": 1999,
+       "value": 54.0
+      },
+      {
+       "year": 2000,
+       "value": 54.0
+      },
+      {
+       "year": 2001,
+       "value": 56.0
+      },
+      {
+       "year": 2002,
+       "value": 58.0
+      },
+      {
+       "year": 2003,
+       "value": 73.0
+      },
+      {
+       "year": 2004,
+       "value": 47.0
+      },
+      {
+       "year": 2005,
+       "value": 69.0
+      },
+      {
+       "year": 2006,
+       "value": 35.0
+      },
+      {
+       "year": 2007,
+       "value": 42.0
+      },
+      {
+       "year": 2008,
+       "value": 62.0
+      },
+      {
+       "year": 2009,
+       "value": 80.0
+      },
+      {
+       "year": 2010,
+       "value": 49.0
+      },
+      {
+       "year": 2011,
+       "value": 59.0
+      },
+      {
+       "year": 2012,
+       "value": 44.0
+      },
+      {
+       "year": 2013,
+       "value": 64.0
+      },
+      {
+       "year": 2014,
+       "value": 72.0
+      },
+      {
+       "year": 2015,
+       "value": 53.0
+      },
+      {
+       "year": 2016,
+       "value": 67.0
+      },
+      {
+       "year": 2017,
+       "value": 64.0
+      },
+      {
+       "year": 2018,
+       "value": 49.0
+      },
+      {
+       "year": 2019,
+       "value": 71.0
+      },
+      {
+       "year": 2020,
+       "value": 79.0
+      },
+      {
+       "year": 2021,
+       "value": 43.0
+      },
+      {
+       "year": 2022,
+       "value": 71.0
+      },
+      {
+       "year": 2023,
+       "value": 57.0
+      },
+      {
+       "year": 2024,
+       "value": 62.0
+      },
+      {
+       "year": 2025,
+       "value": 68.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 43,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 54.48837209302326,
+      "slope_per_decade": 5.555555555555555,
+      "pct_of_mean_per_decade": 10.195855266277801,
+      "intercept": 42.33333333333333,
+      "ci_low": 2.9411764705882355,
+      "ci_high": 8.0,
+      "p_value": 0.003190410536606736,
+      "years_to_detect": 0.0,
+      "q_value": 0.05423697912231451,
+      "verdict": "borderline"
+     }
+    },
+    "jan1_swe": {
+     "label": "Snowpack on Jan 1",
+     "units": "mm",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 381.0
+      },
+      {
+       "year": 1984,
+       "value": 629.92
+      },
+      {
+       "year": 1985,
+       "value": 769.62
+      },
+      {
+       "year": 1986,
+       "value": 391.16
+      },
+      {
+       "year": 1987,
+       "value": 457.2
+      },
+      {
+       "year": 1988,
+       "value": 393.7
+      },
+      {
+       "year": 1989,
+       "value": 452.12
+      },
+      {
+       "year": 1990,
+       "value": 231.14
+      },
+      {
+       "year": 1991,
+       "value": 482.6
+      },
+      {
+       "year": 1992,
+       "value": 467.36
+      },
+      {
+       "year": 1993,
+       "value": 601.98
+      },
+      {
+       "year": 1994,
+       "value": 294.64
+      },
+      {
+       "year": 1995,
+       "value": 873.76
+      },
+      {
+       "year": 1996,
+       "value": 325.12
+      },
+      {
+       "year": 1997,
+       "value": 1038.86
+      },
+      {
+       "year": 1998,
+       "value": 325.12
+      },
+      {
+       "year": 1999,
+       "value": 528.32
+      },
+      {
+       "year": 2000,
+       "value": 492.76
+      },
+      {
+       "year": 2001,
+       "value": 302.26
+      },
+      {
+       "year": 2002,
+       "value": 508.0
+      },
+      {
+       "year": 2003,
+       "value": 279.4
+      },
+      {
+       "year": 2004,
+       "value": 487.68
+      },
+      {
+       "year": 2005,
+       "value": 101.6
+      },
+      {
+       "year": 2006,
+       "value": 378.46
+      },
+      {
+       "year": 2007,
+       "value": 640.08
+      },
+      {
+       "year": 2008,
+       "value": 518.16
+      },
+      {
+       "year": 2009,
+       "value": 424.18
+      },
+      {
+       "year": 2010,
+       "value": 289.56
+      },
+      {
+       "year": 2011,
+       "value": 365.76
+      },
+      {
+       "year": 2012,
+       "value": 370.84
+      },
+      {
+       "year": 2013,
+       "value": 370.84
+      },
+      {
+       "year": 2014,
+       "value": 93.98
+      },
+      {
+       "year": 2015,
+       "value": 172.72
+      },
+      {
+       "year": 2016,
+       "value": 464.82
+      },
+      {
+       "year": 2017,
+       "value": 398.78
+      },
+      {
+       "year": 2018,
+       "value": 299.72
+      },
+      {
+       "year": 2019,
+       "value": 327.66
+      },
+      {
+       "year": 2020,
+       "value": 142.24
+      },
+      {
+       "year": 2021,
+       "value": 436.88
+      },
+      {
+       "year": 2022,
+       "value": 327.66
+      },
+      {
+       "year": 2023,
+       "value": 403.86
+      },
+      {
+       "year": 2024,
+       "value": 198.12
+      },
+      {
+       "year": 2025,
+       "value": 314.96
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 43,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 412.8976744186046,
+      "slope_per_decade": -49.30588235294117,
+      "pct_of_mean_per_decade": -11.941428932087856,
+      "intercept": 494.7023529411764,
+      "ci_low": -87.24347826086955,
+      "ci_high": -11.545454545454534,
+      "p_value": 0.011649718136925724,
+      "years_to_detect": 0.0,
+      "q_value": 0.09902260416386865,
+      "verdict": "borderline"
+     }
+    },
+    "deep_days": {
+     "label": "Days with a deep base (SWE >= 500 mm)",
+     "units": "days",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 137.0
+      },
+      {
+       "year": 1984,
+       "value": 184.0
+      },
+      {
+       "year": 1985,
+       "value": 168.0
+      },
+      {
+       "year": 1986,
+       "value": 126.0
+      },
+      {
+       "year": 1987,
+       "value": 115.0
+      },
+      {
+       "year": 1988,
+       "value": 138.0
+      },
+      {
+       "year": 1989,
+       "value": 144.0
+      },
+      {
+       "year": 1990,
+       "value": 132.0
+      },
+      {
+       "year": 1991,
+       "value": 133.0
+      },
+      {
+       "year": 1992,
+       "value": 107.0
+      },
+      {
+       "year": 1993,
+       "value": 142.0
+      },
+      {
+       "year": 1994,
+       "value": 86.0
+      },
+      {
+       "year": 1995,
+       "value": 181.0
+      },
+      {
+       "year": 1996,
+       "value": 124.0
+      },
+      {
+       "year": 1997,
+       "value": 195.0
+      },
+      {
+       "year": 1998,
+       "value": 129.0
+      },
+      {
+       "year": 1999,
+       "value": 179.0
+      },
+      {
+       "year": 2000,
+       "value": 154.0
+      },
+      {
+       "year": 2001,
+       "value": 103.0
+      },
+      {
+       "year": 2002,
+       "value": 167.0
+      },
+      {
+       "year": 2003,
+       "value": 95.0
+      },
+      {
+       "year": 2004,
+       "value": 132.0
+      },
+      {
+       "year": 2005,
+       "value": 0.0
+      },
+      {
+       "year": 2006,
+       "value": 140.0
+      },
+      {
+       "year": 2007,
+       "value": 167.0
+      },
+      {
+       "year": 2008,
+       "value": 179.0
+      },
+      {
+       "year": 2009,
+       "value": 143.0
+      },
+      {
+       "year": 2010,
+       "value": 50.0
+      },
+      {
+       "year": 2011,
+       "value": 109.0
+      },
+      {
+       "year": 2012,
+       "value": 137.0
+      },
+      {
+       "year": 2013,
+       "value": 112.0
+      },
+      {
+       "year": 2014,
+       "value": 90.0
+      },
+      {
+       "year": 2015,
+       "value": 0.0
+      },
+      {
+       "year": 2016,
+       "value": 110.0
+      },
+      {
+       "year": 2017,
+       "value": 124.0
+      },
+      {
+       "year": 2018,
+       "value": 110.0
+      },
+      {
+       "year": 2019,
+       "value": 80.0
+      },
+      {
+       "year": 2020,
+       "value": 108.0
+      },
+      {
+       "year": 2021,
+       "value": 152.0
+      },
+      {
+       "year": 2022,
+       "value": 152.0
+      },
+      {
+       "year": 2023,
+       "value": 97.0
+      },
+      {
+       "year": 2024,
+       "value": 62.0
+      },
+      {
+       "year": 2025,
+       "value": 61.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 43,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 122.18604651162791,
+      "slope_per_decade": -12.272727272727273,
+      "pct_of_mean_per_decade": -10.044295255562862,
+      "intercept": 154.77272727272728,
+      "ci_low": -22.307692307692307,
+      "ci_high": -3.8235294117647056,
+      "p_value": 0.006085432501306887,
+      "years_to_detect": 0.0,
+      "q_value": 0.06896823501481138,
+      "verdict": "borderline"
+     }
+    },
+    "snow_days": {
+     "label": "Days with snow on the ground (SWE >= 25 mm)",
+     "units": "days",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 197.0
+      },
+      {
+       "year": 1984,
+       "value": 234.0
+      },
+      {
+       "year": 1985,
+       "value": 240.0
+      },
+      {
+       "year": 1986,
+       "value": 214.0
+      },
+      {
+       "year": 1987,
+       "value": 195.0
+      },
+      {
+       "year": 1988,
+       "value": 208.0
+      },
+      {
+       "year": 1989,
+       "value": 211.0
+      },
+      {
+       "year": 1990,
+       "value": 218.0
+      },
+      {
+       "year": 1991,
+       "value": 203.0
+      },
+      {
+       "year": 1992,
+       "value": 186.0
+      },
+      {
+       "year": 1993,
+       "value": 196.0
+      },
+      {
+       "year": 1994,
+       "value": 191.0
+      },
+      {
+       "year": 1995,
+       "value": 221.0
+      },
+      {
+       "year": 1996,
+       "value": 219.0
+      },
+      {
+       "year": 1997,
+       "value": 254.0
+      },
+      {
+       "year": 1998,
+       "value": 215.0
+      },
+      {
+       "year": 1999,
+       "value": 236.0
+      },
+      {
+       "year": 2000,
+       "value": 216.0
+      },
+      {
+       "year": 2001,
+       "value": 219.0
+      },
+      {
+       "year": 2002,
+       "value": 238.0
+      },
+      {
+       "year": 2003,
+       "value": 185.0
+      },
+      {
+       "year": 2004,
+       "value": 208.0
+      },
+      {
+       "year": 2005,
+       "value": 167.0
+      },
+      {
+       "year": 2006,
+       "value": 223.0
+      },
+      {
+       "year": 2007,
+       "value": 214.0
+      },
+      {
+       "year": 2008,
+       "value": 224.0
+      },
+      {
+       "year": 2009,
+       "value": 186.0
+      },
+      {
+       "year": 2010,
+       "value": 220.0
+      },
+      {
+       "year": 2011,
+       "value": 228.0
+      },
+      {
+       "year": 2012,
+       "value": 226.0
+      },
+      {
+       "year": 2013,
+       "value": 208.0
+      },
+      {
+       "year": 2014,
+       "value": 210.0
+      },
+      {
+       "year": 2015,
+       "value": 115.0
+      },
+      {
+       "year": 2016,
+       "value": 179.0
+      },
+      {
+       "year": 2017,
+       "value": 195.0
+      },
+      {
+       "year": 2018,
+       "value": 215.0
+      },
+      {
+       "year": 2019,
+       "value": 185.0
+      },
+      {
+       "year": 2020,
+       "value": 181.0
+      },
+      {
+       "year": 2021,
+       "value": 224.0
+      },
+      {
+       "year": 2022,
+       "value": 216.0
+      },
+      {
+       "year": 2023,
+       "value": 206.0
+      },
+      {
+       "year": 2024,
+       "value": 198.0
+      },
+      {
+       "year": 2025,
+       "value": 192.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 43,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 207.34883720930233,
+      "slope_per_decade": -3.75,
+      "pct_of_mean_per_decade": -1.8085464333781962,
+      "intercept": 218.875,
+      "ci_low": -8.947368421052632,
+      "ci_high": 1.6666666666666665,
+      "p_value": 0.18353198410010352,
+      "years_to_detect": 17.8,
+      "q_value": 0.7601039467286773,
+      "verdict": "cant_tell_yet"
+     }
+    },
+    "melt_out": {
+     "label": "Melt-out day",
+     "units": "days after Oct 1",
+     "worse": "earlier is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 239.0
+      },
+      {
+       "year": 1984,
+       "value": 266.0
+      },
+      {
+       "year": 1985,
+       "value": 252.0
+      },
+      {
+       "year": 1986,
+       "value": 242.0
+      },
+      {
+       "year": 1987,
+       "value": 226.0
+      },
+      {
+       "year": 1988,
+       "value": 251.0
+      },
+      {
+       "year": 1989,
+       "value": 248.0
+      },
+      {
+       "year": 1990,
+       "value": 257.0
+      },
+      {
+       "year": 1991,
+       "value": 242.0
+      },
+      {
+       "year": 1992,
+       "value": 218.0
+      },
+      {
+       "year": 1993,
+       "value": 232.0
+      },
+      {
+       "year": 1994,
+       "value": 234.0
+      },
+      {
+       "year": 1995,
+       "value": 244.0
+      },
+      {
+       "year": 1996,
+       "value": 249.0
+      },
+      {
+       "year": 1997,
+       "value": 267.0
+      },
+      {
+       "year": 1998,
+       "value": 252.0
+      },
+      {
+       "year": 1999,
+       "value": 278.0
+      },
+      {
+       "year": 2000,
+       "value": 260.0
+      },
+      {
+       "year": 2001,
+       "value": 249.0
+      },
+      {
+       "year": 2002,
+       "value": 266.0
+      },
+      {
+       "year": 2003,
+       "value": 248.0
+      },
+      {
+       "year": 2004,
+       "value": 247.0
+      },
+      {
+       "year": 2005,
+       "value": 219.0
+      },
+      {
+       "year": 2006,
+       "value": 252.0
+      },
+      {
+       "year": 2007,
+       "value": 250.0
+      },
+      {
+       "year": 2008,
+       "value": 274.0
+      },
+      {
+       "year": 2009,
+       "value": 254.0
+      },
+      {
+       "year": 2010,
+       "value": 251.0
+      },
+      {
+       "year": 2011,
+       "value": 270.0
+      },
+      {
+       "year": 2012,
+       "value": 263.0
+      },
+      {
+       "year": 2013,
+       "value": 249.0
+      },
+      {
+       "year": 2014,
+       "value": 245.0
+      },
+      {
+       "year": 2015,
+       "value": 166.0
+      },
+      {
+       "year": 2016,
+       "value": 232.0
+      },
+      {
+       "year": 2017,
+       "value": 249.0
+      },
+      {
+       "year": 2018,
+       "value": 240.0
+      },
+      {
+       "year": 2019,
+       "value": 234.0
+      },
+      {
+       "year": 2020,
+       "value": 246.0
+      },
+      {
+       "year": 2021,
+       "value": 261.0
+      },
+      {
+       "year": 2022,
+       "value": 266.0
+      },
+      {
+       "year": 2023,
+       "value": 238.0
+      },
+      {
+       "year": 2024,
+       "value": 243.0
+      },
+      {
+       "year": 2025,
+       "value": 237.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 43,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 246.65116279069767,
+      "slope_per_decade": -0.4,
+      "pct_of_mean_per_decade": -0.16217235527060156,
+      "intercept": 249.84,
+      "ci_low": -3.783783783783784,
+      "ci_high": 3.548387096774194,
+      "p_value": 0.8540684710050102,
+      "years_to_detect": 210.9,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "peak_swe": {
+     "label": "Peak snowpack",
+     "units": "mm",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 1031.24
+      },
+      {
+       "year": 1984,
+       "value": 1244.6
+      },
+      {
+       "year": 1985,
+       "value": 1343.66
+      },
+      {
+       "year": 1986,
+       "value": 906.78
+      },
+      {
+       "year": 1987,
+       "value": 1092.2
+      },
+      {
+       "year": 1988,
+       "value": 1137.92
+      },
+      {
+       "year": 1989,
+       "value": 1384.3
+      },
+      {
+       "year": 1990,
+       "value": 1488.44
+      },
+      {
+       "year": 1991,
+       "value": 1038.86
+      },
+      {
+       "year": 1992,
+       "value": 817.88
+      },
+      {
+       "year": 1993,
+       "value": 876.3
+      },
+      {
+       "year": 1994,
+       "value": 962.66
+      },
+      {
+       "year": 1995,
+       "value": 1363.98
+      },
+      {
+       "year": 1996,
+       "value": 909.32
+      },
+      {
+       "year": 1997,
+       "value": 2128.52
+      },
+      {
+       "year": 1998,
+       "value": 990.6
+      },
+      {
+       "year": 1999,
+       "value": 1668.78
+      },
+      {
+       "year": 2000,
+       "value": 1313.18
+      },
+      {
+       "year": 2001,
+       "value": 762.0
+      },
+      {
+       "year": 2002,
+       "value": 1661.16
+      },
+      {
+       "year": 2003,
+       "value": 843.28
+      },
+      {
+       "year": 2004,
+       "value": 975.36
+      },
+      {
+       "year": 2005,
+       "value": 259.08
+      },
+      {
+       "year": 2006,
+       "value": 1259.84
+      },
+      {
+       "year": 2007,
+       "value": 1132.84
+      },
+      {
+       "year": 2008,
+       "value": 1630.68
+      },
+      {
+       "year": 2009,
+       "value": 1150.62
+      },
+      {
+       "year": 2010,
+       "value": 660.4
+      },
+      {
+       "year": 2011,
+       "value": 1031.24
+      },
+      {
+       "year": 2012,
+       "value": 1254.76
+      },
+      {
+       "year": 2013,
+       "value": 939.8
+      },
+      {
+       "year": 2014,
+       "value": 876.3
+      },
+      {
+       "year": 2015,
+       "value": 218.44
+      },
+      {
+       "year": 2016,
+       "value": 947.42
+      },
+      {
+       "year": 2017,
+       "value": 977.9
+      },
+      {
+       "year": 2018,
+       "value": 939.8
+      },
+      {
+       "year": 2019,
+       "value": 619.76
+      },
+      {
+       "year": 2020,
+       "value": 858.52
+      },
+      {
+       "year": 2021,
+       "value": 1310.64
+      },
+      {
+       "year": 2022,
+       "value": 924.56
+      },
+      {
+       "year": 2023,
+       "value": 919.48
+      },
+      {
+       "year": 2024,
+       "value": 617.22
+      },
+      {
+       "year": 2025,
+       "value": 708.66
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 43,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 1050.6739534883723,
+      "slope_per_decade": -87.3125,
+      "pct_of_mean_per_decade": -8.310142238713667,
+      "intercept": 1161.25625,
+      "ci_low": -171.17391304347825,
+      "ci_high": -25.399999999999977,
+      "p_value": 0.021205841340698806,
+      "years_to_detect": 0.0,
+      "q_value": 0.14419972111675186,
+      "verdict": "borderline"
+     }
+    },
+    "early_precip": {
+     "label": "Oct-Dec precipitation",
+     "units": "mm",
+     "worse": "",
+     "series": [
+      {
+       "year": 1983,
+       "value": 708.66
+      },
+      {
+       "year": 1984,
+       "value": 825.5
+      },
+      {
+       "year": 1985,
+       "value": 1018.54
+      },
+      {
+       "year": 1986,
+       "value": 863.6
+      },
+      {
+       "year": 1987,
+       "value": 779.78
+      },
+      {
+       "year": 1988,
+       "value": 586.74
+      },
+      {
+       "year": 1989,
+       "value": 960.12
+      },
+      {
+       "year": 1990,
+       "value": 795.02
+      },
+      {
+       "year": 1991,
+       "value": 1617.98
+      },
+      {
+       "year": 1992,
+       "value": 980.44
+      },
+      {
+       "year": 1993,
+       "value": 817.88
+      },
+      {
+       "year": 1994,
+       "value": 515.62
+      },
+      {
+       "year": 1995,
+       "value": 1196.34
+      },
+      {
+       "year": 1996,
+       "value": 1409.7
+      },
+      {
+       "year": 1997,
+       "value": 1381.76
+      },
+      {
+       "year": 1998,
+       "value": 751.84
+      },
+      {
+       "year": 1999,
+       "value": 1219.2
+      },
+      {
+       "year": 2000,
+       "value": 1016.0
+      },
+      {
+       "year": 2001,
+       "value": 411.48
+      },
+      {
+       "year": 2002,
+       "value": 1036.32
+      },
+      {
+       "year": 2003,
+       "value": 370.84
+      },
+      {
+       "year": 2004,
+       "value": 922.02
+      },
+      {
+       "year": 2005,
+       "value": 535.94
+      },
+      {
+       "year": 2006,
+       "value": 754.38
+      },
+      {
+       "year": 2007,
+       "value": 1203.96
+      },
+      {
+       "year": 2008,
+       "value": 949.96
+      },
+      {
+       "year": 2009,
+       "value": 906.78
+      },
+      {
+       "year": 2010,
+       "value": 690.88
+      },
+      {
+       "year": 2011,
+       "value": 800.1
+      },
+      {
+       "year": 2012,
+       "value": 767.08
+      },
+      {
+       "year": 2013,
+       "value": 889.0
+      },
+      {
+       "year": 2014,
+       "value": 579.12
+      },
+      {
+       "year": 2015,
+       "value": 853.44
+      },
+      {
+       "year": 2016,
+       "value": 1280.16
+      },
+      {
+       "year": 2017,
+       "value": 937.26
+      },
+      {
+       "year": 2018,
+       "value": 1016.0
+      },
+      {
+       "year": 2019,
+       "value": 850.9
+      },
+      {
+       "year": 2020,
+       "value": 660.4
+      },
+      {
+       "year": 2021,
+       "value": 967.74
+      },
+      {
+       "year": 2022,
+       "value": 909.32
+      },
+      {
+       "year": 2023,
+       "value": 782.32
+      },
+      {
+       "year": 2024,
+       "value": 637.54
+      },
+      {
+       "year": 2025,
+       "value": 662.94
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 43,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 879.5488372093024,
+      "slope_per_decade": -25.400000000000013,
+      "pct_of_mean_per_decade": -2.8878441907320362,
+      "intercept": 906.78,
+      "ci_low": -88.89999999999998,
+      "ci_high": 38.10000000000002,
+      "p_value": 0.40246125139431443,
+      "years_to_detect": 36.8,
+      "q_value": 0.9798474614939037,
+      "verdict": "no_trend"
+     }
+    },
+    "temp_novdec": {
+     "label": "Nov-Dec air temperature",
+     "units": "deg C",
+     "worse": "warmer is worse",
+     "series": [
+      {
+       "year": 1989,
+       "value": 0.0
+      },
+      {
+       "year": 1990,
+       "value": -0.101
+      },
+      {
+       "year": 1991,
+       "value": -3.311
+      },
+      {
+       "year": 1992,
+       "value": -1.45
+      },
+      {
+       "year": 1993,
+       "value": -3.415
+      },
+      {
+       "year": 1995,
+       "value": -3.646
+      },
+      {
+       "year": 1996,
+       "value": -1.471
+      },
+      {
+       "year": 1997,
+       "value": -2.934
+      },
+      {
+       "year": 1998,
+       "value": -1.044
+      },
+      {
+       "year": 1999,
+       "value": -2.305
+      },
+      {
+       "year": 2000,
+       "value": -0.649
+      },
+      {
+       "year": 2001,
+       "value": -4.221
+      },
+      {
+       "year": 2002,
+       "value": -1.848
+      },
+      {
+       "year": 2003,
+       "value": -0.889
+      },
+      {
+       "year": 2004,
+       "value": -3.255
+      },
+      {
+       "year": 2005,
+       "value": -0.411
+      },
+      {
+       "year": 2006,
+       "value": -3.556
+      },
+      {
+       "year": 2007,
+       "value": -3.075
+      },
+      {
+       "year": 2008,
+       "value": -2.539
+      },
+      {
+       "year": 2009,
+       "value": -2.008
+      },
+      {
+       "year": 2010,
+       "value": -3.33
+      },
+      {
+       "year": 2011,
+       "value": -2.821
+      },
+      {
+       "year": 2012,
+       "value": -2.342
+      },
+      {
+       "year": 2013,
+       "value": -1.884
+      },
+      {
+       "year": 2014,
+       "value": -2.035
+      },
+      {
+       "year": 2015,
+       "value": -1.916
+      },
+      {
+       "year": 2016,
+       "value": -2.686
+      },
+      {
+       "year": 2017,
+       "value": -1.939
+      },
+      {
+       "year": 2018,
+       "value": -2.956
+      },
+      {
+       "year": 2019,
+       "value": -1.43
+      },
+      {
+       "year": 2020,
+       "value": -0.699
+      },
+      {
+       "year": 2021,
+       "value": -1.426
+      },
+      {
+       "year": 2022,
+       "value": -2.065
+      },
+      {
+       "year": 2023,
+       "value": -4.503
+      },
+      {
+       "year": 2024,
+       "value": -1.038
+      },
+      {
+       "year": 2025,
+       "value": -1.316
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 36,
+      "first_year": 1989,
+      "last_year": 2025,
+      "mean": -2.125430074883626,
+      "slope_per_decade": 0.08424408014571899,
+      "pct_of_mean_per_decade": -3.9636251101006756,
+      "intercept": -2.168829690346082,
+      "ci_low": -0.34892987249544605,
+      "ci_high": 0.578324225865209,
+      "p_value": 0.7540675143570155,
+      "years_to_detect": 47.7,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "temp_novmar": {
+     "label": "Nov-Mar air temperature",
+     "units": "deg C",
+     "worse": "warmer is worse",
+     "series": [
+      {
+       "year": 1989,
+       "value": 0.0
+      },
+      {
+       "year": 1990,
+       "value": -0.929
+      },
+      {
+       "year": 1991,
+       "value": -2.226
+      },
+      {
+       "year": 1992,
+       "value": -0.435
+      },
+      {
+       "year": 1993,
+       "value": -3.582
+      },
+      {
+       "year": 1995,
+       "value": -2.304
+      },
+      {
+       "year": 1996,
+       "value": -2.06
+      },
+      {
+       "year": 1997,
+       "value": -2.564
+      },
+      {
+       "year": 1998,
+       "value": -1.389
+      },
+      {
+       "year": 1999,
+       "value": -2.092
+      },
+      {
+       "year": 2000,
+       "value": -1.859
+      },
+      {
+       "year": 2001,
+       "value": -3.189
+      },
+      {
+       "year": 2002,
+       "value": -2.339
+      },
+      {
+       "year": 2004,
+       "value": -2.532
+      },
+      {
+       "year": 2005,
+       "value": -0.597
+      },
+      {
+       "year": 2006,
+       "value": -2.907
+      },
+      {
+       "year": 2007,
+       "value": -2.341
+      },
+      {
+       "year": 2008,
+       "value": -2.985
+      },
+      {
+       "year": 2009,
+       "value": -2.819
+      },
+      {
+       "year": 2010,
+       "value": -1.79
+      },
+      {
+       "year": 2011,
+       "value": -2.69
+      },
+      {
+       "year": 2012,
+       "value": -2.655
+      },
+      {
+       "year": 2013,
+       "value": -1.87
+      },
+      {
+       "year": 2014,
+       "value": -2.312
+      },
+      {
+       "year": 2015,
+       "value": 0.038
+      },
+      {
+       "year": 2016,
+       "value": -1.693
+      },
+      {
+       "year": 2017,
+       "value": -3.346
+      },
+      {
+       "year": 2018,
+       "value": -2.453
+      },
+      {
+       "year": 2019,
+       "value": -2.407
+      },
+      {
+       "year": 2020,
+       "value": -1.481
+      },
+      {
+       "year": 2021,
+       "value": -2.015
+      },
+      {
+       "year": 2022,
+       "value": -1.629
+      },
+      {
+       "year": 2023,
+       "value": -3.557
+      },
+      {
+       "year": 2024,
+       "value": -1.769
+      },
+      {
+       "year": 2025,
+       "value": -1.791
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 35,
+      "first_year": 1989,
+      "last_year": 2025,
+      "mean": -2.073480892133845,
+      "slope_per_decade": -0.06947982113545038,
+      "pct_of_mean_per_decade": 3.35087829355147,
+      "intercept": -2.1081536197430233,
+      "ci_low": -0.4265216020182907,
+      "ci_high": 0.2566766220837121,
+      "p_value": 0.711950905455661,
+      "years_to_detect": 49.7,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "early_retention": {
+     "label": "Share of Oct-Dec precipitation still on the ground as snow on Jan 1",
+     "units": "fraction",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 0.538
+      },
+      {
+       "year": 1984,
+       "value": 0.763
+      },
+      {
+       "year": 1985,
+       "value": 0.756
+      },
+      {
+       "year": 1986,
+       "value": 0.453
+      },
+      {
+       "year": 1987,
+       "value": 0.586
+      },
+      {
+       "year": 1988,
+       "value": 0.671
+      },
+      {
+       "year": 1989,
+       "value": 0.471
+      },
+      {
+       "year": 1990,
+       "value": 0.291
+      },
+      {
+       "year": 1991,
+       "value": 0.298
+      },
+      {
+       "year": 1992,
+       "value": 0.477
+      },
+      {
+       "year": 1993,
+       "value": 0.736
+      },
+      {
+       "year": 1994,
+       "value": 0.571
+      },
+      {
+       "year": 1995,
+       "value": 0.73
+      },
+      {
+       "year": 1996,
+       "value": 0.231
+      },
+      {
+       "year": 1997,
+       "value": 0.752
+      },
+      {
+       "year": 1998,
+       "value": 0.432
+      },
+      {
+       "year": 1999,
+       "value": 0.433
+      },
+      {
+       "year": 2000,
+       "value": 0.485
+      },
+      {
+       "year": 2001,
+       "value": 0.735
+      },
+      {
+       "year": 2002,
+       "value": 0.49
+      },
+      {
+       "year": 2003,
+       "value": 0.753
+      },
+      {
+       "year": 2004,
+       "value": 0.529
+      },
+      {
+       "year": 2005,
+       "value": 0.19
+      },
+      {
+       "year": 2006,
+       "value": 0.502
+      },
+      {
+       "year": 2007,
+       "value": 0.532
+      },
+      {
+       "year": 2008,
+       "value": 0.545
+      },
+      {
+       "year": 2009,
+       "value": 0.468
+      },
+      {
+       "year": 2010,
+       "value": 0.419
+      },
+      {
+       "year": 2011,
+       "value": 0.457
+      },
+      {
+       "year": 2012,
+       "value": 0.483
+      },
+      {
+       "year": 2013,
+       "value": 0.417
+      },
+      {
+       "year": 2014,
+       "value": 0.162
+      },
+      {
+       "year": 2015,
+       "value": 0.202
+      },
+      {
+       "year": 2016,
+       "value": 0.363
+      },
+      {
+       "year": 2017,
+       "value": 0.425
+      },
+      {
+       "year": 2018,
+       "value": 0.295
+      },
+      {
+       "year": 2019,
+       "value": 0.385
+      },
+      {
+       "year": 2020,
+       "value": 0.215
+      },
+      {
+       "year": 2021,
+       "value": 0.451
+      },
+      {
+       "year": 2022,
+       "value": 0.36
+      },
+      {
+       "year": 2023,
+       "value": 0.516
+      },
+      {
+       "year": 2024,
+       "value": 0.311
+      },
+      {
+       "year": 2025,
+       "value": 0.475
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 43,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 0.4734158124837222,
+      "slope_per_decade": -0.05912715376592458,
+      "pct_of_mean_per_decade": -12.489475891335504,
+      "intercept": 0.5950664938079127,
+      "ci_low": -0.1001736560841992,
+      "ci_high": -0.02048387323251468,
+      "p_value": 0.0015746779446965675,
+      "years_to_detect": 0.0,
+      "q_value": 0.053539050119683296,
+      "verdict": "borderline"
+     }
+    }
+   },
+   "worst_years": [
+    {
+     "year": 2015,
+     "peak_swe": 218,
+     "enso_djf": 0.73,
+     "pdo_novmar": 1.51,
+     "temp_novmar": 0.04
+    },
+    {
+     "year": 2005,
+     "peak_swe": 259,
+     "enso_djf": 0.62,
+     "pdo_novmar": -0.26,
+     "temp_novmar": -0.6
+    },
+    {
+     "year": 2024,
+     "peak_swe": 617,
+     "enso_djf": 1.84,
+     "pdo_novmar": -1.58,
+     "temp_novmar": -1.77
+    },
+    {
+     "year": 2019,
+     "peak_swe": 620,
+     "enso_djf": 0.99,
+     "pdo_novmar": -0.47,
+     "temp_novmar": -2.41
+    },
+    {
+     "year": 2010,
+     "peak_swe": 660,
+     "enso_djf": 1.47,
+     "pdo_novmar": -0.26,
+     "temp_novmar": -1.79
+    }
+   ],
+   "drivers": {
+    "jan1_swe": {
+     "n_years": 35,
+     "first_year": 1989,
+     "last_year": 2025,
+     "r2": 0.329321052502656,
+     "standardized_effect": {
+      "temp": -0.3591090446971264,
+      "precip": 0.4890163806623038,
+      "enso": 0.1091170725078196,
+      "pdo": 0.06847591674252226
+     },
+     "p_value": {
+      "temp": 0.03055603520334909,
+      "precip": 0.004502382314077638,
+      "enso": 0.5583953109206727,
+      "pdo": 0.691638130101506
+     },
+     "correlation": {
+      "temp": -0.3268876391776119,
+      "precip": 0.4614602858623312,
+      "enso": -0.12684521201165477,
+      "pdo": 0.0016368391132652788
+     },
+     "predictor_correlation": {
+      "temp_enso": 0.3032512745232538,
+      "temp_pdo": 0.23667272151055258,
+      "enso_pdo": 0.4674504188566222
+     }
+    },
+    "peak_swe": {
+     "n_years": 35,
+     "first_year": 1989,
+     "last_year": 2025,
+     "r2": 0.6414236690627111,
+     "standardized_effect": {
+      "temp": -0.1826346612374307,
+      "precip": 0.6850996854750062,
+      "enso": -0.14571657985622433,
+      "pdo": -0.0715690847095134
+     },
+     "p_value": {
+      "temp": 0.1248519469833809,
+      "precip": 1.9266646931080596e-06,
+      "enso": 0.28835692210849156,
+      "pdo": 0.5712814620855537
+     },
+     "correlation": {
+      "temp": -0.2676833108160356,
+      "precip": 0.7436849059784755,
+      "enso": -0.45741040108112674,
+      "pdo": -0.22893745148264733
+     },
+     "predictor_correlation": {
+      "temp_enso": 0.3032512745232538,
+      "temp_pdo": 0.23667272151055258,
+      "enso_pdo": 0.4674504188566222
+     }
+    },
+    "season_start": {
+     "n_years": 35,
+     "first_year": 1989,
+     "last_year": 2025,
+     "r2": 0.1850504640188224,
+     "standardized_effect": {
+      "temp": 0.04988302906348373,
+      "precip": -0.21359679325881709,
+      "enso": 0.21305103700907685,
+      "pdo": -0.3913873723684798
+     },
+     "p_value": {
+      "temp": 0.7768051907930922,
+      "precip": 0.23311125358119336,
+      "enso": 0.3028751935004007,
+      "pdo": 0.04650487673752277
+     },
+     "correlation": {
+      "temp": 0.02931842085577998,
+      "precip": -0.2583460932069758,
+      "enso": 0.11470438746744648,
+      "pdo": -0.2656401150364936
+     },
+     "predictor_correlation": {
+      "temp_enso": 0.3032512745232538,
+      "temp_pdo": 0.23667272151055258,
+      "enso_pdo": 0.4674504188566222
+     }
+    }
+   }
+  },
+  {
+   "id": "672",
+   "name": "Olallie Meadows SNOTEL",
+   "metrics": {
+    "season_start": {
+     "label": "Snowpack reaches 100 mm",
+     "units": "days after Oct 1",
+     "worse": "later is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 46.0
+      },
+      {
+       "year": 1984,
+       "value": 43.0
+      },
+      {
+       "year": 1985,
+       "value": 29.0
+      },
+      {
+       "year": 1986,
+       "value": 39.0
+      },
+      {
+       "year": 1987,
+       "value": 46.0
+      },
+      {
+       "year": 1988,
+       "value": 60.0
+      },
+      {
+       "year": 1989,
+       "value": 46.0
+      },
+      {
+       "year": 1990,
+       "value": 56.0
+      },
+      {
+       "year": 1991,
+       "value": 51.0
+      },
+      {
+       "year": 1992,
+       "value": 49.0
+      },
+      {
+       "year": 1993,
+       "value": 51.0
+      },
+      {
+       "year": 1994,
+       "value": 53.0
+      },
+      {
+       "year": 1995,
+       "value": 30.0
+      },
+      {
+       "year": 1996,
+       "value": 37.0
+      },
+      {
+       "year": 1997,
+       "value": 22.0
+      },
+      {
+       "year": 1998,
+       "value": 53.0
+      },
+      {
+       "year": 1999,
+       "value": 50.0
+      },
+      {
+       "year": 2000,
+       "value": 54.0
+      },
+      {
+       "year": 2001,
+       "value": 56.0
+      },
+      {
+       "year": 2002,
+       "value": 58.0
+      },
+      {
+       "year": 2003,
+       "value": 71.0
+      },
+      {
+       "year": 2004,
+       "value": 46.0
+      },
+      {
+       "year": 2005,
+       "value": 68.0
+      },
+      {
+       "year": 2006,
+       "value": 35.0
+      },
+      {
+       "year": 2007,
+       "value": 41.0
+      },
+      {
+       "year": 2008,
+       "value": 59.0
+      },
+      {
+       "year": 2009,
+       "value": 77.0
+      },
+      {
+       "year": 2010,
+       "value": 40.0
+      },
+      {
+       "year": 2011,
+       "value": 52.0
+      },
+      {
+       "year": 2012,
+       "value": 43.0
+      },
+      {
+       "year": 2013,
+       "value": 49.0
+      },
+      {
+       "year": 2014,
+       "value": 46.0
+      },
+      {
+       "year": 2015,
+       "value": 53.0
+      },
+      {
+       "year": 2016,
+       "value": 65.0
+      },
+      {
+       "year": 2017,
+       "value": 58.0
+      },
+      {
+       "year": 2018,
+       "value": 44.0
+      },
+      {
+       "year": 2019,
+       "value": 61.0
+      },
+      {
+       "year": 2020,
+       "value": 74.0
+      },
+      {
+       "year": 2022,
+       "value": 41.0
+      },
+      {
+       "year": 2023,
+       "value": 52.0
+      },
+      {
+       "year": 2024,
+       "value": 61.0
+      },
+      {
+       "year": 2025,
+       "value": 47.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 42,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 50.285714285714285,
+      "slope_per_decade": 3.333333333333333,
+      "pct_of_mean_per_decade": 6.628787878787879,
+      "intercept": 43.666666666666664,
+      "ci_low": 0.0,
+      "ci_high": 6.190476190476191,
+      "p_value": 0.040200465931192975,
+      "years_to_detect": 0.0,
+      "q_value": 0.22780264027676017,
+      "verdict": "borderline"
+     }
+    },
+    "jan1_swe": {
+     "label": "Snowpack on Jan 1",
+     "units": "mm",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 561.34
+      },
+      {
+       "year": 1984,
+       "value": 673.1
+      },
+      {
+       "year": 1985,
+       "value": 1120.14
+      },
+      {
+       "year": 1986,
+       "value": 403.86
+      },
+      {
+       "year": 1987,
+       "value": 558.8
+      },
+      {
+       "year": 1988,
+       "value": 431.8
+      },
+      {
+       "year": 1989,
+       "value": 490.22
+      },
+      {
+       "year": 1990,
+       "value": 144.78
+      },
+      {
+       "year": 1991,
+       "value": 533.4
+      },
+      {
+       "year": 1992,
+       "value": 434.34
+      },
+      {
+       "year": 1993,
+       "value": 568.96
+      },
+      {
+       "year": 1994,
+       "value": 436.88
+      },
+      {
+       "year": 1995,
+       "value": 739.14
+      },
+      {
+       "year": 1996,
+       "value": 416.56
+      },
+      {
+       "year": 1997,
+       "value": 1150.62
+      },
+      {
+       "year": 1998,
+       "value": 391.16
+      },
+      {
+       "year": 1999,
+       "value": 840.74
+      },
+      {
+       "year": 2000,
+       "value": 515.62
+      },
+      {
+       "year": 2001,
+       "value": 350.52
+      },
+      {
+       "year": 2002,
+       "value": 574.04
+      },
+      {
+       "year": 2003,
+       "value": 330.2
+      },
+      {
+       "year": 2004,
+       "value": 640.08
+      },
+      {
+       "year": 2005,
+       "value": 157.48
+      },
+      {
+       "year": 2006,
+       "value": 508.0
+      },
+      {
+       "year": 2007,
+       "value": 944.88
+      },
+      {
+       "year": 2008,
+       "value": 629.92
+      },
+      {
+       "year": 2009,
+       "value": 497.84
+      },
+      {
+       "year": 2010,
+       "value": 523.24
+      },
+      {
+       "year": 2011,
+       "value": 490.22
+      },
+      {
+       "year": 2012,
+       "value": 622.3
+      },
+      {
+       "year": 2013,
+       "value": 678.18
+      },
+      {
+       "year": 2014,
+       "value": 248.92
+      },
+      {
+       "year": 2015,
+       "value": 193.04
+      },
+      {
+       "year": 2016,
+       "value": 627.38
+      },
+      {
+       "year": 2017,
+       "value": 528.32
+      },
+      {
+       "year": 2018,
+       "value": 444.5
+      },
+      {
+       "year": 2019,
+       "value": 485.14
+      },
+      {
+       "year": 2020,
+       "value": 208.28
+      },
+      {
+       "year": 2022,
+       "value": 525.78
+      },
+      {
+       "year": 2023,
+       "value": 617.22
+      },
+      {
+       "year": 2024,
+       "value": 317.5
+      },
+      {
+       "year": 2025,
+       "value": 561.34
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 42,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 526.5661904761904,
+      "slope_per_decade": -16.933333333333326,
+      "pct_of_mean_per_decade": -3.215803376593544,
+      "intercept": 554.1433333333334,
+      "ci_low": -73.89090909090908,
+      "ci_high": 27.431999999999974,
+      "p_value": 0.461104687761837,
+      "years_to_detect": 38.5,
+      "q_value": 0.9798474614939037,
+      "verdict": "no_trend"
+     }
+    },
+    "deep_days": {
+     "label": "Days with a deep base (SWE >= 500 mm)",
+     "units": "days",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 162.0
+      },
+      {
+       "year": 1984,
+       "value": 199.0
+      },
+      {
+       "year": 1985,
+       "value": 203.0
+      },
+      {
+       "year": 1986,
+       "value": 141.0
+      },
+      {
+       "year": 1987,
+       "value": 146.0
+      },
+      {
+       "year": 1988,
+       "value": 156.0
+      },
+      {
+       "year": 1989,
+       "value": 156.0
+      },
+      {
+       "year": 1990,
+       "value": 140.0
+      },
+      {
+       "year": 1991,
+       "value": 166.0
+      },
+      {
+       "year": 1992,
+       "value": 103.0
+      },
+      {
+       "year": 1993,
+       "value": 145.0
+      },
+      {
+       "year": 1994,
+       "value": 129.0
+      },
+      {
+       "year": 1995,
+       "value": 178.0
+      },
+      {
+       "year": 1996,
+       "value": 143.0
+      },
+      {
+       "year": 1997,
+       "value": 207.0
+      },
+      {
+       "year": 1998,
+       "value": 147.0
+      },
+      {
+       "year": 1999,
+       "value": 218.0
+      },
+      {
+       "year": 2000,
+       "value": 165.0
+      },
+      {
+       "year": 2001,
+       "value": 112.0
+      },
+      {
+       "year": 2002,
+       "value": 190.0
+      },
+      {
+       "year": 2003,
+       "value": 121.0
+      },
+      {
+       "year": 2004,
+       "value": 157.0
+      },
+      {
+       "year": 2005,
+       "value": 2.0
+      },
+      {
+       "year": 2006,
+       "value": 161.0
+      },
+      {
+       "year": 2007,
+       "value": 174.0
+      },
+      {
+       "year": 2008,
+       "value": 189.0
+      },
+      {
+       "year": 2009,
+       "value": 159.0
+      },
+      {
+       "year": 2010,
+       "value": 165.0
+      },
+      {
+       "year": 2011,
+       "value": 174.0
+      },
+      {
+       "year": 2012,
+       "value": 191.0
+      },
+      {
+       "year": 2013,
+       "value": 174.0
+      },
+      {
+       "year": 2014,
+       "value": 126.0
+      },
+      {
+       "year": 2015,
+       "value": 0.0
+      },
+      {
+       "year": 2016,
+       "value": 148.0
+      },
+      {
+       "year": 2017,
+       "value": 160.0
+      },
+      {
+       "year": 2018,
+       "value": 141.0
+      },
+      {
+       "year": 2019,
+       "value": 128.0
+      },
+      {
+       "year": 2020,
+       "value": 133.0
+      },
+      {
+       "year": 2022,
+       "value": 175.0
+      },
+      {
+       "year": 2023,
+       "value": 155.0
+      },
+      {
+       "year": 2024,
+       "value": 144.0
+      },
+      {
+       "year": 2025,
+       "value": 147.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 42,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 150.71428571428572,
+      "slope_per_decade": -2.8571428571428568,
+      "pct_of_mean_per_decade": -1.895734597156398,
+      "intercept": 161.85714285714286,
+      "ci_low": -11.428571428571427,
+      "ci_high": 4.545454545454545,
+      "p_value": 0.4414177675304316,
+      "years_to_detect": 58.2,
+      "q_value": 0.9798474614939037,
+      "verdict": "no_trend"
+     }
+    },
+    "snow_days": {
+     "label": "Days with snow on the ground (SWE >= 25 mm)",
+     "units": "days",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 224.0
+      },
+      {
+       "year": 1984,
+       "value": 245.0
+      },
+      {
+       "year": 1985,
+       "value": 257.0
+      },
+      {
+       "year": 1986,
+       "value": 229.0
+      },
+      {
+       "year": 1987,
+       "value": 216.0
+      },
+      {
+       "year": 1988,
+       "value": 220.0
+      },
+      {
+       "year": 1989,
+       "value": 226.0
+      },
+      {
+       "year": 1990,
+       "value": 222.0
+      },
+      {
+       "year": 1991,
+       "value": 251.0
+      },
+      {
+       "year": 1992,
+       "value": 199.0
+      },
+      {
+       "year": 1993,
+       "value": 201.0
+      },
+      {
+       "year": 1994,
+       "value": 204.0
+      },
+      {
+       "year": 1995,
+       "value": 231.0
+      },
+      {
+       "year": 1996,
+       "value": 221.0
+      },
+      {
+       "year": 1997,
+       "value": 268.0
+      },
+      {
+       "year": 1998,
+       "value": 216.0
+      },
+      {
+       "year": 1999,
+       "value": 255.0
+      },
+      {
+       "year": 2000,
+       "value": 222.0
+      },
+      {
+       "year": 2001,
+       "value": 222.0
+      },
+      {
+       "year": 2002,
+       "value": 249.0
+      },
+      {
+       "year": 2003,
+       "value": 191.0
+      },
+      {
+       "year": 2004,
+       "value": 213.0
+      },
+      {
+       "year": 2005,
+       "value": 179.0
+      },
+      {
+       "year": 2006,
+       "value": 236.0
+      },
+      {
+       "year": 2007,
+       "value": 230.0
+      },
+      {
+       "year": 2008,
+       "value": 251.0
+      },
+      {
+       "year": 2009,
+       "value": 217.0
+      },
+      {
+       "year": 2010,
+       "value": 239.0
+      },
+      {
+       "year": 2011,
+       "value": 252.0
+      },
+      {
+       "year": 2012,
+       "value": 247.0
+      },
+      {
+       "year": 2013,
+       "value": 231.0
+      },
+      {
+       "year": 2014,
+       "value": 231.0
+      },
+      {
+       "year": 2015,
+       "value": 160.0
+      },
+      {
+       "year": 2016,
+       "value": 196.0
+      },
+      {
+       "year": 2017,
+       "value": 213.0
+      },
+      {
+       "year": 2018,
+       "value": 236.0
+      },
+      {
+       "year": 2019,
+       "value": 191.0
+      },
+      {
+       "year": 2020,
+       "value": 221.0
+      },
+      {
+       "year": 2022,
+       "value": 233.0
+      },
+      {
+       "year": 2023,
+       "value": 220.0
+      },
+      {
+       "year": 2024,
+       "value": 218.0
+      },
+      {
+       "year": 2025,
+       "value": 217.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 42,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 223.8095238095238,
+      "slope_per_decade": -2.307692307692308,
+      "pct_of_mean_per_decade": -1.0310965630114568,
+      "intercept": 226.73076923076923,
+      "ci_low": -9.09090909090909,
+      "ci_high": 2.3333333333333335,
+      "p_value": 0.31830903116310316,
+      "years_to_detect": 35.3,
+      "q_value": 0.9798474614939037,
+      "verdict": "no_trend"
+     }
+    },
+    "melt_out": {
+     "label": "Melt-out day",
+     "units": "days after Oct 1",
+     "worse": "earlier is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 254.0
+      },
+      {
+       "year": 1984,
+       "value": 278.0
+      },
+      {
+       "year": 1985,
+       "value": 264.0
+      },
+      {
+       "year": 1986,
+       "value": 248.0
+      },
+      {
+       "year": 1987,
+       "value": 251.0
+      },
+      {
+       "year": 1988,
+       "value": 264.0
+      },
+      {
+       "year": 1989,
+       "value": 259.0
+      },
+      {
+       "year": 1990,
+       "value": 266.0
+      },
+      {
+       "year": 1991,
+       "value": 270.0
+      },
+      {
+       "year": 1992,
+       "value": 229.0
+      },
+      {
+       "year": 1993,
+       "value": 238.0
+      },
+      {
+       "year": 1994,
+       "value": 244.0
+      },
+      {
+       "year": 1995,
+       "value": 252.0
+      },
+      {
+       "year": 1996,
+       "value": 254.0
+      },
+      {
+       "year": 1997,
+       "value": 277.0
+      },
+      {
+       "year": 1998,
+       "value": 255.0
+      },
+      {
+       "year": 1999,
+       "value": 290.0
+      },
+      {
+       "year": 2000,
+       "value": 268.0
+      },
+      {
+       "year": 2001,
+       "value": 257.0
+      },
+      {
+       "year": 2002,
+       "value": 274.0
+      },
+      {
+       "year": 2003,
+       "value": 253.0
+      },
+      {
+       "year": 2004,
+       "value": 248.0
+      },
+      {
+       "year": 2005,
+       "value": 225.0
+      },
+      {
+       "year": 2006,
+       "value": 263.0
+      },
+      {
+       "year": 2007,
+       "value": 261.0
+      },
+      {
+       "year": 2008,
+       "value": 283.0
+      },
+      {
+       "year": 2009,
+       "value": 264.0
+      },
+      {
+       "year": 2010,
+       "value": 268.0
+      },
+      {
+       "year": 2011,
+       "value": 282.0
+      },
+      {
+       "year": 2012,
+       "value": 280.0
+      },
+      {
+       "year": 2013,
+       "value": 262.0
+      },
+      {
+       "year": 2014,
+       "value": 259.0
+      },
+      {
+       "year": 2015,
+       "value": 211.0
+      },
+      {
+       "year": 2016,
+       "value": 246.0
+      },
+      {
+       "year": 2017,
+       "value": 262.0
+      },
+      {
+       "year": 2018,
+       "value": 257.0
+      },
+      {
+       "year": 2019,
+       "value": 242.0
+      },
+      {
+       "year": 2020,
+       "value": 258.0
+      },
+      {
+       "year": 2022,
+       "value": 271.0
+      },
+      {
+       "year": 2023,
+       "value": 248.0
+      },
+      {
+       "year": 2024,
+       "value": 255.0
+      },
+      {
+       "year": 2025,
+       "value": 246.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 42,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 258.0,
+      "slope_per_decade": -0.8,
+      "pct_of_mean_per_decade": -0.31007751937984496,
+      "intercept": 260.14,
+      "ci_low": -4.705882352941177,
+      "ci_high": 3.333333333333333,
+      "p_value": 0.6881835489467627,
+      "years_to_detect": 100.1,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "peak_swe": {
+     "label": "Peak snowpack",
+     "units": "mm",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 1325.88
+      },
+      {
+       "year": 1984,
+       "value": 1503.68
+      },
+      {
+       "year": 1985,
+       "value": 1826.26
+      },
+      {
+       "year": 1986,
+       "value": 1003.3
+      },
+      {
+       "year": 1987,
+       "value": 1270.0
+      },
+      {
+       "year": 1988,
+       "value": 1483.36
+      },
+      {
+       "year": 1989,
+       "value": 1643.38
+      },
+      {
+       "year": 1990,
+       "value": 1483.36
+      },
+      {
+       "year": 1991,
+       "value": 1353.82
+      },
+      {
+       "year": 1992,
+       "value": 769.62
+      },
+      {
+       "year": 1993,
+       "value": 949.96
+      },
+      {
+       "year": 1994,
+       "value": 1094.74
+      },
+      {
+       "year": 1995,
+       "value": 1226.82
+      },
+      {
+       "year": 1996,
+       "value": 980.44
+      },
+      {
+       "year": 1997,
+       "value": 2542.54
+      },
+      {
+       "year": 1998,
+       "value": 1412.24
+      },
+      {
+       "year": 1999,
+       "value": 2506.98
+      },
+      {
+       "year": 2000,
+       "value": 1686.56
+      },
+      {
+       "year": 2001,
+       "value": 970.28
+      },
+      {
+       "year": 2002,
+       "value": 1907.54
+      },
+      {
+       "year": 2003,
+       "value": 1084.58
+      },
+      {
+       "year": 2004,
+       "value": 1198.88
+      },
+      {
+       "year": 2005,
+       "value": 505.46
+      },
+      {
+       "year": 2006,
+       "value": 1772.92
+      },
+      {
+       "year": 2007,
+       "value": 1610.36
+      },
+      {
+       "year": 2008,
+       "value": 2296.16
+      },
+      {
+       "year": 2009,
+       "value": 1557.02
+      },
+      {
+       "year": 2010,
+       "value": 1427.48
+      },
+      {
+       "year": 2011,
+       "value": 1734.82
+      },
+      {
+       "year": 2012,
+       "value": 2100.58
+      },
+      {
+       "year": 2013,
+       "value": 1615.44
+      },
+      {
+       "year": 2014,
+       "value": 1455.42
+      },
+      {
+       "year": 2015,
+       "value": 287.02
+      },
+      {
+       "year": 2016,
+       "value": 1412.24
+      },
+      {
+       "year": 2017,
+       "value": 1524.0
+      },
+      {
+       "year": 2018,
+       "value": 1564.64
+      },
+      {
+       "year": 2019,
+       "value": 949.96
+      },
+      {
+       "year": 2020,
+       "value": 1262.38
+      },
+      {
+       "year": 2022,
+       "value": 1463.04
+      },
+      {
+       "year": 2023,
+       "value": 1531.62
+      },
+      {
+       "year": 2024,
+       "value": 1148.08
+      },
+      {
+       "year": 2025,
+       "value": 1275.08
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 42,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 1421.8557142857144,
+      "slope_per_decade": -2.3090909090908758,
+      "pct_of_mean_per_decade": -0.1623998051202315,
+      "intercept": 1446.1836363636362,
+      "ci_low": -105.22857142857141,
+      "ci_high": 101.59999999999998,
+      "p_value": 0.974059043598515,
+      "years_to_detect": 542.4,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "early_precip": {
+     "label": "Oct-Dec precipitation",
+     "units": "mm",
+     "worse": "",
+     "series": [
+      {
+       "year": 1982,
+       "value": 883.92
+      },
+      {
+       "year": 1983,
+       "value": 1079.5
+      },
+      {
+       "year": 1984,
+       "value": 1010.92
+      },
+      {
+       "year": 1985,
+       "value": 1333.5
+      },
+      {
+       "year": 1986,
+       "value": 1097.28
+      },
+      {
+       "year": 1987,
+       "value": 1049.02
+      },
+      {
+       "year": 1988,
+       "value": 741.68
+      },
+      {
+       "year": 1989,
+       "value": 1366.52
+      },
+      {
+       "year": 1990,
+       "value": 1160.78
+      },
+      {
+       "year": 1991,
+       "value": 2153.92
+      },
+      {
+       "year": 1992,
+       "value": 1216.66
+      },
+      {
+       "year": 1993,
+       "value": 1054.1
+      },
+      {
+       "year": 1994,
+       "value": 767.08
+      },
+      {
+       "year": 1995,
+       "value": 1605.28
+      },
+      {
+       "year": 1996,
+       "value": 2039.62
+      },
+      {
+       "year": 1997,
+       "value": 1620.52
+      },
+      {
+       "year": 1998,
+       "value": 1087.12
+      },
+      {
+       "year": 1999,
+       "value": 1856.74
+      },
+      {
+       "year": 2000,
+       "value": 1531.62
+      },
+      {
+       "year": 2001,
+       "value": 525.78
+      },
+      {
+       "year": 2002,
+       "value": 1386.84
+      },
+      {
+       "year": 2003,
+       "value": 525.78
+      },
+      {
+       "year": 2004,
+       "value": 1358.9
+      },
+      {
+       "year": 2005,
+       "value": 937.26
+      },
+      {
+       "year": 2006,
+       "value": 1005.84
+      },
+      {
+       "year": 2007,
+       "value": 1534.16
+      },
+      {
+       "year": 2008,
+       "value": 1173.48
+      },
+      {
+       "year": 2009,
+       "value": 1259.84
+      },
+      {
+       "year": 2010,
+       "value": 1104.9
+      },
+      {
+       "year": 2011,
+       "value": 1201.42
+      },
+      {
+       "year": 2012,
+       "value": 1158.24
+      },
+      {
+       "year": 2013,
+       "value": 1442.72
+      },
+      {
+       "year": 2014,
+       "value": 828.04
+      },
+      {
+       "year": 2015,
+       "value": 1236.98
+      },
+      {
+       "year": 2016,
+       "value": 1765.3
+      },
+      {
+       "year": 2017,
+       "value": 1287.78
+      },
+      {
+       "year": 2018,
+       "value": 1313.18
+      },
+      {
+       "year": 2019,
+       "value": 1247.14
+      },
+      {
+       "year": 2020,
+       "value": 965.2
+      },
+      {
+       "year": 2021,
+       "value": 1275.08
+      },
+      {
+       "year": 2022,
+       "value": 1524.0
+      },
+      {
+       "year": 2023,
+       "value": 1150.62
+      },
+      {
+       "year": 2024,
+       "value": 863.6
+      },
+      {
+       "year": 2025,
+       "value": 1021.08
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 44,
+      "first_year": 1982,
+      "last_year": 2025,
+      "mean": 1221.5668181818182,
+      "slope_per_decade": 18.203333333333376,
+      "pct_of_mean_per_decade": 1.4901627207283874,
+      "intercept": 1148.312833333333,
+      "ci_low": -66.03999999999996,
+      "ci_high": 81.8444444444444,
+      "p_value": 0.7461856524100434,
+      "years_to_detect": 74.9,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "temp_novdec": {
+     "label": "Nov-Dec air temperature",
+     "units": "deg C",
+     "worse": "warmer is worse",
+     "series": [
+      {
+       "year": 1990,
+       "value": 0.0
+      },
+      {
+       "year": 1991,
+       "value": -3.161
+      },
+      {
+       "year": 1992,
+       "value": -0.923
+      },
+      {
+       "year": 1993,
+       "value": -3.122
+      },
+      {
+       "year": 1994,
+       "value": -2.543
+      },
+      {
+       "year": 1995,
+       "value": -3.385
+      },
+      {
+       "year": 1996,
+       "value": -1.134
+      },
+      {
+       "year": 1997,
+       "value": -2.607
+      },
+      {
+       "year": 1998,
+       "value": -0.628
+      },
+      {
+       "year": 1999,
+       "value": -1.93
+      },
+      {
+       "year": 2000,
+       "value": -0.091
+      },
+      {
+       "year": 2001,
+       "value": -3.272
+      },
+      {
+       "year": 2002,
+       "value": -1.292
+      },
+      {
+       "year": 2003,
+       "value": -0.393
+      },
+      {
+       "year": 2004,
+       "value": -2.679
+      },
+      {
+       "year": 2006,
+       "value": -2.633
+      },
+      {
+       "year": 2007,
+       "value": -2.472
+      },
+      {
+       "year": 2008,
+       "value": -2.195
+      },
+      {
+       "year": 2009,
+       "value": -1.661
+      },
+      {
+       "year": 2010,
+       "value": -2.932
+      },
+      {
+       "year": 2011,
+       "value": -2.39
+      },
+      {
+       "year": 2012,
+       "value": -1.995
+      },
+      {
+       "year": 2013,
+       "value": -1.627
+      },
+      {
+       "year": 2014,
+       "value": -1.783
+      },
+      {
+       "year": 2015,
+       "value": -1.395
+      },
+      {
+       "year": 2016,
+       "value": -2.342
+      },
+      {
+       "year": 2017,
+       "value": -1.624
+      },
+      {
+       "year": 2018,
+       "value": -2.451
+      },
+      {
+       "year": 2019,
+       "value": -1.165
+      },
+      {
+       "year": 2020,
+       "value": -0.142
+      },
+      {
+       "year": 2021,
+       "value": -1.015
+      },
+      {
+       "year": 2022,
+       "value": -1.638
+      },
+      {
+       "year": 2023,
+       "value": -4.05
+      },
+      {
+       "year": 2024,
+       "value": -0.518
+      },
+      {
+       "year": 2025,
+       "value": -1.262
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 35,
+      "first_year": 1990,
+      "last_year": 2025,
+      "mean": -1.8413999665274141,
+      "slope_per_decade": 0.303797308237199,
+      "pct_of_mean_per_decade": -16.498170617984325,
+      "intercept": -2.2996976826553333,
+      "ci_low": -0.18214123806320492,
+      "ci_high": 0.6344869459623557,
+      "p_value": 0.20120398589876753,
+      "years_to_detect": 0.0,
+      "q_value": 0.7601039467286773,
+      "verdict": "borderline"
+     }
+    },
+    "temp_novmar": {
+     "label": "Nov-Mar air temperature",
+     "units": "deg C",
+     "worse": "warmer is worse",
+     "series": [
+      {
+       "year": 1990,
+       "value": 0.0
+      },
+      {
+       "year": 1991,
+       "value": -2.003
+      },
+      {
+       "year": 1992,
+       "value": 0.192
+      },
+      {
+       "year": 1993,
+       "value": -3.208
+      },
+      {
+       "year": 1994,
+       "value": -1.298
+      },
+      {
+       "year": 1995,
+       "value": -1.94
+      },
+      {
+       "year": 1996,
+       "value": -1.744
+      },
+      {
+       "year": 1997,
+       "value": -2.262
+      },
+      {
+       "year": 1998,
+       "value": -1.03
+      },
+      {
+       "year": 1999,
+       "value": -1.79
+      },
+      {
+       "year": 2000,
+       "value": -1.395
+      },
+      {
+       "year": 2001,
+       "value": -2.54
+      },
+      {
+       "year": 2002,
+       "value": -1.979
+      },
+      {
+       "year": 2003,
+       "value": -0.677
+      },
+      {
+       "year": 2004,
+       "value": -1.922
+      },
+      {
+       "year": 2006,
+       "value": -2.272
+      },
+      {
+       "year": 2007,
+       "value": -1.818
+      },
+      {
+       "year": 2008,
+       "value": -2.613
+      },
+      {
+       "year": 2009,
+       "value": -2.2
+      },
+      {
+       "year": 2010,
+       "value": -1.434
+      },
+      {
+       "year": 2011,
+       "value": -2.345
+      },
+      {
+       "year": 2012,
+       "value": -2.269
+      },
+      {
+       "year": 2013,
+       "value": -1.578
+      },
+      {
+       "year": 2014,
+       "value": -1.791
+      },
+      {
+       "year": 2015,
+       "value": 0.515
+      },
+      {
+       "year": 2016,
+       "value": -1.341
+      },
+      {
+       "year": 2017,
+       "value": -2.985
+      },
+      {
+       "year": 2018,
+       "value": -2.12
+      },
+      {
+       "year": 2019,
+       "value": -1.941
+      },
+      {
+       "year": 2020,
+       "value": -1.164
+      },
+      {
+       "year": 2021,
+       "value": -1.713
+      },
+      {
+       "year": 2022,
+       "value": -1.188
+      },
+      {
+       "year": 2023,
+       "value": -3.18
+      },
+      {
+       "year": 2024,
+       "value": -1.371
+      },
+      {
+       "year": 2025,
+       "value": -1.648
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 35,
+      "first_year": 1990,
+      "last_year": 2025,
+      "mean": -1.7157729338658894,
+      "slope_per_decade": -0.020524842702569702,
+      "pct_of_mean_per_decade": 1.1962446951721173,
+      "intercept": -1.7557626607095316,
+      "ci_low": -0.36724864539434066,
+      "ci_high": 0.23914643119940998,
+      "p_value": 0.8870686942118249,
+      "years_to_detect": 129.2,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "early_retention": {
+     "label": "Share of Oct-Dec precipitation still on the ground as snow on Jan 1",
+     "units": "fraction",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1983,
+       "value": 0.52
+      },
+      {
+       "year": 1984,
+       "value": 0.666
+      },
+      {
+       "year": 1985,
+       "value": 0.84
+      },
+      {
+       "year": 1986,
+       "value": 0.368
+      },
+      {
+       "year": 1987,
+       "value": 0.533
+      },
+      {
+       "year": 1988,
+       "value": 0.582
+      },
+      {
+       "year": 1989,
+       "value": 0.359
+      },
+      {
+       "year": 1990,
+       "value": 0.125
+      },
+      {
+       "year": 1991,
+       "value": 0.248
+      },
+      {
+       "year": 1992,
+       "value": 0.357
+      },
+      {
+       "year": 1993,
+       "value": 0.54
+      },
+      {
+       "year": 1994,
+       "value": 0.57
+      },
+      {
+       "year": 1995,
+       "value": 0.46
+      },
+      {
+       "year": 1996,
+       "value": 0.204
+      },
+      {
+       "year": 1997,
+       "value": 0.71
+      },
+      {
+       "year": 1998,
+       "value": 0.36
+      },
+      {
+       "year": 1999,
+       "value": 0.453
+      },
+      {
+       "year": 2000,
+       "value": 0.337
+      },
+      {
+       "year": 2001,
+       "value": 0.667
+      },
+      {
+       "year": 2002,
+       "value": 0.414
+      },
+      {
+       "year": 2003,
+       "value": 0.628
+      },
+      {
+       "year": 2004,
+       "value": 0.471
+      },
+      {
+       "year": 2005,
+       "value": 0.168
+      },
+      {
+       "year": 2006,
+       "value": 0.505
+      },
+      {
+       "year": 2007,
+       "value": 0.616
+      },
+      {
+       "year": 2008,
+       "value": 0.537
+      },
+      {
+       "year": 2009,
+       "value": 0.395
+      },
+      {
+       "year": 2010,
+       "value": 0.474
+      },
+      {
+       "year": 2011,
+       "value": 0.408
+      },
+      {
+       "year": 2012,
+       "value": 0.537
+      },
+      {
+       "year": 2013,
+       "value": 0.47
+      },
+      {
+       "year": 2014,
+       "value": 0.301
+      },
+      {
+       "year": 2015,
+       "value": 0.156
+      },
+      {
+       "year": 2016,
+       "value": 0.355
+      },
+      {
+       "year": 2017,
+       "value": 0.41
+      },
+      {
+       "year": 2018,
+       "value": 0.338
+      },
+      {
+       "year": 2019,
+       "value": 0.389
+      },
+      {
+       "year": 2020,
+       "value": 0.216
+      },
+      {
+       "year": 2022,
+       "value": 0.345
+      },
+      {
+       "year": 2023,
+       "value": 0.536
+      },
+      {
+       "year": 2024,
+       "value": 0.368
+      },
+      {
+       "year": 2025,
+       "value": 0.55
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 42,
+      "first_year": 1983,
+      "last_year": 2025,
+      "mean": 0.4400968363672521,
+      "slope_per_decade": -0.032277526395173464,
+      "pct_of_mean_per_decade": -7.334187326045331,
+      "intercept": 0.49953082485230227,
+      "ci_low": -0.07221375487247272,
+      "ci_high": 0.006718614718614724,
+      "p_value": 0.13476842433139002,
+      "years_to_detect": 6.8,
+      "q_value": 0.6545894896096087,
+      "verdict": "cant_tell_yet"
+     }
+    }
+   },
+   "worst_years": [
+    {
+     "year": 2015,
+     "peak_swe": 287,
+     "enso_djf": 0.73,
+     "pdo_novmar": 1.51,
+     "temp_novmar": 0.52
+    },
+    {
+     "year": 2005,
+     "peak_swe": 505,
+     "enso_djf": 0.62,
+     "pdo_novmar": -0.26,
+     "temp_novmar": null
+    },
+    {
+     "year": 1992,
+     "peak_swe": 770,
+     "enso_djf": 1.54,
+     "pdo_novmar": 0.14,
+     "temp_novmar": 0.19
+    },
+    {
+     "year": 2019,
+     "peak_swe": 950,
+     "enso_djf": 0.99,
+     "pdo_novmar": -0.47,
+     "temp_novmar": -1.94
+    },
+    {
+     "year": 1993,
+     "peak_swe": 950,
+     "enso_djf": 0.13,
+     "pdo_novmar": 0.32,
+     "temp_novmar": -3.21
+    }
+   ],
+   "drivers": {
+    "jan1_swe": {
+     "n_years": 34,
+     "first_year": 1990,
+     "last_year": 2025,
+     "r2": 0.36775182210318647,
+     "standardized_effect": {
+      "temp": -0.5545164105730016,
+      "precip": 0.4139585618789751,
+      "enso": 0.18230074618848668,
+      "pdo": -0.011776874443352847
+     },
+     "p_value": {
+      "temp": 0.003076121915190155,
+      "precip": 0.013688363718300026,
+      "enso": 0.3425482169930004,
+      "pdo": 0.9451274893570059
+     },
+     "correlation": {
+      "temp": -0.46488661825025096,
+      "precip": 0.3496772102673156,
+      "enso": -0.20245894435235334,
+      "pdo": -0.18010761528417066
+     },
+     "predictor_correlation": {
+      "temp_enso": 0.4628383541695677,
+      "temp_pdo": 0.33307098507433036,
+      "enso_pdo": 0.4717560864580764
+     }
+    },
+    "peak_swe": {
+     "n_years": 34,
+     "first_year": 1990,
+     "last_year": 2025,
+     "r2": 0.5390266856643925,
+     "standardized_effect": {
+      "temp": -0.32709828434396526,
+      "precip": 0.4784545523676649,
+      "enso": -0.1308934696322157,
+      "pdo": -0.1722530340287251
+     },
+     "p_value": {
+      "temp": 0.03356829112137842,
+      "precip": 0.0013257707257393729,
+      "enso": 0.4237403942617989,
+      "pdo": 0.24400031776084635
+     },
+     "correlation": {
+      "temp": -0.4344470058122214,
+      "precip": 0.5389320765300959,
+      "enso": -0.5051949693141099,
+      "pdo": -0.4234386234708155
+     },
+     "predictor_correlation": {
+      "temp_enso": 0.4628383541695677,
+      "temp_pdo": 0.33307098507433036,
+      "enso_pdo": 0.4717560864580764
+     }
+    },
+    "season_start": {
+     "n_years": 34,
+     "first_year": 1990,
+     "last_year": 2025,
+     "r2": 0.08235473568381557,
+     "standardized_effect": {
+      "temp": 0.13916869626241243,
+      "precip": -0.2027970420242588,
+      "enso": 0.11330018419502325,
+      "pdo": -0.13679141273853743
+     },
+     "p_value": {
+      "temp": 0.5063995690153025,
+      "precip": 0.29460690120955135,
+      "enso": 0.6223802020467502,
+      "pdo": 0.50856602729758
+     },
+     "correlation": {
+      "temp": 0.14155155240069445,
+      "precip": -0.2102425195603704,
+      "enso": 0.1732186690851764,
+      "pdo": -0.002872420764479849
+     },
+     "predictor_correlation": {
+      "temp_enso": 0.4628383541695677,
+      "temp_pdo": 0.33307098507433036,
+      "enso_pdo": 0.4717560864580764
+     }
+    }
+   }
+  },
+  {
+   "id": "911",
+   "name": "Rex River SNOTEL",
+   "metrics": {
+    "season_start": {
+     "label": "Snowpack reaches 100 mm",
+     "units": "days after Oct 1",
+     "worse": "later is worse",
+     "series": [
+      {
+       "year": 1996,
+       "value": 69.0
+      },
+      {
+       "year": 1997,
+       "value": 53.0
+      },
+      {
+       "year": 1998,
+       "value": 75.0
+      },
+      {
+       "year": 1999,
+       "value": 54.0
+      },
+      {
+       "year": 2000,
+       "value": 62.0
+      },
+      {
+       "year": 2001,
+       "value": 69.0
+      },
+      {
+       "year": 2002,
+       "value": 59.0
+      },
+      {
+       "year": 2003,
+       "value": 90.0
+      },
+      {
+       "year": 2004,
+       "value": 53.0
+      },
+      {
+       "year": 2005,
+       "value": 68.0
+      },
+      {
+       "year": 2006,
+       "value": 35.0
+      },
+      {
+       "year": 2007,
+       "value": 42.0
+      },
+      {
+       "year": 2008,
+       "value": 62.0
+      },
+      {
+       "year": 2009,
+       "value": 77.0
+      },
+      {
+       "year": 2010,
+       "value": 43.0
+      },
+      {
+       "year": 2011,
+       "value": 56.0
+      },
+      {
+       "year": 2012,
+       "value": 43.0
+      },
+      {
+       "year": 2013,
+       "value": 63.0
+      },
+      {
+       "year": 2014,
+       "value": 80.0
+      },
+      {
+       "year": 2015,
+       "value": 88.0
+      },
+      {
+       "year": 2016,
+       "value": 66.0
+      },
+      {
+       "year": 2017,
+       "value": 60.0
+      },
+      {
+       "year": 2018,
+       "value": 46.0
+      },
+      {
+       "year": 2019,
+       "value": 72.0
+      },
+      {
+       "year": 2021,
+       "value": 43.0
+      },
+      {
+       "year": 2022,
+       "value": 71.0
+      },
+      {
+       "year": 2023,
+       "value": 58.0
+      },
+      {
+       "year": 2024,
+       "value": 62.0
+      },
+      {
+       "year": 2025,
+       "value": 69.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 29,
+      "first_year": 1996,
+      "last_year": 2025,
+      "mean": 61.6551724137931,
+      "slope_per_decade": 0.2631578947368421,
+      "pct_of_mean_per_decade": 0.42682208877899447,
+      "intercept": 61.63157894736842,
+      "ci_low": -5.882352941176471,
+      "ci_high": 6.25,
+      "p_value": 0.8656549776608149,
+      "years_to_detect": 191.4,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "jan1_swe": {
+     "label": "Snowpack on Jan 1",
+     "units": "mm",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1996,
+       "value": 124.46
+      },
+      {
+       "year": 1997,
+       "value": 662.94
+      },
+      {
+       "year": 1998,
+       "value": 220.98
+      },
+      {
+       "year": 1999,
+       "value": 363.22
+      },
+      {
+       "year": 2000,
+       "value": 403.86
+      },
+      {
+       "year": 2001,
+       "value": 190.5
+      },
+      {
+       "year": 2002,
+       "value": 403.86
+      },
+      {
+       "year": 2003,
+       "value": 167.64
+      },
+      {
+       "year": 2004,
+       "value": 421.64
+      },
+      {
+       "year": 2005,
+       "value": 104.14
+      },
+      {
+       "year": 2006,
+       "value": 220.98
+      },
+      {
+       "year": 2007,
+       "value": 647.7
+      },
+      {
+       "year": 2008,
+       "value": 485.14
+      },
+      {
+       "year": 2009,
+       "value": 429.26
+      },
+      {
+       "year": 2010,
+       "value": 218.44
+      },
+      {
+       "year": 2011,
+       "value": 335.28
+      },
+      {
+       "year": 2012,
+       "value": 424.18
+      },
+      {
+       "year": 2013,
+       "value": 449.58
+      },
+      {
+       "year": 2014,
+       "value": 109.22
+      },
+      {
+       "year": 2015,
+       "value": 101.6
+      },
+      {
+       "year": 2016,
+       "value": 533.4
+      },
+      {
+       "year": 2017,
+       "value": 474.98
+      },
+      {
+       "year": 2018,
+       "value": 281.94
+      },
+      {
+       "year": 2019,
+       "value": 289.56
+      },
+      {
+       "year": 2021,
+       "value": 406.4
+      },
+      {
+       "year": 2022,
+       "value": 360.68
+      },
+      {
+       "year": 2023,
+       "value": 363.22
+      },
+      {
+       "year": 2024,
+       "value": 139.7
+      },
+      {
+       "year": 2025,
+       "value": 271.78
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 29,
+      "first_year": 1996,
+      "last_year": 2025,
+      "mean": 331.25103448275866,
+      "slope_per_decade": -0.5772727272727319,
+      "pct_of_mean_per_decade": -0.17427046776597419,
+      "intercept": 361.4881818181818,
+      "ci_low": -74.93,
+      "ci_high": 71.58181818181818,
+      "p_value": 0.9700576841335724,
+      "years_to_detect": 582.2,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "deep_days": {
+     "label": "Days with a deep base (SWE >= 500 mm)",
+     "units": "days",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1996,
+       "value": 0.0
+      },
+      {
+       "year": 1997,
+       "value": 150.0
+      },
+      {
+       "year": 1998,
+       "value": 95.0
+      },
+      {
+       "year": 1999,
+       "value": 134.0
+      },
+      {
+       "year": 2000,
+       "value": 128.0
+      },
+      {
+       "year": 2001,
+       "value": 14.0
+      },
+      {
+       "year": 2002,
+       "value": 133.0
+      },
+      {
+       "year": 2003,
+       "value": 0.0
+      },
+      {
+       "year": 2004,
+       "value": 90.0
+      },
+      {
+       "year": 2005,
+       "value": 0.0
+      },
+      {
+       "year": 2006,
+       "value": 116.0
+      },
+      {
+       "year": 2007,
+       "value": 140.0
+      },
+      {
+       "year": 2008,
+       "value": 176.0
+      },
+      {
+       "year": 2009,
+       "value": 145.0
+      },
+      {
+       "year": 2010,
+       "value": 29.0
+      },
+      {
+       "year": 2011,
+       "value": 110.0
+      },
+      {
+       "year": 2012,
+       "value": 140.0
+      },
+      {
+       "year": 2013,
+       "value": 136.0
+      },
+      {
+       "year": 2014,
+       "value": 82.0
+      },
+      {
+       "year": 2015,
+       "value": 0.0
+      },
+      {
+       "year": 2016,
+       "value": 120.0
+      },
+      {
+       "year": 2017,
+       "value": 112.0
+      },
+      {
+       "year": 2018,
+       "value": 97.0
+      },
+      {
+       "year": 2019,
+       "value": 59.0
+      },
+      {
+       "year": 2021,
+       "value": 141.0
+      },
+      {
+       "year": 2022,
+       "value": 144.0
+      },
+      {
+       "year": 2023,
+       "value": 100.0
+      },
+      {
+       "year": 2024,
+       "value": 46.0
+      },
+      {
+       "year": 2025,
+       "value": 49.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 29,
+      "first_year": 1996,
+      "last_year": 2025,
+      "mean": 92.62068965517241,
+      "slope_per_decade": -0.41666666666666663,
+      "pct_of_mean_per_decade": -0.4498634896996773,
+      "intercept": 110.58333333333333,
+      "ci_low": -25.714285714285715,
+      "ci_high": 20.909090909090907,
+      "p_value": 0.9102364743186713,
+      "years_to_detect": 369.7,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "snow_days": {
+     "label": "Days with snow on the ground (SWE >= 25 mm)",
+     "units": "days",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1996,
+       "value": 122.0
+      },
+      {
+       "year": 1997,
+       "value": 215.0
+      },
+      {
+       "year": 1998,
+       "value": 178.0
+      },
+      {
+       "year": 1999,
+       "value": 210.0
+      },
+      {
+       "year": 2000,
+       "value": 193.0
+      },
+      {
+       "year": 2001,
+       "value": 195.0
+      },
+      {
+       "year": 2002,
+       "value": 205.0
+      },
+      {
+       "year": 2003,
+       "value": 164.0
+      },
+      {
+       "year": 2004,
+       "value": 174.0
+      },
+      {
+       "year": 2005,
+       "value": 127.0
+      },
+      {
+       "year": 2006,
+       "value": 208.0
+      },
+      {
+       "year": 2007,
+       "value": 196.0
+      },
+      {
+       "year": 2008,
+       "value": 220.0
+      },
+      {
+       "year": 2009,
+       "value": 179.0
+      },
+      {
+       "year": 2010,
+       "value": 208.0
+      },
+      {
+       "year": 2011,
+       "value": 224.0
+      },
+      {
+       "year": 2012,
+       "value": 222.0
+      },
+      {
+       "year": 2013,
+       "value": 212.0
+      },
+      {
+       "year": 2014,
+       "value": 199.0
+      },
+      {
+       "year": 2015,
+       "value": 64.0
+      },
+      {
+       "year": 2016,
+       "value": 163.0
+      },
+      {
+       "year": 2017,
+       "value": 192.0
+      },
+      {
+       "year": 2018,
+       "value": 206.0
+      },
+      {
+       "year": 2019,
+       "value": 170.0
+      },
+      {
+       "year": 2021,
+       "value": 212.0
+      },
+      {
+       "year": 2022,
+       "value": 207.0
+      },
+      {
+       "year": 2023,
+       "value": 206.0
+      },
+      {
+       "year": 2024,
+       "value": 187.0
+      },
+      {
+       "year": 2025,
+       "value": 182.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 29,
+      "first_year": 1996,
+      "last_year": 2025,
+      "mean": 187.58620689655172,
+      "slope_per_decade": 1.4835164835164836,
+      "pct_of_mean_per_decade": 0.7908451842275374,
+      "intercept": 193.92307692307693,
+      "ci_low": -9.583333333333334,
+      "ci_high": 14.166666666666668,
+      "p_value": 0.7927420565451428,
+      "years_to_detect": 111.8,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "melt_out": {
+     "label": "Melt-out day",
+     "units": "days after Oct 1",
+     "worse": "earlier is worse",
+     "series": [
+      {
+       "year": 1996,
+       "value": 164.0
+      },
+      {
+       "year": 1997,
+       "value": 246.0
+      },
+      {
+       "year": 1998,
+       "value": 222.0
+      },
+      {
+       "year": 1999,
+       "value": 259.0
+      },
+      {
+       "year": 2000,
+       "value": 240.0
+      },
+      {
+       "year": 2001,
+       "value": 232.0
+      },
+      {
+       "year": 2002,
+       "value": 255.0
+      },
+      {
+       "year": 2003,
+       "value": 233.0
+      },
+      {
+       "year": 2004,
+       "value": 214.0
+      },
+      {
+       "year": 2005,
+       "value": 207.0
+      },
+      {
+       "year": 2006,
+       "value": 238.0
+      },
+      {
+       "year": 2007,
+       "value": 234.0
+      },
+      {
+       "year": 2008,
+       "value": 272.0
+      },
+      {
+       "year": 2009,
+       "value": 249.0
+      },
+      {
+       "year": 2010,
+       "value": 243.0
+      },
+      {
+       "year": 2011,
+       "value": 266.0
+      },
+      {
+       "year": 2012,
+       "value": 260.0
+      },
+      {
+       "year": 2013,
+       "value": 248.0
+      },
+      {
+       "year": 2014,
+       "value": 234.0
+      },
+      {
+       "year": 2015,
+       "value": 131.0
+      },
+      {
+       "year": 2016,
+       "value": 222.0
+      },
+      {
+       "year": 2017,
+       "value": 246.0
+      },
+      {
+       "year": 2018,
+       "value": 233.0
+      },
+      {
+       "year": 2019,
+       "value": 222.0
+      },
+      {
+       "year": 2021,
+       "value": 246.0
+      },
+      {
+       "year": 2022,
+       "value": 262.0
+      },
+      {
+       "year": 2023,
+       "value": 238.0
+      },
+      {
+       "year": 2024,
+       "value": 232.0
+      },
+      {
+       "year": 2025,
+       "value": 225.0
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 29,
+      "first_year": 1996,
+      "last_year": 2025,
+      "mean": 233.55172413793105,
+      "slope_per_decade": 0.0,
+      "pct_of_mean_per_decade": 0.0,
+      "intercept": 238.0,
+      "ci_low": -8.571428571428571,
+      "ci_high": 10.909090909090908,
+      "p_value": 0.985004183207592,
+      "years_to_detect": null,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "peak_swe": {
+     "label": "Peak snowpack",
+     "units": "mm",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1996,
+       "value": 325.12
+      },
+      {
+       "year": 1997,
+       "value": 1277.62
+      },
+      {
+       "year": 1998,
+       "value": 774.7
+      },
+      {
+       "year": 1999,
+       "value": 1181.1
+      },
+      {
+       "year": 2000,
+       "value": 1005.84
+      },
+      {
+       "year": 2001,
+       "value": 548.64
+      },
+      {
+       "year": 2002,
+       "value": 1419.86
+      },
+      {
+       "year": 2003,
+       "value": 462.28
+      },
+      {
+       "year": 2004,
+       "value": 932.18
+      },
+      {
+       "year": 2005,
+       "value": 231.14
+      },
+      {
+       "year": 2006,
+       "value": 1193.8
+      },
+      {
+       "year": 2007,
+       "value": 1130.3
+      },
+      {
+       "year": 2008,
+       "value": 2313.94
+      },
+      {
+       "year": 2009,
+       "value": 1325.88
+      },
+      {
+       "year": 2010,
+       "value": 619.76
+      },
+      {
+       "year": 2011,
+       "value": 1323.34
+      },
+      {
+       "year": 2012,
+       "value": 1511.3
+      },
+      {
+       "year": 2013,
+       "value": 1214.12
+      },
+      {
+       "year": 2014,
+       "value": 850.9
+      },
+      {
+       "year": 2015,
+       "value": 144.78
+      },
+      {
+       "year": 2016,
+       "value": 960.12
+      },
+      {
+       "year": 2017,
+       "value": 1046.48
+      },
+      {
+       "year": 2018,
+       "value": 1043.94
+      },
+      {
+       "year": 2019,
+       "value": 624.84
+      },
+      {
+       "year": 2021,
+       "value": 1384.3
+      },
+      {
+       "year": 2022,
+       "value": 975.36
+      },
+      {
+       "year": 2023,
+       "value": 1066.8
+      },
+      {
+       "year": 2024,
+       "value": 584.2
+      },
+      {
+       "year": 2025,
+       "value": 695.96
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 29,
+      "first_year": 1996,
+      "last_year": 2025,
+      "mean": 971.3310344827586,
+      "slope_per_decade": -17.13492063492065,
+      "pct_of_mean_per_decade": -1.764066011135445,
+      "intercept": 1029.828888888889,
+      "ci_low": -200.5263157894737,
+      "ci_high": 195.94285714285712,
+      "p_value": 0.9551233832161916,
+      "years_to_detect": 114.8,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "early_precip": {
+     "label": "Oct-Dec precipitation",
+     "units": "mm",
+     "worse": "",
+     "series": [
+      {
+       "year": 1996,
+       "value": 1666.24
+      },
+      {
+       "year": 1997,
+       "value": 1399.54
+      },
+      {
+       "year": 1998,
+       "value": 833.12
+      },
+      {
+       "year": 1999,
+       "value": 1483.36
+      },
+      {
+       "year": 2000,
+       "value": 1381.76
+      },
+      {
+       "year": 2001,
+       "value": 533.4
+      },
+      {
+       "year": 2002,
+       "value": 1176.02
+      },
+      {
+       "year": 2003,
+       "value": 472.44
+      },
+      {
+       "year": 2004,
+       "value": 982.98
+      },
+      {
+       "year": 2005,
+       "value": 706.12
+      },
+      {
+       "year": 2006,
+       "value": 868.68
+      },
+      {
+       "year": 2007,
+       "value": 1315.72
+      },
+      {
+       "year": 2008,
+       "value": 960.12
+      },
+      {
+       "year": 2009,
+       "value": 1038.86
+      },
+      {
+       "year": 2010,
+       "value": 906.78
+      },
+      {
+       "year": 2011,
+       "value": 1000.76
+      },
+      {
+       "year": 2012,
+       "value": 967.74
+      },
+      {
+       "year": 2013,
+       "value": 1160.78
+      },
+      {
+       "year": 2014,
+       "value": 820.42
+      },
+      {
+       "year": 2015,
+       "value": 1186.18
+      },
+      {
+       "year": 2016,
+       "value": 1653.54
+      },
+      {
+       "year": 2017,
+       "value": 1183.64
+      },
+      {
+       "year": 2018,
+       "value": 1330.96
+      },
+      {
+       "year": 2019,
+       "value": 1173.48
+      },
+      {
+       "year": 2020,
+       "value": 937.26
+      },
+      {
+       "year": 2021,
+       "value": 1287.78
+      },
+      {
+       "year": 2022,
+       "value": 1303.02
+      },
+      {
+       "year": 2023,
+       "value": 1160.78
+      },
+      {
+       "year": 2024,
+       "value": 894.08
+      },
+      {
+       "year": 2025,
+       "value": 1046.48
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 30,
+      "first_year": 1996,
+      "last_year": 2025,
+      "mean": 1094.4013333333335,
+      "slope_per_decade": 13.854545454545464,
+      "pct_of_mean_per_decade": 1.2659474209837824,
+      "intercept": 1083.5409090909093,
+      "ci_low": -118.53333333333316,
+      "ci_high": 179.29411764705878,
+      "p_value": 0.9005970992136978,
+      "years_to_detect": 98.0,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "temp_novdec": {
+     "label": "Nov-Dec air temperature",
+     "units": "deg C",
+     "worse": "warmer is worse",
+     "series": [
+      {
+       "year": 1996,
+       "value": 0.978
+      },
+      {
+       "year": 1997,
+       "value": -0.461
+      },
+      {
+       "year": 1998,
+       "value": 1.342
+      },
+      {
+       "year": 1999,
+       "value": -0.665
+      },
+      {
+       "year": 2000,
+       "value": 2.144
+      },
+      {
+       "year": 2001,
+       "value": -0.518
+      },
+      {
+       "year": 2002,
+       "value": 0.379
+      },
+      {
+       "year": 2003,
+       "value": 2.423
+      },
+      {
+       "year": 2004,
+       "value": -1.129
+      },
+      {
+       "year": 2005,
+       "value": 1.599
+      },
+      {
+       "year": 2006,
+       "value": 0.976
+      },
+      {
+       "year": 2007,
+       "value": -0.033
+      },
+      {
+       "year": 2008,
+       "value": -0.3
+      },
+      {
+       "year": 2009,
+       "value": 0.321
+      },
+      {
+       "year": 2010,
+       "value": -0.657
+      },
+      {
+       "year": 2011,
+       "value": -0.787
+      },
+      {
+       "year": 2012,
+       "value": -0.305
+      },
+      {
+       "year": 2013,
+       "value": -0.106
+      },
+      {
+       "year": 2015,
+       "value": 0.675
+      },
+      {
+       "year": 2016,
+       "value": -0.21
+      },
+      {
+       "year": 2017,
+       "value": -0.189
+      },
+      {
+       "year": 2018,
+       "value": 0.234
+      },
+      {
+       "year": 2019,
+       "value": 0.439
+      },
+      {
+       "year": 2020,
+       "value": 1.667
+      },
+      {
+       "year": 2021,
+       "value": 0.929
+      },
+      {
+       "year": 2022,
+       "value": -0.209
+      },
+      {
+       "year": 2023,
+       "value": -1.424
+      },
+      {
+       "year": 2024,
+       "value": 1.889
+      },
+      {
+       "year": 2025,
+       "value": 1.202
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 29,
+      "first_year": 1996,
+      "last_year": 2025,
+      "mean": 0.35189372526851337,
+      "slope_per_decade": 0.10428051001821484,
+      "pct_of_mean_per_decade": 29.63409192324852,
+      "intercept": 0.0880692167577416,
+      "ci_low": -0.4724499089253186,
+      "ci_high": 0.5809605982168535,
+      "p_value": 0.8073432738589212,
+      "years_to_detect": 34.2,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "temp_novmar": {
+     "label": "Nov-Mar air temperature",
+     "units": "deg C",
+     "worse": "warmer is worse",
+     "series": [
+      {
+       "year": 1996,
+       "value": 0.178
+      },
+      {
+       "year": 1997,
+       "value": -0.392
+      },
+      {
+       "year": 1998,
+       "value": 0.492
+      },
+      {
+       "year": 1999,
+       "value": -0.617
+      },
+      {
+       "year": 2000,
+       "value": 0.381
+      },
+      {
+       "year": 2001,
+       "value": -0.142
+      },
+      {
+       "year": 2002,
+       "value": -0.618
+      },
+      {
+       "year": 2003,
+       "value": 1.682
+      },
+      {
+       "year": 2004,
+       "value": -0.234
+      },
+      {
+       "year": 2005,
+       "value": 1.459
+      },
+      {
+       "year": 2006,
+       "value": 0.187
+      },
+      {
+       "year": 2007,
+       "value": 0.356
+      },
+      {
+       "year": 2008,
+       "value": -0.941
+      },
+      {
+       "year": 2009,
+       "value": -0.163
+      },
+      {
+       "year": 2010,
+       "value": 0.528
+      },
+      {
+       "year": 2011,
+       "value": -0.795
+      },
+      {
+       "year": 2012,
+       "value": -0.703
+      },
+      {
+       "year": 2013,
+       "value": 0.001
+      },
+      {
+       "year": 2015,
+       "value": 2.426
+      },
+      {
+       "year": 2016,
+       "value": 0.63
+      },
+      {
+       "year": 2017,
+       "value": -0.872
+      },
+      {
+       "year": 2018,
+       "value": -0.178
+      },
+      {
+       "year": 2019,
+       "value": -0.268
+      },
+      {
+       "year": 2020,
+       "value": 0.241
+      },
+      {
+       "year": 2021,
+       "value": -0.221
+      },
+      {
+       "year": 2022,
+       "value": 0.432
+      },
+      {
+       "year": 2023,
+       "value": -1.363
+      },
+      {
+       "year": 2024,
+       "value": 0.667
+      },
+      {
+       "year": 2025,
+       "value": 0.309
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 29,
+      "first_year": 1996,
+      "last_year": 2025,
+      "mean": 0.0850148368943215,
+      "slope_per_decade": -0.011727373068432703,
+      "pct_of_mean_per_decade": -13.794501638591067,
+      "intercept": 0.017889992641648263,
+      "ci_low": -0.36017733197354435,
+      "ci_high": 0.31627680311890843,
+      "p_value": 0.9850341097366098,
+      "years_to_detect": 221.0,
+      "q_value": 0.9850341097366098,
+      "verdict": "no_trend"
+     }
+    },
+    "early_retention": {
+     "label": "Share of Oct-Dec precipitation still on the ground as snow on Jan 1",
+     "units": "fraction",
+     "worse": "lower is worse",
+     "series": [
+      {
+       "year": 1996,
+       "value": 0.075
+      },
+      {
+       "year": 1997,
+       "value": 0.474
+      },
+      {
+       "year": 1998,
+       "value": 0.265
+      },
+      {
+       "year": 1999,
+       "value": 0.245
+      },
+      {
+       "year": 2000,
+       "value": 0.292
+      },
+      {
+       "year": 2001,
+       "value": 0.357
+      },
+      {
+       "year": 2002,
+       "value": 0.343
+      },
+      {
+       "year": 2003,
+       "value": 0.355
+      },
+      {
+       "year": 2004,
+       "value": 0.429
+      },
+      {
+       "year": 2005,
+       "value": 0.147
+      },
+      {
+       "year": 2006,
+       "value": 0.254
+      },
+      {
+       "year": 2007,
+       "value": 0.492
+      },
+      {
+       "year": 2008,
+       "value": 0.505
+      },
+      {
+       "year": 2009,
+       "value": 0.413
+      },
+      {
+       "year": 2010,
+       "value": 0.241
+      },
+      {
+       "year": 2011,
+       "value": 0.335
+      },
+      {
+       "year": 2012,
+       "value": 0.438
+      },
+      {
+       "year": 2013,
+       "value": 0.387
+      },
+      {
+       "year": 2014,
+       "value": 0.133
+      },
+      {
+       "year": 2015,
+       "value": 0.086
+      },
+      {
+       "year": 2016,
+       "value": 0.323
+      },
+      {
+       "year": 2017,
+       "value": 0.401
+      },
+      {
+       "year": 2018,
+       "value": 0.212
+      },
+      {
+       "year": 2019,
+       "value": 0.247
+      },
+      {
+       "year": 2021,
+       "value": 0.316
+      },
+      {
+       "year": 2022,
+       "value": 0.277
+      },
+      {
+       "year": 2023,
+       "value": 0.313
+      },
+      {
+       "year": 2024,
+       "value": 0.156
+      },
+      {
+       "year": 2025,
+       "value": 0.26
+      }
+     ],
+     "trend": {
+      "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+      "n_years": 29,
+      "first_year": 1996,
+      "last_year": 2025,
+      "mean": 0.30247511236185765,
+      "slope_per_decade": -0.02197090218762871,
+      "pct_of_mean_per_decade": -7.263705769400438,
+      "intercept": 0.34366954752657514,
+      "ci_low": -0.08223779120571122,
+      "ci_high": 0.03317774569332097,
+      "p_value": 0.3779775180071052,
+      "years_to_detect": 22.4,
+      "q_value": 0.9798474614939037,
+      "verdict": "cant_tell_yet"
+     }
+    }
+   },
+   "worst_years": [
+    {
+     "year": 2015,
+     "peak_swe": 145,
+     "enso_djf": 0.73,
+     "pdo_novmar": 1.51,
+     "temp_novmar": 2.43
+    },
+    {
+     "year": 2005,
+     "peak_swe": 231,
+     "enso_djf": 0.62,
+     "pdo_novmar": -0.26,
+     "temp_novmar": 1.46
+    },
+    {
+     "year": 1996,
+     "peak_swe": 325,
+     "enso_djf": -0.88,
+     "pdo_novmar": 0.67,
+     "temp_novmar": 0.18
+    },
+    {
+     "year": 2003,
+     "peak_swe": 462,
+     "enso_djf": 0.9,
+     "pdo_novmar": 1.27,
+     "temp_novmar": 1.68
+    },
+    {
+     "year": 2001,
+     "peak_swe": 549,
+     "enso_djf": -0.76,
+     "pdo_novmar": -0.2,
+     "temp_novmar": -0.14
+    }
+   ],
+   "drivers": {
+    "jan1_swe": {
+     "n_years": 28,
+     "first_year": 1996,
+     "last_year": 2025,
+     "r2": 0.4603820275206997,
+     "standardized_effect": {
+      "temp": -0.5138665489814741,
+      "precip": 0.4426820363144227,
+      "enso": 0.26715723202419916,
+      "pdo": -0.09018375987188934
+     },
+     "p_value": {
+      "temp": 0.01394281213577726,
+      "precip": 0.01314771282637631,
+      "enso": 0.19478936994983254,
+      "pdo": 0.6460518697717914
+     },
+     "correlation": {
+      "temp": -0.5312575099791679,
+      "precip": 0.48939876622257616,
+      "enso": -0.20191823318610916,
+      "pdo": -0.27369049764966713
+     },
+     "predictor_correlation": {
+      "temp_enso": 0.5240562335622517,
+      "temp_pdo": 0.5278688536450642,
+      "enso_pdo": 0.5302075686190213
+     }
+    },
+    "peak_swe": {
+     "n_years": 28,
+     "first_year": 1996,
+     "last_year": 2025,
+     "r2": 0.5836048257053036,
+     "standardized_effect": {
+      "temp": -0.5320502129036769,
+      "precip": 0.20979139835550237,
+      "enso": -0.08675892105161519,
+      "pdo": -0.154483417558745
+     },
+     "p_value": {
+      "temp": 0.004623004888664166,
+      "precip": 0.16059699982649775,
+      "enso": 0.6261928521509378,
+      "pdo": 0.37357068451794073
+     },
+     "correlation": {
+      "temp": -0.7110948756960266,
+      "precip": 0.39033984418346246,
+      "enso": -0.5195088549673935,
+      "pdo": -0.5068807866572084
+     },
+     "predictor_correlation": {
+      "temp_enso": 0.5240562335622517,
+      "temp_pdo": 0.5278688536450642,
+      "enso_pdo": 0.5302075686190213
+     }
+    },
+    "season_start": {
+     "n_years": 28,
+     "first_year": 1996,
+     "last_year": 2025,
+     "r2": 0.2805207867240036,
+     "standardized_effect": {
+      "temp": 0.4517464616188932,
+      "precip": -0.11634890578246207,
+      "enso": -0.09180647211697268,
+      "pdo": 0.14362161574012203
+     },
+     "p_value": {
+      "temp": 0.054483973803678594,
+      "precip": 0.5467295017819307,
+      "enso": 0.6947054144467393,
+      "pdo": 0.5273367127214403
+     },
+     "correlation": {
+      "temp": 0.5083041989857071,
+      "precip": -0.2143602561046978,
+      "enso": 0.26102372738018964,
+      "pdo": 0.34757476761074385
+     },
+     "predictor_correlation": {
+      "temp_enso": 0.5240562335622517,
+      "temp_pdo": 0.5278688536450642,
+      "enso_pdo": 0.5302075686190213
+     }
+    }
+   }
+  }
+ ],
+ "nldas_temperature": {
+  "temp_novdec 1980-2025": {
+   "label": "Nov-Dec air temperature, NLDAS Upper Cedar",
+   "units": "deg C",
+   "series": [
+    {
+     "year": 1980,
+     "value": 1.852
+    },
+    {
+     "year": 1981,
+     "value": 2.556
+    },
+    {
+     "year": 1982,
+     "value": 1.283
+    },
+    {
+     "year": 1983,
+     "value": -0.205
+    },
+    {
+     "year": 1984,
+     "value": -1.146
+    },
+    {
+     "year": 1985,
+     "value": -0.904
+    },
+    {
+     "year": 1986,
+     "value": -2.296
+    },
+    {
+     "year": 1987,
+     "value": 1.507
+    },
+    {
+     "year": 1988,
+     "value": 1.526
+    },
+    {
+     "year": 1989,
+     "value": 0.904
+    },
+    {
+     "year": 1990,
+     "value": 2.392
+    },
+    {
+     "year": 1991,
+     "value": -0.98
+    },
+    {
+     "year": 1992,
+     "value": 1.297
+    },
+    {
+     "year": 1993,
+     "value": -0.011
+    },
+    {
+     "year": 1994,
+     "value": 0.225
+    },
+    {
+     "year": 1995,
+     "value": -0.818
+    },
+    {
+     "year": 1996,
+     "value": 1.173
+    },
+    {
+     "year": 1997,
+     "value": 0.436
+    },
+    {
+     "year": 1998,
+     "value": 2.058
+    },
+    {
+     "year": 1999,
+     "value": 1.089
+    },
+    {
+     "year": 2000,
+     "value": 2.823
+    },
+    {
+     "year": 2001,
+     "value": 0.001
+    },
+    {
+     "year": 2002,
+     "value": 1.785
+    },
+    {
+     "year": 2003,
+     "value": 3.009
+    },
+    {
+     "year": 2004,
+     "value": 0.552
+    },
+    {
+     "year": 2005,
+     "value": 2.669
+    },
+    {
+     "year": 2006,
+     "value": 0.87
+    },
+    {
+     "year": 2007,
+     "value": 0.57
+    },
+    {
+     "year": 2008,
+     "value": 0.378
+    },
+    {
+     "year": 2009,
+     "value": 1.425
+    },
+    {
+     "year": 2010,
+     "value": -0.498
+    },
+    {
+     "year": 2011,
+     "value": 0.098
+    },
+    {
+     "year": 2012,
+     "value": -0.094
+    },
+    {
+     "year": 2013,
+     "value": 1.543
+    },
+    {
+     "year": 2014,
+     "value": 0.311
+    },
+    {
+     "year": 2015,
+     "value": 1.494
+    },
+    {
+     "year": 2016,
+     "value": 0.626
+    },
+    {
+     "year": 2017,
+     "value": 0.358
+    },
+    {
+     "year": 2018,
+     "value": 0.957
+    },
+    {
+     "year": 2019,
+     "value": 2.354
+    },
+    {
+     "year": 2020,
+     "value": 2.516
+    },
+    {
+     "year": 2021,
+     "value": 1.557
+    },
+    {
+     "year": 2022,
+     "value": 0.705
+    },
+    {
+     "year": 2023,
+     "value": -0.845
+    },
+    {
+     "year": 2024,
+     "value": 2.432
+    },
+    {
+     "year": 2025,
+     "value": 1.494
+    }
+   ],
+   "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 0.8919023478261094,
+    "slope_per_decade": 0.13423149999999878,
+    "pct_of_mean_per_decade": 15.050022048621106,
+    "intercept": 0.6288278750000125,
+    "ci_low": -0.18019480769230364,
+    "ci_high": 0.44950750000000184,
+    "p_value": 0.34373296465069236,
+    "years_to_detect": 29.9,
+    "q_value": 0.9798474614939037,
+    "verdict": "cant_tell_yet"
+   }
+  },
+  "temp_novdec 1989-2025 (same years as SNOTEL temperature)": {
+   "label": "Nov-Dec air temperature, NLDAS Upper Cedar",
+   "units": "deg C",
+   "series": [
+    {
+     "year": 1989,
+     "value": 0.904
+    },
+    {
+     "year": 1990,
+     "value": 2.392
+    },
+    {
+     "year": 1991,
+     "value": -0.98
+    },
+    {
+     "year": 1992,
+     "value": 1.297
+    },
+    {
+     "year": 1993,
+     "value": -0.011
+    },
+    {
+     "year": 1994,
+     "value": 0.225
+    },
+    {
+     "year": 1995,
+     "value": -0.818
+    },
+    {
+     "year": 1996,
+     "value": 1.173
+    },
+    {
+     "year": 1997,
+     "value": 0.436
+    },
+    {
+     "year": 1998,
+     "value": 2.058
+    },
+    {
+     "year": 1999,
+     "value": 1.089
+    },
+    {
+     "year": 2000,
+     "value": 2.823
+    },
+    {
+     "year": 2001,
+     "value": 0.001
+    },
+    {
+     "year": 2002,
+     "value": 1.785
+    },
+    {
+     "year": 2003,
+     "value": 3.009
+    },
+    {
+     "year": 2004,
+     "value": 0.552
+    },
+    {
+     "year": 2005,
+     "value": 2.669
+    },
+    {
+     "year": 2006,
+     "value": 0.87
+    },
+    {
+     "year": 2007,
+     "value": 0.57
+    },
+    {
+     "year": 2008,
+     "value": 0.378
+    },
+    {
+     "year": 2009,
+     "value": 1.425
+    },
+    {
+     "year": 2010,
+     "value": -0.498
+    },
+    {
+     "year": 2011,
+     "value": 0.098
+    },
+    {
+     "year": 2012,
+     "value": -0.094
+    },
+    {
+     "year": 2013,
+     "value": 1.543
+    },
+    {
+     "year": 2014,
+     "value": 0.311
+    },
+    {
+     "year": 2015,
+     "value": 1.494
+    },
+    {
+     "year": 2016,
+     "value": 0.626
+    },
+    {
+     "year": 2017,
+     "value": 0.358
+    },
+    {
+     "year": 2018,
+     "value": 0.957
+    },
+    {
+     "year": 2019,
+     "value": 2.354
+    },
+    {
+     "year": 2020,
+     "value": 2.516
+    },
+    {
+     "year": 2021,
+     "value": 1.557
+    },
+    {
+     "year": 2022,
+     "value": 0.705
+    },
+    {
+     "year": 2023,
+     "value": -0.845
+    },
+    {
+     "year": 2024,
+     "value": 2.432
+    },
+    {
+     "year": 2025,
+     "value": 1.494
+    }
+   ],
+   "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 37,
+    "first_year": 1989,
+    "last_year": 2025,
+    "mean": 0.9960559324324549,
+    "slope_per_decade": 0.13757872619048006,
+    "pct_of_mean_per_decade": 13.812349458579188,
+    "intercept": 0.6567252928571436,
+    "ci_low": -0.24130678571428418,
+    "ci_high": 0.5134836111111143,
+    "p_value": 0.42497974024989427,
+    "years_to_detect": 23.5,
+    "q_value": 0.9798474614939037,
+    "verdict": "cant_tell_yet"
+   }
+  },
+  "temp_novmar 1980-2025": {
+   "label": "Nov-Mar air temperature, NLDAS Upper Cedar",
+   "units": "deg C",
+   "series": [
+    {
+     "year": 1980,
+     "value": 0.377
+    },
+    {
+     "year": 1981,
+     "value": 2.418
+    },
+    {
+     "year": 1982,
+     "value": 0.181
+    },
+    {
+     "year": 1983,
+     "value": 1.114
+    },
+    {
+     "year": 1984,
+     "value": 0.327
+    },
+    {
+     "year": 1985,
+     "value": -0.877
+    },
+    {
+     "year": 1986,
+     "value": 0.298
+    },
+    {
+     "year": 1987,
+     "value": 1.498
+    },
+    {
+     "year": 1988,
+     "value": 0.973
+    },
+    {
+     "year": 1989,
+     "value": -0.678
+    },
+    {
+     "year": 1990,
+     "value": 1.132
+    },
+    {
+     "year": 1991,
+     "value": 0.011
+    },
+    {
+     "year": 1992,
+     "value": 2.345
+    },
+    {
+     "year": 1993,
+     "value": -0.713
+    },
+    {
+     "year": 1994,
+     "value": 0.496
+    },
+    {
+     "year": 1995,
+     "value": 0.006
+    },
+    {
+     "year": 1996,
+     "value": 0.428
+    },
+    {
+     "year": 1997,
+     "value": 0.504
+    },
+    {
+     "year": 1998,
+     "value": 1.734
+    },
+    {
+     "year": 1999,
+     "value": 0.358
+    },
+    {
+     "year": 2000,
+     "value": 1.552
+    },
+    {
+     "year": 2001,
+     "value": 0.587
+    },
+    {
+     "year": 2002,
+     "value": 0.776
+    },
+    {
+     "year": 2003,
+     "value": 2.202
+    },
+    {
+     "year": 2004,
+     "value": 1.311
+    },
+    {
+     "year": 2005,
+     "value": 2.197
+    },
+    {
+     "year": 2006,
+     "value": 0.737
+    },
+    {
+     "year": 2007,
+     "value": 0.415
+    },
+    {
+     "year": 2008,
+     "value": -0.651
+    },
+    {
+     "year": 2009,
+     "value": 0.124
+    },
+    {
+     "year": 2010,
+     "value": 0.666
+    },
+    {
+     "year": 2011,
+     "value": -0.394
+    },
+    {
+     "year": 2012,
+     "value": -0.263
+    },
+    {
+     "year": 2013,
+     "value": 0.929
+    },
+    {
+     "year": 2014,
+     "value": 0.511
+    },
+    {
+     "year": 2015,
+     "value": 2.814
+    },
+    {
+     "year": 2016,
+     "value": 1.236
+    },
+    {
+     "year": 2017,
+     "value": -0.951
+    },
+    {
+     "year": 2018,
+     "value": 0.767
+    },
+    {
+     "year": 2019,
+     "value": 0.8
+    },
+    {
+     "year": 2020,
+     "value": 1.463
+    },
+    {
+     "year": 2021,
+     "value": 0.571
+    },
+    {
+     "year": 2022,
+     "value": 0.611
+    },
+    {
+     "year": 2023,
+     "value": -0.613
+    },
+    {
+     "year": 2024,
+     "value": 1.347
+    },
+    {
+     "year": 2025,
+     "value": 0.512
+    }
+   ],
+   "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 0.6780316173913261,
+    "slope_per_decade": 0.040950214285710954,
+    "pct_of_mean_per_decade": 6.039572969069454,
+    "intercept": 0.48651491785717615,
+    "ci_low": -0.1819865000000126,
+    "ci_high": 0.20397947826086738,
+    "p_value": 0.6224762549686809,
+    "years_to_detect": 77.5,
+    "q_value": 0.9850341097366098,
+    "verdict": "no_trend"
+   }
+  },
+  "temp_novmar 1989-2025 (same years as SNOTEL temperature)": {
+   "label": "Nov-Mar air temperature, NLDAS Upper Cedar",
+   "units": "deg C",
+   "series": [
+    {
+     "year": 1989,
+     "value": -0.678
+    },
+    {
+     "year": 1990,
+     "value": 1.132
+    },
+    {
+     "year": 1991,
+     "value": 0.011
+    },
+    {
+     "year": 1992,
+     "value": 2.345
+    },
+    {
+     "year": 1993,
+     "value": -0.713
+    },
+    {
+     "year": 1994,
+     "value": 0.496
+    },
+    {
+     "year": 1995,
+     "value": 0.006
+    },
+    {
+     "year": 1996,
+     "value": 0.428
+    },
+    {
+     "year": 1997,
+     "value": 0.504
+    },
+    {
+     "year": 1998,
+     "value": 1.734
+    },
+    {
+     "year": 1999,
+     "value": 0.358
+    },
+    {
+     "year": 2000,
+     "value": 1.552
+    },
+    {
+     "year": 2001,
+     "value": 0.587
+    },
+    {
+     "year": 2002,
+     "value": 0.776
+    },
+    {
+     "year": 2003,
+     "value": 2.202
+    },
+    {
+     "year": 2004,
+     "value": 1.311
+    },
+    {
+     "year": 2005,
+     "value": 2.197
+    },
+    {
+     "year": 2006,
+     "value": 0.737
+    },
+    {
+     "year": 2007,
+     "value": 0.415
+    },
+    {
+     "year": 2008,
+     "value": -0.651
+    },
+    {
+     "year": 2009,
+     "value": 0.124
+    },
+    {
+     "year": 2010,
+     "value": 0.666
+    },
+    {
+     "year": 2011,
+     "value": -0.394
+    },
+    {
+     "year": 2012,
+     "value": -0.263
+    },
+    {
+     "year": 2013,
+     "value": 0.929
+    },
+    {
+     "year": 2014,
+     "value": 0.511
+    },
+    {
+     "year": 2015,
+     "value": 2.814
+    },
+    {
+     "year": 2016,
+     "value": 1.236
+    },
+    {
+     "year": 2017,
+     "value": -0.951
+    },
+    {
+     "year": 2018,
+     "value": 0.767
+    },
+    {
+     "year": 2019,
+     "value": 0.8
+    },
+    {
+     "year": 2020,
+     "value": 1.463
+    },
+    {
+     "year": 2021,
+     "value": 0.571
+    },
+    {
+     "year": 2022,
+     "value": 0.611
+    },
+    {
+     "year": 2023,
+     "value": -0.613
+    },
+    {
+     "year": 2024,
+     "value": 1.347
+    },
+    {
+     "year": 2025,
+     "value": 0.512
+    }
+   ],
+   "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 37,
+    "first_year": 1989,
+    "last_year": 2025,
+    "mean": 0.6724365405405617,
+    "slope_per_decade": 0.04716541025641645,
+    "pct_of_mean_per_decade": 7.014105779929937,
+    "intercept": 0.5017048615384765,
+    "ci_low": -0.2483762666666734,
+    "ci_high": 0.32889214285713864,
+    "p_value": 0.5738490427115428,
+    "years_to_detect": 76.8,
+    "q_value": 0.9850341097366098,
+    "verdict": "no_trend"
+   }
+  }
+ }
+}

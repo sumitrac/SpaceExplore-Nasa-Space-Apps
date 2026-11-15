@@ -1611,6 +1611,72 @@ thead th {
   font-size: 1.1rem;
 }
 
+.bill-card {
+  margin-top: 1.5rem;
+}
+.bill-card .footnote {
+  margin-top: 0;
+}
+.bill-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  font-weight: 600;
+}
+.bill-input-field {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+}
+.bill-input input {
+  width: 6rem;
+  font: inherit;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.bill-table-wrap {
+  overflow-x: auto;
+}
+.bill-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+.bill-table th,
+.bill-table td {
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+  text-align: right;
+}
+.bill-table th[scope="row"],
+.bill-table thead th:first-child {
+  text-align: left;
+  font-weight: 400;
+}
+.bill-table thead th {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.bill-table tr.is-empty td,
+.bill-table tr.is-empty th {
+  color: var(--muted);
+}
+.bill-table tfoot th,
+.bill-table tfoot td {
+  font-weight: 700;
+  border-bottom: 0;
+}
+.bill-note {
+  margin: 0;
+  max-width: var(--measure);
+}
+
 @media (max-width: 900px) {
   .story {
     grid-template-columns: 1fr;

@@ -35,6 +35,38 @@ export const WATER_BILL_FACTS = [
   },
 ];
 
+// Seattle Public Utilities inside-Seattle residential drinking water rates, as of 2026.
+// Peak tiers are per 60-day billing period. Used by the water bill card in Impact.jsx.
+export const WATER_BILL = {
+  asOf: "2026",
+  billingDays: 60,
+  baseMonthly: 21.35, // service charge per month, 3/4" and smaller meter
+  meter: '3/4"',
+  offPeak: { label: "Sept 16 – May 15", perCcf: 5.82 },
+  peak: {
+    label: "May 16 – Sept 15",
+    tiers: [
+      { upTo: 10, perCcf: 5.98, label: "First 10 CCF" },
+      { upTo: 36, perCcf: 7.39, label: "Next 26 CCF" },
+      { upTo: Infinity, perCcf: 11.8, label: "Over 36 CCF" },
+    ],
+  },
+  gallonsPerCcf: 748,
+  source: {
+    label: "Seattle Public Utilities, Residential Drinking Water Rates",
+    url: "https://seattle.gov/utilities/your-services/accounts-and-payments/rates/water/residential-water-rates",
+  },
+  cityTax: {
+    pct: 15.54, // City utility tax on SPU's gross water income, effective 1/1/2011
+    effective: "January 1, 2011",
+    includedInRates: true, // built into the rates above, not added to the bill
+    source: {
+      label: "Seattle Public Utilities, response to panel on City taxes (March 28, 2014)",
+      url: "https://seattle.gov/Documents/Departments/SPU/March282014ResponsetoPanelCitytaxes.pdf",
+    },
+  },
+};
+
 // 1 acre-inch of water = 27,154 gallons
 export const GALLONS_PER_ACRE_INCH = 27154;
 
