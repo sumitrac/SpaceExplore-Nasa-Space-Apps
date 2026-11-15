@@ -1863,7 +1863,7 @@ thead th {
 }
 
 /* Explore: question, region buttons and map */
-.explore {
+.trends-explore {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
   gap: 1.5rem 2.5rem;
@@ -2031,7 +2031,7 @@ thead th {
 }
 
 @media (max-width: 720px) {
-  .explore {
+  .trends-explore {
     grid-template-columns: 1fr;
   }
 }

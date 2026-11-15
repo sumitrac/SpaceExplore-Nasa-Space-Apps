@@ -139,7 +139,7 @@ export default function Trends() {
               onStep={(i) => setTour({ ...tour, step: i })} onClose={() => setTour(null)} />
           )}
 
-          <div className="explore">
+          <div className="trends-explore">
             <div>
               <h3 className="explore-q">What do you want to investigate?</h3>
               <div className="region-picker" role="group" aria-label="Topic">
