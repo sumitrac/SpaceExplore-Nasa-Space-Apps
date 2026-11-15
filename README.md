@@ -41,7 +41,10 @@ Hosted publicly via Vercel or GitHub Pages.
   - **NLDAS-2 Forcing (monthly)** — near surface air temperature (`tair`) — Cedar & Tolt, Jan 1979–Sep 2025
   - **GPM IMERG Final (daily)** — precipitation (`precip_daily`) — Seattle region, Jun 2000–Sep 2025
 - **[AppEEARS](https://appeears.earthdatacloud.nasa.gov/)** — snow cover days (`snow_cover_days`) via MODIS MOD10A2, one value per water year — Cedar & Tolt, 2001–present
-- **[Hydrology Time Series](https://disc.gsfc.nasa.gov/information/tools?title=Hydrology%20Data%20Rods%20Time%20Series)** — hydrological time-series generation
+- **[Hydrology Time Series](https://disc.gsfc.nasa.gov/information/tools?title=Hydrology%20Data%20Rods%20Time%20Series) — hourly NLDAS-2 point data**
+  * Sites: Upper & Lower Cedar, Oct 1979–Sep 2025
+  * Variables: SWE, snowfall, rainfall, precipitation, air temperature, surface + subsurface runoff
+  * Downloaded via NASA's [Giovanni Time Series API](https://api.giovanni.earthdata.nasa.gov/timeseries); cleaned files in `data/clean/hourly/`
 - **[Climate Data Online (CDO)](https://www.ncdc.noaa.gov/cdo-web/)** — historical weather and climate station data for the Cascade region
 
 ### Study Regions
