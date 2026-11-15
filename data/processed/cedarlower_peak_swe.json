@@ -1,0 +1,211 @@
+{
+  "region": "cedarlower",
+  "variable": "peak_swe",
+  "label": "Peak snowpack",
+  "units": "mm",
+  "source": "NLDAS 2 Noah",
+  "definition": "The most water stored in the snow during the winter. This is the water that melts into rivers and reservoirs through summer.",
+  "series": [
+    {
+      "year": 1980,
+      "value": 13.4606
+    },
+    {
+      "year": 1981,
+      "value": 0.9608
+    },
+    {
+      "year": 1982,
+      "value": 10.359
+    },
+    {
+      "year": 1983,
+      "value": 0.1585
+    },
+    {
+      "year": 1984,
+      "value": 2.4431
+    },
+    {
+      "year": 1985,
+      "value": 16.1565
+    },
+    {
+      "year": 1986,
+      "value": 22.6839
+    },
+    {
+      "year": 1987,
+      "value": 0.5509
+    },
+    {
+      "year": 1988,
+      "value": 2.0731
+    },
+    {
+      "year": 1989,
+      "value": 3.195
+    },
+    {
+      "year": 1990,
+      "value": 3.2076
+    },
+    {
+      "year": 1991,
+      "value": 4.7947
+    },
+    {
+      "year": 1992,
+      "value": 0.2698
+    },
+    {
+      "year": 1993,
+      "value": 5.2174
+    },
+    {
+      "year": 1994,
+      "value": 0.5568
+    },
+    {
+      "year": 1995,
+      "value": 1.3651
+    },
+    {
+      "year": 1996,
+      "value": 6.0212
+    },
+    {
+      "year": 1997,
+      "value": 26.9437
+    },
+    {
+      "year": 1998,
+      "value": 1.2573
+    },
+    {
+      "year": 1999,
+      "value": 1.7231
+    },
+    {
+      "year": 2000,
+      "value": 1.16
+    },
+    {
+      "year": 2001,
+      "value": 0.4647
+    },
+    {
+      "year": 2002,
+      "value": 0.9308
+    },
+    {
+      "year": 2003,
+      "value": 0.0215
+    },
+    {
+      "year": 2004,
+      "value": 2.3376
+    },
+    {
+      "year": 2005,
+      "value": 0.4762
+    },
+    {
+      "year": 2006,
+      "value": 0.8357
+    },
+    {
+      "year": 2007,
+      "value": 1.7539
+    },
+    {
+      "year": 2008,
+      "value": 37.1748
+    },
+    {
+      "year": 2009,
+      "value": 48.0114
+    },
+    {
+      "year": 2010,
+      "value": 0.6146
+    },
+    {
+      "year": 2011,
+      "value": 2.4737
+    },
+    {
+      "year": 2012,
+      "value": 23.9438
+    },
+    {
+      "year": 2013,
+      "value": 0.5107
+    },
+    {
+      "year": 2014,
+      "value": 0.4039
+    },
+    {
+      "year": 2015,
+      "value": 0.2061
+    },
+    {
+      "year": 2016,
+      "value": 0.3033
+    },
+    {
+      "year": 2017,
+      "value": 6.8982
+    },
+    {
+      "year": 2018,
+      "value": 1.6116
+    },
+    {
+      "year": 2019,
+      "value": 2.8196
+    },
+    {
+      "year": 2020,
+      "value": 0.9818
+    },
+    {
+      "year": 2021,
+      "value": 3.5108
+    },
+    {
+      "year": 2022,
+      "value": 10.6419
+    },
+    {
+      "year": 2023,
+      "value": 4.3965
+    },
+    {
+      "year": 2024,
+      "value": 0.4792
+    },
+    {
+      "year": 2025,
+      "value": 3.785
+    }
+  ],
+  "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 6.0901171161108705,
+    "slope_per_decade": -0.12444570625000012,
+    "pct_of_mean_per_decade": -2.043404155903503,
+    "intercept": 2.1935142340625005,
+    "ci_low": -0.703275296153846,
+    "ci_high": 0.4151494242857143,
+    "p_value": 0.6646250221225816,
+    "years_to_detect": 321.5,
+    "q_value": 0.9165173731833084,
+    "verdict": "no_trend"
+  },
+  "by_month": []
+}

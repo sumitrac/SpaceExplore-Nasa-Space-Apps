@@ -8,193 +8,204 @@
   "series": [
     {
       "year": 1980,
-      "value": 2.3027
+      "value": 2.1337
     },
     {
       "year": 1981,
-      "value": 2.0088
+      "value": 3.8137
     },
     {
       "year": 1982,
-      "value": 2.0476
+      "value": 1.6771
     },
     {
       "year": 1983,
-      "value": 2.0751
+      "value": 2.9951
     },
     {
       "year": 1984,
-      "value": 2.0277
+      "value": 2.103
     },
     {
       "year": 1985,
-      "value": 2.9243
+      "value": 1.0036
     },
     {
       "year": 1986,
-      "value": 2.4938
+      "value": 2.0737
     },
     {
       "year": 1987,
-      "value": 2.5126
+      "value": 3.0239
     },
     {
       "year": 1988,
-      "value": 2.4874
+      "value": 2.0605
     },
     {
       "year": 1989,
-      "value": 2.6463
+      "value": 0.1171
     },
     {
       "year": 1990,
-      "value": 3.3158
+      "value": 1.4675
     },
     {
       "year": 1991,
-      "value": 2.5165
+      "value": 0.9874
     },
     {
       "year": 1992,
-      "value": 2.2299
+      "value": 2.6152
     },
     {
       "year": 1993,
-      "value": 2.4647
+      "value": 0.1332
     },
     {
       "year": 1994,
-      "value": 1.9991
+      "value": 1.3994
     },
     {
       "year": 1995,
-      "value": 2.815
+      "value": 1.0279
     },
     {
       "year": 1996,
-      "value": 2.9728
+      "value": 1.5885
     },
     {
       "year": 1997,
-      "value": 2.1205
+      "value": 1.5153
     },
     {
       "year": 1998,
-      "value": 2.3132
+      "value": 2.7093
     },
     {
       "year": 1999,
-      "value": 3.5589
+      "value": 1.2084
     },
     {
       "year": 2000,
-      "value": 2.7558
+      "value": 2.5214
     },
     {
       "year": 2001,
-      "value": 2.2496
+      "value": 1.5493
     },
     {
       "year": 2002,
-      "value": 2.0616
+      "value": 1.7603
     },
     {
       "year": 2003,
-      "value": 2.8461
+      "value": 3.2405
     },
     {
       "year": 2004,
-      "value": 2.5064
+      "value": 2.4278
     },
     {
       "year": 2005,
-      "value": 2.7319
+      "value": 3.1938
     },
     {
       "year": 2006,
-      "value": 2.2544
+      "value": 1.8703
     },
     {
       "year": 2007,
-      "value": 2.5037
+      "value": 1.3887
     },
     {
       "year": 2008,
-      "value": 1.8407
+      "value": 0.2212
     },
     {
       "year": 2009,
-      "value": 2.342
+      "value": 1.1265
     },
     {
       "year": 2010,
-      "value": 3.1583
+      "value": 1.5475
     },
     {
       "year": 2011,
-      "value": 2.4778
+      "value": 0.4798
     },
     {
       "year": 2012,
-      "value": 3.1238
+      "value": 0.6637
     },
     {
       "year": 2013,
-      "value": 3.0055
+      "value": 1.9009
     },
     {
       "year": 2014,
-      "value": 3.0261
+      "value": 1.3676
     },
     {
       "year": 2015,
-      "value": 2.9359
+      "value": 3.6271
     },
     {
       "year": 2016,
-      "value": 3.493
+      "value": 2.2662
     },
     {
       "year": 2017,
-      "value": 3.0015
+      "value": 0.0175
     },
     {
       "year": 2018,
-      "value": 2.853
+      "value": 1.6225
     },
     {
       "year": 2019,
-      "value": 3.0448
+      "value": 1.7975
     },
     {
       "year": 2020,
-      "value": 3.6534
+      "value": 2.4619
     },
     {
       "year": 2021,
-      "value": 3.2318
+      "value": 1.4461
     },
     {
       "year": 2022,
-      "value": 3.4368
+      "value": 1.6246
     },
     {
       "year": 2023,
-      "value": 3.7957
+      "value": 0.4366
     },
     {
       "year": 2024,
-      "value": 3.1324
+      "value": 2.3919
+    },
+    {
+      "year": 2025,
+      "value": 1.585
     }
   ],
   "trend": {
-    "slope_per_decade": 0.23147185069192533,
-    "ci_low": 0.15382904293055746,
-    "ci_high": 0.3353527282537566,
-    "p_value": 1.7513611840325183e-05,
-    "years_to_detect": 0.0,
-    "q_value": 4.0865094294092095e-05,
-    "verdict": "real_trend"
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 1.7432587782608924,
+    "slope_per_decade": -0.10010866666666138,
+    "pct_of_mean_per_decade": -5.742616524583439,
+    "intercept": 1.8487948000000158,
+    "ci_low": -0.32616599999999785,
+    "ci_high": 0.09971616666667016,
+    "p_value": 0.34373296465069236,
+    "years_to_detect": 28.2,
+    "q_value": 0.9165173731833084,
+    "verdict": "cant_tell_yet"
   },
   "by_month": []
 }

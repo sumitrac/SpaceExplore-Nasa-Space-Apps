@@ -8,254 +8,265 @@
   "series": [
     {
       "year": 1980,
-      "value": 473.2069
+      "value": 751.5583
     },
     {
       "year": 1981,
-      "value": 435.8369
+      "value": 849.6185
     },
     {
       "year": 1982,
-      "value": 497.1607
+      "value": 976.151
     },
     {
       "year": 1983,
-      "value": 558.4761
+      "value": 820.9479
     },
     {
       "year": 1984,
-      "value": 516.6662
+      "value": 698.5946
     },
     {
       "year": 1985,
-      "value": 496.7864
+      "value": 344.5378
     },
     {
       "year": 1986,
-      "value": 504.7517
+      "value": 567.013
     },
     {
       "year": 1987,
-      "value": 498.3313
+      "value": 506.4252
     },
     {
       "year": 1988,
-      "value": 554.9966
+      "value": 593.5972
     },
     {
       "year": 1989,
-      "value": 468.5014
+      "value": 508.6292
     },
     {
       "year": 1990,
-      "value": 533.352
+      "value": 751.4475
     },
     {
       "year": 1991,
-      "value": 500.9252
+      "value": 706.9682
     },
     {
       "year": 1992,
-      "value": 514.8143
+      "value": 740.371
     },
     {
       "year": 1993,
-      "value": 488.3082
+      "value": 383.2394
     },
     {
       "year": 1994,
-      "value": 594.863
+      "value": 553.0097
     },
     {
       "year": 1995,
-      "value": 574.548
+      "value": 726.1255
     },
     {
       "year": 1996,
-      "value": 504.9529
+      "value": 907.3955
     },
     {
       "year": 1997,
-      "value": 554.2397
+      "value": 745.6933
     },
     {
       "year": 1998,
-      "value": 491.6932
+      "value": 497.2572
     },
     {
       "year": 1999,
-      "value": 503.1477
+      "value": 803.2994
     },
     {
       "year": 2000,
-      "value": 546.3707
+      "value": 506.8238
     },
     {
       "year": 2001,
-      "value": 492.5792
+      "value": 204.186
     },
     {
       "year": 2002,
-      "value": 578.613
+      "value": 756.3106
     },
     {
       "year": 2003,
-      "value": 510.0351
+      "value": 742.8623
     },
     {
       "year": 2004,
-      "value": 564.6157
+      "value": 710.5723
     },
     {
       "year": 2005,
-      "value": 532.7695
+      "value": 544.2367
     },
     {
       "year": 2006,
-      "value": 554.5344
+      "value": 957.2521
     },
     {
       "year": 2007,
-      "value": 627.7904
+      "value": 672.1955
     },
     {
       "year": 2008,
-      "value": 464.8405
+      "value": 446.933
     },
     {
       "year": 2009,
-      "value": 592.3765
+      "value": 566.9364
     },
     {
       "year": 2010,
-      "value": 621.5629
+      "value": 410.8774
     },
     {
       "year": 2011,
-      "value": 593.9973
+      "value": 804.1279
     },
     {
       "year": 2012,
-      "value": 566.6884
+      "value": 575.7057
     },
     {
       "year": 2013,
-      "value": 526.986
+      "value": 451.159
     },
     {
       "year": 2014,
-      "value": 575.2121
+      "value": 570.252
     },
     {
       "year": 2015,
-      "value": 616.1941
+      "value": 673.0126
     },
     {
       "year": 2016,
-      "value": 548.487
+      "value": 847.8064
     },
     {
       "year": 2017,
-      "value": 546.9533
+      "value": 411.5116
     },
     {
       "year": 2018,
-      "value": 452.2681
+      "value": 772.5124
     },
     {
       "year": 2019,
-      "value": 587.7458
+      "value": 562.9793
     },
     {
       "year": 2020,
-      "value": 511.0645
+      "value": 1042.4577
     },
     {
       "year": 2021,
-      "value": 569.8304
+      "value": 766.128
     },
     {
       "year": 2022,
-      "value": 557.2385
+      "value": 655.475
     },
     {
       "year": 2023,
-      "value": 512.0034
+      "value": 485.4823
     },
     {
       "year": 2024,
-      "value": 594.0512
+      "value": 704.5129
+    },
+    {
+      "year": 2025,
+      "value": 519.1354
     }
   ],
   "trend": {
-    "slope_per_decade": 16.900141505207582,
-    "ci_low": 5.79606425668295,
-    "ci_high": 27.34284220015011,
-    "p_value": 0.0005759878691828924,
-    "years_to_detect": 0.0,
-    "q_value": 0.0011519757383657847,
-    "verdict": "real_trend"
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 647.6809405355434,
+    "slope_per_decade": -12.550673191249984,
+    "pct_of_mean_per_decade": -1.9377864015686947,
+    "intercept": 700.8430449990624,
+    "ci_low": -53.852053608974366,
+    "ci_high": 26.73559219513894,
+    "p_value": 0.49542428436678865,
+    "years_to_detect": 54.7,
+    "q_value": 0.9165173731833084,
+    "verdict": "no_trend"
   },
   "by_month": [
     {
       "month": 1,
-      "slope_per_decade": 8.647843715808074,
-      "p_value": 0.023838891030700138
+      "slope_per_decade": 8.717632105263174,
+      "p_value": 0.49542428436678865
     },
     {
       "month": 2,
-      "slope_per_decade": 2.0018673004736227,
-      "p_value": 0.36295134216230274
+      "slope_per_decade": -12.089955134782603,
+      "p_value": 0.16112842612650713
     },
     {
       "month": 3,
-      "slope_per_decade": -1.0334146549109637,
-      "p_value": 0.7616978898670956
+      "slope_per_decade": -12.494649208823569,
+      "p_value": 0.17275211520327916
     },
     {
       "month": 4,
-      "slope_per_decade": 2.3981816691430953,
-      "p_value": 0.6317012739760888
+      "slope_per_decade": 0.5690144226190477,
+      "p_value": 0.9546974155629524
     },
     {
       "month": 5,
-      "slope_per_decade": -2.608080513180524,
-      "p_value": 0.3947350133030303
+      "slope_per_decade": -0.2569486625000117,
+      "p_value": 0.9848919186264304
     },
     {
       "month": 6,
-      "slope_per_decade": -1.2622901328636538,
-      "p_value": 0.7028245031974558
+      "slope_per_decade": 0.27709166388888995,
+      "p_value": 0.9546974155629524
     },
     {
       "month": 7,
-      "slope_per_decade": -1.0519746166338197,
-      "p_value": 0.7766500488347059
+      "slope_per_decade": -4.137954033055553,
+      "p_value": 0.026722506187758732
     },
     {
       "month": 8,
-      "slope_per_decade": 7.874929546612545,
-      "p_value": 0.006347524644867875
+      "slope_per_decade": -2.3505183587790692,
+      "p_value": 0.005697511075561934
     },
     {
       "month": 9,
-      "slope_per_decade": 0.13198331774126681,
-      "p_value": 0.9921949625764028
+      "slope_per_decade": -3.9239950385714284,
+      "p_value": 0.003998017092012418
     },
     {
       "month": 10,
-      "slope_per_decade": -1.0838630272795038,
-      "p_value": 0.617851026234554
+      "slope_per_decade": 2.428725241666664,
+      "p_value": 0.719004354873376
     },
     {
       "month": 11,
-      "slope_per_decade": -0.9031395793535943,
-      "p_value": 0.7616978898670956
+      "slope_per_decade": -11.175218615384647,
+      "p_value": 0.41549541482814467
     },
     {
       "month": 12,
-      "slope_per_decade": 5.8955781073520575,
-      "p_value": 0.10233290890892555
+      "slope_per_decade": -4.193149374999962,
+      "p_value": 0.5829005895536312
     }
   ]
 }

@@ -1,0 +1,272 @@
+{
+  "region": "cedarlower",
+  "variable": "winter_runoff",
+  "label": "Winter runoff",
+  "units": "mm",
+  "source": "NLDAS 2 Noah",
+  "definition": "Water flowing off the land in December to February. More winter runoff means higher flood risk.",
+  "series": [
+    {
+      "year": 1980,
+      "value": 741.2226
+    },
+    {
+      "year": 1981,
+      "value": 732.3003
+    },
+    {
+      "year": 1982,
+      "value": 1018.7971
+    },
+    {
+      "year": 1983,
+      "value": 770.9925
+    },
+    {
+      "year": 1984,
+      "value": 701.967
+    },
+    {
+      "year": 1985,
+      "value": 493.1467
+    },
+    {
+      "year": 1986,
+      "value": 552.9301
+    },
+    {
+      "year": 1987,
+      "value": 537.1309
+    },
+    {
+      "year": 1988,
+      "value": 585.8802
+    },
+    {
+      "year": 1989,
+      "value": 590.6146
+    },
+    {
+      "year": 1990,
+      "value": 856.0862
+    },
+    {
+      "year": 1991,
+      "value": 740.2909
+    },
+    {
+      "year": 1992,
+      "value": 649.4991
+    },
+    {
+      "year": 1993,
+      "value": 447.5587
+    },
+    {
+      "year": 1994,
+      "value": 519.7163
+    },
+    {
+      "year": 1995,
+      "value": 691.1092
+    },
+    {
+      "year": 1996,
+      "value": 944.17
+    },
+    {
+      "year": 1997,
+      "value": 858.3812
+    },
+    {
+      "year": 1998,
+      "value": 526.2791
+    },
+    {
+      "year": 1999,
+      "value": 867.9627
+    },
+    {
+      "year": 2000,
+      "value": 488.384
+    },
+    {
+      "year": 2001,
+      "value": 229.7257
+    },
+    {
+      "year": 2002,
+      "value": 803.0756
+    },
+    {
+      "year": 2003,
+      "value": 656.9871
+    },
+    {
+      "year": 2004,
+      "value": 665.279
+    },
+    {
+      "year": 2005,
+      "value": 509.1827
+    },
+    {
+      "year": 2006,
+      "value": 928.1039
+    },
+    {
+      "year": 2007,
+      "value": 655.8071
+    },
+    {
+      "year": 2008,
+      "value": 635.6194
+    },
+    {
+      "year": 2009,
+      "value": 593.5559
+    },
+    {
+      "year": 2010,
+      "value": 422.2716
+    },
+    {
+      "year": 2011,
+      "value": 837.8599
+    },
+    {
+      "year": 2012,
+      "value": 612.9925
+    },
+    {
+      "year": 2013,
+      "value": 504.3292
+    },
+    {
+      "year": 2014,
+      "value": 584.4192
+    },
+    {
+      "year": 2015,
+      "value": 552.7862
+    },
+    {
+      "year": 2016,
+      "value": 793.6479
+    },
+    {
+      "year": 2017,
+      "value": 473.7612
+    },
+    {
+      "year": 2018,
+      "value": 738.7748
+    },
+    {
+      "year": 2019,
+      "value": 514.8714
+    },
+    {
+      "year": 2020,
+      "value": 979.3309
+    },
+    {
+      "year": 2021,
+      "value": 947.9446
+    },
+    {
+      "year": 2022,
+      "value": 787.3373
+    },
+    {
+      "year": 2023,
+      "value": 542.2411
+    },
+    {
+      "year": 2024,
+      "value": 697.8101
+    },
+    {
+      "year": 2025,
+      "value": 600.1315
+    }
+  ],
+  "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 664.8318530558696,
+    "slope_per_decade": -9.865263109090847,
+    "pct_of_mean_per_decade": -1.4838734130661175,
+    "intercept": 674.8499242404545,
+    "ci_low": -46.55180252941176,
+    "ci_high": 32.351454905000026,
+    "p_value": 0.5950942209475834,
+    "years_to_detect": 68.3,
+    "q_value": 0.9165173731833084,
+    "verdict": "no_trend"
+  },
+  "by_month": [
+    {
+      "month": 1,
+      "slope_per_decade": 0.17536523600000464,
+      "p_value": 0.9697892536299655
+    },
+    {
+      "month": 2,
+      "slope_per_decade": -3.276288312499993,
+      "p_value": 0.8055491304479265
+    },
+    {
+      "month": 3,
+      "slope_per_decade": -5.06653514074074,
+      "p_value": 0.6359224155282395
+    },
+    {
+      "month": 4,
+      "slope_per_decade": -2.562300100000006,
+      "p_value": 0.6359224155282395
+    },
+    {
+      "month": 5,
+      "slope_per_decade": -5.128768715789473,
+      "p_value": 0.27207106306553674
+    },
+    {
+      "month": 6,
+      "slope_per_decade": -3.5210033473684224,
+      "p_value": 0.48352569023396663
+    },
+    {
+      "month": 7,
+      "slope_per_decade": -6.1010086204444445,
+      "p_value": 0.004505056404825014
+    },
+    {
+      "month": 8,
+      "slope_per_decade": -2.28929264875,
+      "p_value": 0.0047798260618665545
+    },
+    {
+      "month": 9,
+      "slope_per_decade": -2.8974941803571426,
+      "p_value": 0.010576116453574258
+    },
+    {
+      "month": 10,
+      "slope_per_decade": 1.703848064516126,
+      "p_value": 0.7909260715569881
+    },
+    {
+      "month": 11,
+      "slope_per_decade": -9.388690714285715,
+      "p_value": 0.41549541482814467
+    },
+    {
+      "month": 12,
+      "slope_per_decade": -4.423939571428589,
+      "p_value": 0.7048912901598181
+    }
+  ]
+}

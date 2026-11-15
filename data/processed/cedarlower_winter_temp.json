@@ -1,0 +1,211 @@
+{
+  "region": "cedarlower",
+  "variable": "winter_temp",
+  "label": "Winter temperature",
+  "units": "deg C",
+  "source": "NLDAS 2",
+  "definition": "Average air temperature from November to March. It decides whether precipitation falls as rain or snow.",
+  "series": [
+    {
+      "year": 1980,
+      "value": 4.1548
+    },
+    {
+      "year": 1981,
+      "value": 5.7329
+    },
+    {
+      "year": 1982,
+      "value": 3.7843
+    },
+    {
+      "year": 1983,
+      "value": 4.4744
+    },
+    {
+      "year": 1984,
+      "value": 4.1465
+    },
+    {
+      "year": 1985,
+      "value": 2.8991
+    },
+    {
+      "year": 1986,
+      "value": 3.7936
+    },
+    {
+      "year": 1987,
+      "value": 5.012
+    },
+    {
+      "year": 1988,
+      "value": 4.0725
+    },
+    {
+      "year": 1989,
+      "value": 2.8738
+    },
+    {
+      "year": 1990,
+      "value": 4.5115
+    },
+    {
+      "year": 1991,
+      "value": 3.6534
+    },
+    {
+      "year": 1992,
+      "value": 5.6756
+    },
+    {
+      "year": 1993,
+      "value": 3.1648
+    },
+    {
+      "year": 1994,
+      "value": 4.0095
+    },
+    {
+      "year": 1995,
+      "value": 3.7353
+    },
+    {
+      "year": 1996,
+      "value": 3.9644
+    },
+    {
+      "year": 1997,
+      "value": 3.6589
+    },
+    {
+      "year": 1998,
+      "value": 5.0863
+    },
+    {
+      "year": 1999,
+      "value": 3.6455
+    },
+    {
+      "year": 2000,
+      "value": 4.661
+    },
+    {
+      "year": 2001,
+      "value": 4.1848
+    },
+    {
+      "year": 2002,
+      "value": 4.1994
+    },
+    {
+      "year": 2003,
+      "value": 5.6429
+    },
+    {
+      "year": 2004,
+      "value": 4.9209
+    },
+    {
+      "year": 2005,
+      "value": 5.6278
+    },
+    {
+      "year": 2006,
+      "value": 4.1792
+    },
+    {
+      "year": 2007,
+      "value": 3.6665
+    },
+    {
+      "year": 2008,
+      "value": 2.65
+    },
+    {
+      "year": 2009,
+      "value": 3.3665
+    },
+    {
+      "year": 2010,
+      "value": 4.1528
+    },
+    {
+      "year": 2011,
+      "value": 2.9723
+    },
+    {
+      "year": 2012,
+      "value": 2.9293
+    },
+    {
+      "year": 2013,
+      "value": 4.2511
+    },
+    {
+      "year": 2014,
+      "value": 3.5709
+    },
+    {
+      "year": 2015,
+      "value": 6.0584
+    },
+    {
+      "year": 2016,
+      "value": 4.7476
+    },
+    {
+      "year": 2017,
+      "value": 1.662
+    },
+    {
+      "year": 2018,
+      "value": 4.1173
+    },
+    {
+      "year": 2019,
+      "value": 4.2169
+    },
+    {
+      "year": 2020,
+      "value": 4.8278
+    },
+    {
+      "year": 2021,
+      "value": 4.1177
+    },
+    {
+      "year": 2022,
+      "value": 4.0376
+    },
+    {
+      "year": 2023,
+      "value": 2.8086
+    },
+    {
+      "year": 2024,
+      "value": 4.5291
+    },
+    {
+      "year": 2025,
+      "value": 3.5243
+    }
+  ],
+  "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 4.079822204347848,
+    "slope_per_decade": -0.051580000000001444,
+    "pct_of_mean_per_decade": -1.264270779864693,
+    "intercept": 4.233532400000021,
+    "ci_low": -0.266238594594591,
+    "ci_high": 0.12393877419355069,
+    "p_value": 0.3974710565635293,
+    "years_to_detect": 62.2,
+    "q_value": 0.9165173731833084,
+    "verdict": "no_trend"
+  },
+  "by_month": []
+}

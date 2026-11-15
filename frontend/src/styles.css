@@ -1694,5 +1694,341 @@ thead th {
   .compare-bar-fill,
   .decade li {
     transition: none;
+/* Trends (reads pipeline output from public/data) */
+.region-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.region-picker button {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.45rem 1rem;
+  border: 2px solid var(--water);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.region-picker button[aria-pressed="true"],
+.tour-start button[aria-pressed="true"] {
+  background: var(--water);
+  color: var(--surface);
+}
+.region-note,
+.trend-loading {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0.75rem 0 1.5rem;
+}
+.trend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 26rem), 1fr));
+  gap: 1.5rem;
+}
+.trend-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1.25rem 1.25rem 1rem;
+  display: grid;
+  gap: 0.6rem;
+  align-content: start;
+}
+.trend-card-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.trend-sentence {
+  margin: 0;
+}
+.trend-def,
+.trend-source {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.verdict {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  border: 2px solid var(--muted);
+  color: var(--muted);
+  white-space: nowrap;
+}
+.verdict.is-real {
+  background: var(--water);
+  border-color: var(--water);
+  color: var(--surface);
+}
+.verdict.is-borderline {
+  border-color: var(--water);
+  color: var(--water);
+}
+.verdict.is-cant-tell {
+  border-style: dashed;
+}
+.trend-chart {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.tc-grid {
+  stroke: var(--line);
+  stroke-dasharray: 2 4;
+}
+.tc-axis {
+  fill: var(--muted);
+  font-size: 12px;
+  font-family: var(--font-body);
+  font-variant-numeric: tabular-nums;
+}
+.tc-line {
+  fill: none;
+  stroke: var(--rock);
+  stroke-width: 1.5;
+}
+.tc-dot {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 1.5;
+}
+.tc-sen {
+  stroke: var(--muted);
+  stroke-width: 2.5;
+  stroke-dasharray: 6 5;
+}
+.tc-sen.is-real,
+.tc-sen.is-borderline {
+  stroke: var(--water);
+  stroke-dasharray: none;
+}
+.trend-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 0.5rem 1rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.trend-stats dt {
+  color: var(--muted);
+}
+.trend-stats dd {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.opposite {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+}
+.opposite-title {
+  font-size: 2rem !important;
+}
+.pair {
+  margin-top: 1rem;
+}
+.pair-intro {
+  color: var(--muted);
+  max-width: var(--measure);
+  margin: 0.4rem 0 1rem;
+}
+.pair-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 1.5rem;
+}
+.methods {
+  margin-top: 3rem;
+  padding: 1.5rem 1.75rem;
+  background: var(--surface);
+  border-left: 4px solid var(--water);
+  max-width: 50rem;
+}
+.methods ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+.methods li {
+  max-width: var(--measure);
+}
+
+/* Explore: question, region buttons and map */
+.explore {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 1.5rem 2.5rem;
+  align-items: start;
+  margin: 1rem 0 2rem;
+}
+.explore-q {
+  font-size: 1.35rem !important;
+  margin: 0.75rem 0 0.6rem !important;
+}
+.zone-map {
+  margin: 0;
+}
+.zone-map svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+.zm-bg {
+  fill: var(--sky);
+}
+.zm-box rect {
+  fill: var(--water);
+  fill-opacity: 0.12;
+  stroke: var(--water);
+  stroke-width: 1.5;
+}
+.zm-box[role="button"] {
+  cursor: pointer;
+}
+.zm-box[role="button"]:hover rect {
+  fill-opacity: 0.25;
+}
+.zm-box.is-active rect {
+  fill-opacity: 0.4;
+  stroke-width: 3;
+}
+.zm-box:focus-visible {
+  outline: none;
+}
+.zm-box:focus-visible rect {
+  stroke: var(--focus);
+  stroke-width: 4;
+}
+.zm-box text {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  fill: var(--ink);
+}
+.zm-lake circle {
+  fill: var(--water);
+}
+.zm-snotel path {
+  fill: var(--snow);
+  stroke: var(--ink);
+  stroke-width: 1.2;
+}
+.zm-gauge rect {
+  fill: var(--ink);
+}
+.zone-map figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.zm-key {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-right: 0.3rem;
+  vertical-align: -1px;
+}
+.zm-key-lake {
+  background: var(--water);
+  border-radius: 50%;
+}
+.zm-key-svg {
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-right: 0.3rem;
+  vertical-align: -1px;
+}
+.zm-key-gauge {
+  background: var(--ink);
+}
+
+/* Guided tours */
+.tour-start {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.tour-start span {
+  color: var(--muted);
+}
+.tour-start button {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.45rem 1rem;
+  border: 2px dashed var(--water);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.tour {
+  position: fixed;
+  right: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: 20;
+  width: min(30rem, calc(100vw - 2rem));
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--water);
+  border-radius: 6px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 8px 30px rgb(0 0 0 / 0.2);
+}
+.tour h3 {
+  font-size: 1.4rem;
+}
+.tour p {
+  margin: 0.5rem 0 0.9rem;
+}
+.tour .tour-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.tour-close {
+  margin-left: auto;
+  border-color: var(--line) !important;
+}
+.trend-card.is-focus {
+  outline: 3px solid var(--water);
+  outline-offset: 3px;
+}
+
+/* Validation */
+.validation {
+  margin-top: 3rem;
+  display: grid;
+  gap: 1rem;
+}
+.validation .trend-grid {
+  grid-template-columns: 1fr;
+  max-width: 60rem;
+}
+.val-charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
+  gap: 0.75rem;
+}
+.val-label {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .explore {
+    grid-template-columns: 1fr;
   }
 }

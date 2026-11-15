@@ -1,0 +1,211 @@
+{
+  "region": "cedarupper",
+  "variable": "rain_fraction",
+  "label": "Rain fraction",
+  "units": "share",
+  "source": "NLDAS 2",
+  "definition": "The share of winter precipitation that falls as rain instead of snow. Higher means less water saved in the mountains.",
+  "series": [
+    {
+      "year": 1980,
+      "value": 0.7442
+    },
+    {
+      "year": 1981,
+      "value": 0.9147
+    },
+    {
+      "year": 1982,
+      "value": 0.7667
+    },
+    {
+      "year": 1983,
+      "value": 0.8963
+    },
+    {
+      "year": 1984,
+      "value": 0.8736
+    },
+    {
+      "year": 1985,
+      "value": 0.5921
+    },
+    {
+      "year": 1986,
+      "value": 0.8007
+    },
+    {
+      "year": 1987,
+      "value": 0.8751
+    },
+    {
+      "year": 1988,
+      "value": 0.7918
+    },
+    {
+      "year": 1989,
+      "value": 0.713
+    },
+    {
+      "year": 1990,
+      "value": 0.7666
+    },
+    {
+      "year": 1991,
+      "value": 0.7971
+    },
+    {
+      "year": 1992,
+      "value": 0.908
+    },
+    {
+      "year": 1993,
+      "value": 0.7127
+    },
+    {
+      "year": 1994,
+      "value": 0.7913
+    },
+    {
+      "year": 1995,
+      "value": 0.7692
+    },
+    {
+      "year": 1996,
+      "value": 0.8123
+    },
+    {
+      "year": 1997,
+      "value": 0.7021
+    },
+    {
+      "year": 1998,
+      "value": 0.7908
+    },
+    {
+      "year": 1999,
+      "value": 0.7835
+    },
+    {
+      "year": 2000,
+      "value": 0.8097
+    },
+    {
+      "year": 2001,
+      "value": 0.7133
+    },
+    {
+      "year": 2002,
+      "value": 0.7562
+    },
+    {
+      "year": 2003,
+      "value": 0.8896
+    },
+    {
+      "year": 2004,
+      "value": 0.7925
+    },
+    {
+      "year": 2005,
+      "value": 0.869
+    },
+    {
+      "year": 2006,
+      "value": 0.8434
+    },
+    {
+      "year": 2007,
+      "value": 0.8273
+    },
+    {
+      "year": 2008,
+      "value": 0.4301
+    },
+    {
+      "year": 2009,
+      "value": 0.69
+    },
+    {
+      "year": 2010,
+      "value": 0.8817
+    },
+    {
+      "year": 2011,
+      "value": 0.7741
+    },
+    {
+      "year": 2012,
+      "value": 0.7226
+    },
+    {
+      "year": 2013,
+      "value": 0.7346
+    },
+    {
+      "year": 2014,
+      "value": 0.8801
+    },
+    {
+      "year": 2015,
+      "value": 0.9579
+    },
+    {
+      "year": 2016,
+      "value": 0.8418
+    },
+    {
+      "year": 2017,
+      "value": 0.679
+    },
+    {
+      "year": 2018,
+      "value": 0.8178
+    },
+    {
+      "year": 2019,
+      "value": 0.8224
+    },
+    {
+      "year": 2020,
+      "value": 0.8318
+    },
+    {
+      "year": 2021,
+      "value": 0.7707
+    },
+    {
+      "year": 2022,
+      "value": 0.7579
+    },
+    {
+      "year": 2023,
+      "value": 0.6571
+    },
+    {
+      "year": 2024,
+      "value": 0.8355
+    },
+    {
+      "year": 2025,
+      "value": 0.8408
+    }
+  ],
+  "trend": {
+    "test": "Mann-Kendall (Hamed-Rao modified) + Sen's slope",
+    "n_years": 46,
+    "first_year": 1980,
+    "last_year": 2025,
+    "mean": 0.787578863782898,
+    "slope_per_decade": -0.001050668222849,
+    "pct_of_mean_per_decade": -0.13340482727055822,
+    "intercept": 0.7945344643968653,
+    "ci_low": -0.01852283436066382,
+    "ci_high": 0.018064226147611606,
+    "p_value": 0.9126817788425114,
+    "years_to_detect": 281.5,
+    "q_value": 0.9636343736208991,
+    "verdict": "no_trend"
+  },
+  "by_month": []
+}
