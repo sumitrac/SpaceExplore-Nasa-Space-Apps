@@ -1,4 +1,7 @@
 .venv/
 .venv/
+node_modules/
+frontend/dist/
+frontend/public/data/
 check/
 data/raw/
