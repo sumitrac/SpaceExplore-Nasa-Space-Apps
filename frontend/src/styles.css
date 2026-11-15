@@ -21,7 +21,8 @@
   --cloud: #ffffff;
   --sun: #f2b544;
 
-  --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --font-display:
+    "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
 
   --measure: 62ch;
@@ -679,7 +680,10 @@ input[type="range"] {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1.2rem;
-  transition: background 250ms, border-color 250ms, color 250ms;
+  transition:
+    background 250ms,
+    border-color 250ms,
+    color 250ms;
 }
 .path-step.is-reached .path-num {
   border-color: var(--water);
@@ -2250,5 +2254,106 @@ thead th {
 @media (prefers-reduced-motion: reduce) {
   .m3d-hint {
     animation: none;
+  }
+}
+
+.discovery-panel {
+  margin: 2rem 0;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  border: 1px solid rgba(74, 163, 155, 0.35);
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(18, 75, 77, 0.12),
+    rgba(18, 75, 77, 0.02)
+  );
+}
+
+.discovery-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #3c9991;
+  margin-bottom: 0.8rem;
+}
+
+.discovery-panel h3 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.2;
+  margin: 0 0 0.5rem;
+}
+
+.discovery-location {
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.discovery-explanation {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 1.5rem 0;
+}
+
+.discovery-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.discovery-metrics > div {
+  padding: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 12px;
+  min-width: 0;
+}
+
+.discovery-metrics span {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+
+.discovery-metrics strong {
+  display: block;
+  font-size: 1.3rem;
+  overflow-wrap: anywhere;
+}
+
+.discovery-metrics small {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.discovery-metrics .discovery-ci {
+  font-size: 1rem;
+}
+
+.discovery-evidence {
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+  padding-top: 1rem;
+}
+
+.discovery-evidence h4 {
+  margin-bottom: 0.75rem;
+}
+
+.discovery-evidence p {
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+.discovery-caveat {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+  .discovery-metrics {
+    grid-template-columns: 1fr;
   }
 }
