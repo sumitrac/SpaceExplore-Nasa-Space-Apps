@@ -104,7 +104,7 @@ def by_month(df, var="runoff"):
         s = d[d.date.dt.month == m].groupby("wy")["value"].mean()
         if len(s) >= 10:
             r = mk.original_test(s.values)
-            rows.append({"month": m, "slope_per_decade": float(r.slope * 10), "p_value": float(r.p)})
+            rows.append({"month": m, "slope_per_decade": float(r.slope * 10), "p_value": float(max(r.p, mk.original_test(y).p))})
     return rows
 
 
@@ -142,11 +142,13 @@ def analyze(s):
             "mean": mean, "slope_per_decade": float(r.slope * 10),
             "pct_of_mean_per_decade": float(r.slope * 10 / mean * 100) if mean else None,
             "intercept": float(r.intercept),  # Sen line value at first_year: intercept + slope * (year - first_year)
-            "ci_low": float(lo * 10), "ci_high": float(hi * 10), "p_value": float(r.p), "years_to_detect": more}
+            "ci_low": float(lo * 10), "ci_high": float(hi * 10), "p_value": float(max(r.p, mk.original_test(y).p)), "years_to_detect": more}
 
 
-def verdict(q, more):
+def verdict(q, more, lo=None, hi=None):
     if q < 0.05:
+        if lo is not None and lo <= 0 <= hi:  # significant but slope range crosses zero
+            return "borderline"
         return "real_trend"
     if more is not None and more == 0:  # should already be detectable, but q says no: on the edge
         return "borderline"
@@ -172,7 +174,7 @@ def run(df):
     index = []
     for (region, var, s, trend, months), q in zip(results, qs):
         trend["q_value"] = float(q)
-        trend["verdict"] = verdict(q, trend["years_to_detect"])
+        trend["verdict"] = verdict(q, trend["years_to_detect"], trend["ci_low"], trend["ci_high"])
         doc = {"region": region, "variable": var, **CATALOG[var],
                "series": [{"year": int(y), "value": round(float(v), 4)} for y, v in s.items()],
                "trend": trend, "by_month": months}

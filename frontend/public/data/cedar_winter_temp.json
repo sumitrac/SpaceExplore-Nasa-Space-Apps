@@ -1,0 +1,200 @@
+{
+  "region": "cedar",
+  "variable": "winter_temp",
+  "label": "Winter temperature",
+  "units": "deg C",
+  "source": "NLDAS 2",
+  "definition": "Average air temperature from November to March. It decides whether precipitation falls as rain or snow.",
+  "series": [
+    {
+      "year": 1980,
+      "value": 1.3379
+    },
+    {
+      "year": 1981,
+      "value": 2.8468
+    },
+    {
+      "year": 1982,
+      "value": 3.066
+    },
+    {
+      "year": 1983,
+      "value": 2.1281
+    },
+    {
+      "year": 1984,
+      "value": 1.6022
+    },
+    {
+      "year": 1985,
+      "value": 2.1937
+    },
+    {
+      "year": 1986,
+      "value": 1.7718
+    },
+    {
+      "year": 1987,
+      "value": 2.1684
+    },
+    {
+      "year": 1988,
+      "value": 2.5615
+    },
+    {
+      "year": 1989,
+      "value": 1.7895
+    },
+    {
+      "year": 1990,
+      "value": 2.3755
+    },
+    {
+      "year": 1991,
+      "value": 2.4412
+    },
+    {
+      "year": 1992,
+      "value": 2.3114
+    },
+    {
+      "year": 1993,
+      "value": 1.8684
+    },
+    {
+      "year": 1994,
+      "value": 2.2959
+    },
+    {
+      "year": 1995,
+      "value": 2.5342
+    },
+    {
+      "year": 1996,
+      "value": 1.5983
+    },
+    {
+      "year": 1997,
+      "value": 2.2682
+    },
+    {
+      "year": 1998,
+      "value": 2.4709
+    },
+    {
+      "year": 1999,
+      "value": 3.0293
+    },
+    {
+      "year": 2000,
+      "value": 2.605
+    },
+    {
+      "year": 2001,
+      "value": 2.3719
+    },
+    {
+      "year": 2002,
+      "value": 2.3681
+    },
+    {
+      "year": 2003,
+      "value": 2.4691
+    },
+    {
+      "year": 2004,
+      "value": 2.6215
+    },
+    {
+      "year": 2005,
+      "value": 2.3897
+    },
+    {
+      "year": 2006,
+      "value": 2.6996
+    },
+    {
+      "year": 2007,
+      "value": 2.889
+    },
+    {
+      "year": 2008,
+      "value": 2.1998
+    },
+    {
+      "year": 2009,
+      "value": 2.5767
+    },
+    {
+      "year": 2010,
+      "value": 3.7462
+    },
+    {
+      "year": 2011,
+      "value": 2.7746
+    },
+    {
+      "year": 2012,
+      "value": 2.7355
+    },
+    {
+      "year": 2013,
+      "value": 2.5834
+    },
+    {
+      "year": 2014,
+      "value": 2.5445
+    },
+    {
+      "year": 2015,
+      "value": 3.041
+    },
+    {
+      "year": 2016,
+      "value": 3.5486
+    },
+    {
+      "year": 2017,
+      "value": 2.548
+    },
+    {
+      "year": 2018,
+      "value": 3.4239
+    },
+    {
+      "year": 2019,
+      "value": 3.1063
+    },
+    {
+      "year": 2020,
+      "value": 3.9638
+    },
+    {
+      "year": 2021,
+      "value": 2.7087
+    },
+    {
+      "year": 2022,
+      "value": 3.169
+    },
+    {
+      "year": 2023,
+      "value": 3.1108
+    },
+    {
+      "year": 2024,
+      "value": 2.9576
+    }
+  ],
+  "trend": {
+    "slope_per_decade": 0.26372055427492963,
+    "ci_low": 0.17121468830717484,
+    "ci_high": 0.36737948574764534,
+    "p_value": 2.498001805406602e-13,
+    "years_to_detect": 0.0,
+    "q_value": 1.7486012637846216e-12,
+    "verdict": "real_trend"
+  },
+  "by_month": []
+}
