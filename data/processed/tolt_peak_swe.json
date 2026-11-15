@@ -204,7 +204,7 @@
     "ci_high": 19.21419647368421,
     "p_value": 0.8202405130792938,
     "years_to_detect": 172.7,
-    "q_value": 0.9636343736208991,
+    "q_value": 0.9764768012848736,
     "verdict": "no_trend"
   },
   "by_month": []

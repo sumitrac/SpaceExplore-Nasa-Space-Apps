@@ -140,32 +140,32 @@
     "q_value": 0.9165173731833084
   },
   {
+    "region": "tolt",
+    "variable": "peak_swe",
+    "label": "Peak snowpack",
+    "verdict": "no_trend",
+    "q_value": 0.9764768012848736
+  },
+  {
     "region": "cedar",
     "variable": "winter_temp",
     "label": "Winter temperature",
     "verdict": "no_trend",
-    "q_value": 0.9636343736208991
+    "q_value": 0.9787727118111073
   },
   {
     "region": "cedarupper",
     "variable": "rain_fraction",
     "label": "Rain fraction",
     "verdict": "no_trend",
-    "q_value": 0.9636343736208991
-  },
-  {
-    "region": "tolt",
-    "variable": "peak_swe",
-    "label": "Peak snowpack",
-    "verdict": "no_trend",
-    "q_value": 0.9636343736208991
+    "q_value": 0.9787727118111073
   },
   {
     "region": "tolt",
     "variable": "total_precip",
     "label": "Total precipitation",
     "verdict": "no_trend",
-    "q_value": 0.9636343736208991
+    "q_value": 0.9787727118111073
   },
   {
     "region": "cedar",

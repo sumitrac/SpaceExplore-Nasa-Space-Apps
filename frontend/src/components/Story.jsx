@@ -135,6 +135,8 @@ export default function Story() {
     },
     {
       title: "Is it melting earlier?",
+      // Melt-out needs daily snow data; hide this chapter when the watershed file has none.
+      skip: s.melt.length < 8,
       body: (
         <>
           <p>
@@ -184,7 +186,7 @@ export default function Story() {
       chart: <StackedYearBars rows={s.rainSnow} ariaLabel="Stacked bars of winter rain and snow for each year." unitLabel="mm" />,
     },
     {
-      title: "Why? Winters are warming",
+      title: "Are winters warming?",
       body: (
         <>
           <p>
@@ -217,8 +219,8 @@ export default function Story() {
           <p>
             Typical {s.flowVar === "streamflow" ? "river flow" : "runoff"} through the year, comparing
             {" "}{s.earlyYears[0]}–{s.earlyYears[s.earlyYears.length - 1]} with{" "}
-            {s.recentYears[0]}–{s.recentYears[s.recentYears.length - 1]}. With less snow, more water
-            leaves in winter and less is left for late summer.
+            {s.recentYears[0]}–{s.recentYears[s.recentYears.length - 1]}. If less water were stored as
+            snow, more would leave in winter and less would be left for late summer.
           </p>
           <p className="finding">
             Late-summer {s.flowVar === "streamflow" ? "flow" : "runoff"} is{" "}
@@ -242,7 +244,7 @@ export default function Story() {
         />
       ),
     },
-  ];
+  ].filter((c) => !c.skip);
 
   const current = chapters[Math.min(active, chapters.length - 1)];
 
@@ -250,7 +252,7 @@ export default function Story() {
     <section id="story" className="section story-section" aria-labelledby="story-title">
       <h2 id="story-title">What’s changing in the {data.name} watershed</h2>
       <p className="section-intro">
-        Five questions, answered with {s.first}–{s.last} data. Scroll through them, and point at any
+        {chapters.length} questions, answered with {s.first}–{s.last} data. Scroll through them, and point at any
         year to see its numbers.
       </p>
 
@@ -284,8 +286,8 @@ export default function Story() {
           >
             <h3>So what does it mean downstream?</h3>
             <p>
-              Less snow and earlier melt mean less water arriving when Seattle needs it most. See what
-              that could mean for river flow and your water bill.
+              Late summer is when Seattle needs water most. See how late-summer flow has looked after
+              low-snow winters, and what that could mean for your water bill.
             </p>
             <a className="button" href="#impact">
               See the downstream impact
