@@ -1694,6 +1694,9 @@ thead th {
   .compare-bar-fill,
   .decade li {
     transition: none;
+  }
+}
+
 /* Trends (reads pipeline output from public/data) */
 .region-picker {
   display: flex;
@@ -1942,7 +1945,7 @@ thead th {
   background: var(--water);
   border-radius: 50%;
 }
-.zm-key-svg {
+.zone-map .zm-key-svg {
   width: 0.85rem;
   height: 0.85rem;
   margin-right: 0.3rem;
@@ -2030,5 +2033,156 @@ thead th {
 @media (max-width: 720px) {
   .explore {
     grid-template-columns: 1fr;
+  }
+}
+
+/* 3D data mountain */
+.mountain3d h2 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+.mountain3d .section-intro,
+.mountain3d .footnote {
+  max-width: none;
+}
+.stripe-tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.3rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+.stripe-tabs button {
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  transition: background 250ms, color 250ms;
+}
+.stripe-tabs button[aria-selected="true"] {
+  background: var(--water);
+  color: var(--surface);
+}
+.m3d-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 1rem 1.5rem;
+  margin: 1.5rem 0 1rem;
+}
+.m3d-year {
+  min-width: 10rem;
+}
+.m3d-smooth legend {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+.m3d-buttons {
+  display: flex;
+  gap: 0.4rem;
+  margin-left: auto;
+}
+.chip-button {
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  min-width: 2.4rem;
+  padding: 0.4rem 0.8rem;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 200ms;
+}
+.chip-button:hover {
+  border-color: var(--water);
+}
+.m3d-stage {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background:
+    radial-gradient(50rem 22rem at 50% 0%, color-mix(in srgb, var(--water) 14%, transparent), transparent 70%),
+    linear-gradient(180deg, var(--surface), var(--bg));
+  border: 1px solid var(--line);
+}
+.m3d-stage canvas {
+  display: block;
+  cursor: grab;
+  touch-action: none;
+}
+.m3d-stage canvas:active {
+  cursor: grabbing;
+}
+.m3d-stage canvas:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: -3px;
+}
+.m3d-tip {
+  pointer-events: none;
+}
+.m3d-tip-note {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.m3d-legend {
+  position: absolute;
+  left: 1rem;
+  top: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.legend-ramp {
+  width: 9rem;
+  height: 0.6rem;
+  border-radius: 999px;
+}
+.m3d-hint {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.6rem;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  animation: hint-pulse 2.2s ease-in-out infinite;
+}
+@keyframes hint-pulse {
+  50% {
+    opacity: 0.4;
+  }
+}
+@media (max-width: 720px) {
+  .m3d-buttons {
+    margin-left: 0;
+  }
+  .legend-ramp {
+    width: 4rem;
+  }
+  .stripe-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .stripe-tabs button {
+    white-space: nowrap;
+    flex: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .m3d-hint {
+    animation: none;
   }
 }

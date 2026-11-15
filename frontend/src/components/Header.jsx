@@ -2,9 +2,11 @@ import { useEffect, useRef } from "react";
 import { useAppState, WATERSHEDS } from "../state/AppState.jsx";
 
 const LINKS = [
+  ["#mountain3d", "3D"],
   ["#glance", "This year"],
   ["#story", "What’s changing"],
   ["#explore", "Explore"],
+  ["#trends", "Trends"],
   ["#impact", "Downstream"],
 ];
 
