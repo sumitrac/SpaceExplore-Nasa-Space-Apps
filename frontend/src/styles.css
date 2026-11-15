@@ -17,6 +17,9 @@
   --focus: #2569a0;
   --snowbar: #a9c9dc;
   --snowbar-ink: #3f6e8c;
+  --sky-top: #b9d3e3;
+  --cloud: #ffffff;
+  --sun: #f2b544;
 
   --font-display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
   --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
@@ -43,6 +46,9 @@
     --focus: #6cb6de;
     --snowbar: #557d96;
     --snowbar-ink: #a9cfe4;
+    --sky-top: #0d1a23;
+    --cloud: #3a4f5e;
+    --sun: #e3ad55;
     color-scheme: dark;
   }
 }
@@ -213,10 +219,12 @@ a {
   padding: 2rem 1.5rem 3rem;
 }
 .hero-copy {
-  max-width: 48rem;
+  max-width: none;
 }
 .hero h1 {
-  font-size: clamp(3rem, 9vw, 6.5rem);
+  /* Sized to the viewport so the headline always fits on one line. */
+  font-size: clamp(1.5rem, calc((100vw - 3rem) / 12.5), 5.5rem);
+  white-space: nowrap;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 0.92;
@@ -234,8 +242,104 @@ a {
   height: auto;
   border-radius: 6px;
 }
-.scene-sky {
-  fill: var(--sky);
+.sky-top {
+  stop-color: var(--sky-top);
+}
+.sky-bottom {
+  stop-color: var(--sky);
+}
+.warm-stop {
+  stop-color: var(--sun);
+}
+.sun-stop {
+  stop-color: var(--sun);
+}
+.scene-warm,
+.scene-sun {
+  transition: opacity 900ms ease;
+}
+.scene-sun-disc {
+  fill: var(--sun);
+}
+.scene-sun-glow {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: sun-pulse 5s ease-in-out infinite;
+}
+@keyframes sun-pulse {
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+.scene-cloud {
+  fill: var(--cloud);
+  opacity: 0.92;
+}
+.scene-cloud-drift {
+  animation: drift linear infinite;
+}
+@keyframes drift {
+  0% {
+    transform: translateX(-140px);
+  }
+  50% {
+    transform: translateX(140px);
+  }
+  100% {
+    transform: translateX(-140px);
+  }
+}
+
+.scene-tree-body {
+  fill: var(--fir);
+}
+.scene-tree-cap {
+  fill: var(--snow);
+  opacity: 0;
+  transition: opacity 700ms ease;
+}
+.scene-tree-cap.is-snowy {
+  opacity: 1;
+}
+
+.scene-runoff {
+  fill: none;
+  stroke: var(--water);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 10 14;
+  animation: flow 2.4s linear infinite;
+  transition: opacity 700ms ease;
+}
+.scene-river-flow {
+  fill: none;
+  stroke: var(--snow);
+  stroke-opacity: 0.7;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-dasharray: 5 13;
+  animation: flow 1.6s linear infinite;
+}
+@keyframes flow {
+  to {
+    stroke-dashoffset: 72;
+  }
+}
+.scene-lake-shimmer line {
+  stroke: var(--snow);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  animation: shimmer 2.6s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 .scene-grid line {
   stroke: var(--line);
@@ -259,6 +363,13 @@ a {
 }
 .scene-snow {
   stroke: var(--snow);
+  transition: stroke-width 700ms ease;
+  animation: settle 1.4s ease-out 0.5s both;
+}
+@keyframes settle {
+  from {
+    opacity: 0;
+  }
 }
 .scene-snowmask {
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.2, 1);
@@ -266,14 +377,24 @@ a {
 .scene-ridge {
   fill: none;
   stroke: var(--ink);
-  stroke-opacity: 0.25;
+  stroke-opacity: 0.3;
   stroke-width: 1.5;
+  stroke-dasharray: 1;
+  animation: draw-ridge 1.8s ease-out both;
+}
+@keyframes draw-ridge {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 .scene-river {
   fill: none;
   stroke: var(--water);
-  stroke-width: 4;
   stroke-linecap: round;
+  transition: stroke-width 700ms ease;
 }
 .scene-lake {
   fill: var(--water);
@@ -306,6 +427,7 @@ a {
   opacity: 0;
 }
 .snowflake {
+  animation-name: snowfall;
   fill: var(--snow);
   stroke: var(--muted);
   stroke-width: 1;
@@ -314,6 +436,54 @@ a {
   stroke: var(--water);
   stroke-width: 2;
   stroke-linecap: round;
+}
+.splash {
+  fill: none;
+  stroke: var(--water);
+  stroke-width: 1.2;
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: splash linear infinite;
+}
+@keyframes splash {
+  0%,
+  86% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+@keyframes snowfall {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.95;
+  }
+  25% {
+    transform: translate(6px, calc(var(--fall) * 0.25));
+  }
+  50% {
+    transform: translate(-6px, calc(var(--fall) * 0.5));
+  }
+  75% {
+    transform: translate(6px, calc(var(--fall) * 0.75));
+  }
+  90% {
+    opacity: 0.95;
+  }
+  100% {
+    transform: translate(0, var(--fall));
+    opacity: 0;
+  }
 }
 @keyframes fall {
   0% {
@@ -332,12 +502,63 @@ a {
   }
 }
 
+.hero-copy > * {
+  animation: rise 800ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.hero-copy > :nth-child(2) {
+  animation-delay: 150ms;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
 .hero-controls {
   display: grid;
   grid-template-columns: minmax(16rem, 1fr) auto;
-  gap: 1.5rem 3rem;
+  grid-template-areas:
+    "slider readouts"
+    "play readouts";
+  gap: 0.75rem 3rem;
   align-items: end;
   margin-top: 1.5rem;
+}
+.hero-controls .slider {
+  grid-area: slider;
+}
+.hero-controls .readouts {
+  grid-area: readouts;
+}
+.play-btn {
+  grid-area: play;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  color: var(--water);
+  background: var(--surface);
+  border: 1.5px solid var(--water);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.play-btn:hover,
+.play-btn[aria-pressed="true"] {
+  color: var(--surface);
+  background: var(--water);
+}
+.readouts dd {
+  animation: tick 450ms ease-out;
+}
+@keyframes tick {
+  from {
+    opacity: 0.3;
+    transform: translateY(-6px);
+  }
 }
 
 .slider {
@@ -503,36 +724,6 @@ input[type="range"] {
   cursor: default;
 }
 
-/* Timeline */
-.timeline {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  max-width: 50rem;
-}
-.timeline li {
-  display: grid;
-  grid-template-columns: 10rem 1fr;
-  gap: 1.5rem;
-  padding: 1.25rem 0;
-  border-bottom: 1px solid var(--line);
-}
-.timeline time {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: var(--water);
-}
-.timeline p {
-  margin: 0.4rem 0 0;
-  max-width: var(--measure);
-}
-.callout {
-  max-width: var(--measure);
-  margin: 2rem 0 0;
-  font-size: 1.15rem;
-}
-
 /* Snow bank */
 .bank {
   max-width: 44rem;
@@ -577,27 +768,6 @@ input[type="range"] {
   transition: height 300ms ease-out;
 }
 
-/* Data */
-.data-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  margin-top: 2rem;
-}
-.plain-list {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0 0;
-  display: grid;
-  gap: 0.9rem;
-}
-.plain-list li {
-  display: grid;
-  gap: 0.15rem;
-}
-.plain-list span {
-  color: var(--muted);
-}
 
 .site-footer {
   max-width: var(--page);
@@ -616,6 +786,10 @@ input[type="range"] {
 @media (max-width: 720px) {
   .hero-controls {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "slider"
+      "play"
+      "readouts";
   }
   .readouts {
     gap: 1.5rem;
@@ -646,13 +820,6 @@ input[type="range"] {
   .path-name {
     max-width: none;
   }
-  .timeline li {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
-  }
-  .data-grid {
-    grid-template-columns: 1fr;
-  }
   .path-panel {
     padding: 1.25rem;
   }
@@ -667,6 +834,21 @@ input[type="range"] {
     animation: none;
     opacity: 0.8;
     transform: translateY(calc(var(--fall) * 0.55));
+  }
+  .splash,
+  .scene-lake-shimmer line {
+    animation: none;
+    opacity: 0;
+  }
+  .scene-cloud-drift,
+  .scene-sun-glow,
+  .scene-runoff,
+  .scene-river-flow,
+  .scene-ridge,
+  .scene-snow,
+  .hero-copy > *,
+  .readouts dd {
+    animation: none;
   }
   .scene-snowmask,
   .scene-snowline,
@@ -1427,12 +1609,6 @@ thead th {
 .household-result {
   margin: 0;
   font-size: 1.1rem;
-}
-.sources-title {
-  margin-top: 2.5rem;
-}
-.sources {
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 }
 
 @media (max-width: 900px) {

@@ -4,11 +4,9 @@ import Hero from "./components/Hero.jsx";
 import Glance from "./components/Glance.jsx";
 import WaterPath from "./components/WaterPath.jsx";
 import Story from "./components/Story.jsx";
-import WinterTimeline from "./components/WinterTimeline.jsx";
 import Explore from "./components/Explore.jsx";
 import Impact from "./components/Impact.jsx";
 import SnowBank from "./components/SnowBank.jsx";
-import DataSources from "./components/DataSources.jsx";
 
 export default function App() {
   return (
@@ -22,11 +20,9 @@ export default function App() {
         <Glance />
         <WaterPath />
         <Story />
-        <WinterTimeline />
         <Explore />
         <Impact />
         <SnowBank />
-        <DataSources />
       </main>
       <footer className="site-footer">
         <p>

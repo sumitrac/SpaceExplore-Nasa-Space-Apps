@@ -6,7 +6,6 @@ const LINKS = [
   ["#story", "What’s changing"],
   ["#explore", "Explore"],
   ["#impact", "Downstream"],
-  ["#data", "Data"],
 ];
 
 export default function Header() {
