@@ -17,6 +17,7 @@ import {
 import YearChart from "./charts/YearChart.jsx";
 import MonthChart from "./charts/MonthChart.jsx";
 import SignificanceBadge from "./SignificanceBadge.jsx";
+import InvestigateYourData from "./InvestigateYourData.jsx";
 
 const MELT_TICKS = [60, 91, 121, 152, 182, 213];
 
@@ -299,6 +300,8 @@ export default function Explore() {
           </div>
         </div>
       </div>
+
+      <InvestigateYourData />
 
       {canCompare && (
         <div className="compare" id="compare">

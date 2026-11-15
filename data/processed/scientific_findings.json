@@ -1,0 +1,305 @@
+{
+  "cedarupper": {
+    "trends": {
+      "peak_swe": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -0.38848181818181743,
+        "slope_ci_95": [
+          -2.7551068181818184,
+          2.1834181818181806
+        ],
+        "kendall_tau": -0.03768115942028986,
+        "p_value": 0.7119354871322096,
+        "significant": false,
+        "direction": "decreasing"
+      },
+      "winter_runoff": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -1.2053285714285786,
+        "slope_ci_95": [
+          -5.991882352941176,
+          2.9925125
+        ],
+        "kendall_tau": -0.06666666666666667,
+        "p_value": 0.5135612972130861,
+        "significant": false,
+        "direction": "decreasing"
+      },
+      "summer_runoff": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -1.1489621621621622,
+        "slope_ci_95": [
+          -2.025519230769231,
+          -0.359163888888889
+        ],
+        "kendall_tau": -0.29855072463768123,
+        "p_value": 0.003437275766684885,
+        "significant": true,
+        "direction": "decreasing"
+      },
+      "winter_temp": {
+        "units": "deg C",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": 0.004096428571428572,
+        "slope_ci_95": [
+          -0.018199999999999997,
+          0.020058333333333334
+        ],
+        "kendall_tau": 0.051207729468599035,
+        "p_value": 0.6157997388896345,
+        "significant": false,
+        "direction": "increasing"
+      },
+      "total_precip": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -3.9776090909090893,
+        "slope_ci_95": [
+          -11.034076666666662,
+          4.229984210526314
+        ],
+        "kendall_tau": -0.10144927536231885,
+        "p_value": 0.3201469546834197,
+        "significant": false,
+        "direction": "decreasing"
+      },
+      "rain_fraction": {
+        "units": "share",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -0.00011111111111111121,
+        "slope_ci_95": [
+          -0.0018571428571428534,
+          0.0018031250000000026
+        ],
+        "kendall_tau": -0.008695652173913045,
+        "p_value": 0.9320917644690463,
+        "significant": false,
+        "direction": "decreasing"
+      }
+    },
+    "snow_runoff_relationship": {
+      "n_years": 46,
+      "correlation": -0.031653153825753025,
+      "p_value": 0.834583914932349,
+      "significant": false,
+      "note": "Same-year association; correlation does not establish causation."
+    }
+  },
+  "cedarlower": {
+    "trends": {
+      "peak_swe": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -0.012443750000000003,
+        "slope_ci_95": [
+          -0.07032692307692306,
+          0.04064736842105263
+        ],
+        "kendall_tau": -0.051207729468599035,
+        "p_value": 0.6157997388896345,
+        "significant": false,
+        "direction": "decreasing"
+      },
+      "winter_runoff": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -0.986527272727275,
+        "slope_ci_95": [
+          -4.655179411764704,
+          3.156079999999999
+        ],
+        "kendall_tau": -0.04734299516908213,
+        "p_value": 0.6426911357100258,
+        "significant": false,
+        "direction": "decreasing"
+      },
+      "summer_runoff": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -1.227951851851852,
+        "slope_ci_95": [
+          -2.1283821428571437,
+          -0.55609375
+        ],
+        "kendall_tau": -0.32173913043478264,
+        "p_value": 0.0016166019138036546,
+        "significant": true,
+        "direction": "decreasing"
+      },
+      "winter_temp": {
+        "units": "deg C",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -0.005158333333333302,
+        "slope_ci_95": [
+          -0.026621621621621617,
+          0.011691891891891888
+        ],
+        "kendall_tau": -0.06666666666666667,
+        "p_value": 0.5135612972130861,
+        "significant": false,
+        "direction": "decreasing"
+      },
+      "total_precip": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -4.033231428571435,
+        "slope_ci_95": [
+          -11.29102500000001,
+          2.6997647058823637
+        ],
+        "kendall_tau": -0.13429951690821257,
+        "p_value": 0.18814950810376052,
+        "significant": false,
+        "direction": "decreasing"
+      },
+      "rain_fraction": {
+        "units": "share",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": 0.00011250000000000149,
+        "slope_ci_95": [
+          -0.0002500000000000042,
+          0.0005562500000000012
+        ],
+        "kendall_tau": 0.06186564279875079,
+        "p_value": 0.5445221382754664,
+        "significant": false,
+        "direction": "increasing"
+      }
+    },
+    "snow_runoff_relationship": {
+      "n_years": 46,
+      "correlation": -0.02331373245610563,
+      "p_value": 0.877774810956649,
+      "significant": false,
+      "note": "Same-year association; correlation does not establish causation."
+    }
+  },
+  "tolt": {
+    "trends": {
+      "peak_swe": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": 0.20576666666666674,
+        "slope_ci_95": [
+          -1.2545166666666674,
+          1.9016137931034487
+        ],
+        "kendall_tau": 0.02415458937198068,
+        "p_value": 0.8128865904398033,
+        "significant": false,
+        "direction": "increasing"
+      },
+      "winter_runoff": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -1.5064450000000023,
+        "slope_ci_95": [
+          -6.5632627906976735,
+          2.6215034482758615
+        ],
+        "kendall_tau": -0.08599033816425121,
+        "p_value": 0.39941554109433886,
+        "significant": false,
+        "direction": "decreasing"
+      },
+      "summer_runoff": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -1.4900235294117645,
+        "slope_ci_95": [
+          -2.8672,
+          -0.4946531249999999
+        ],
+        "kendall_tau": -0.27729468599033824,
+        "p_value": 0.0065805074022153185,
+        "significant": true,
+        "direction": "decreasing"
+      },
+      "winter_temp": {
+        "units": "deg C",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -0.010000000000000009,
+        "slope_ci_95": [
+          -0.032619047619047624,
+          0.009438888888888898
+        ],
+        "kendall_tau": -0.09758454106280194,
+        "p_value": 0.3389291081857071,
+        "significant": false,
+        "direction": "decreasing"
+      },
+      "total_precip": {
+        "units": "mm",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -0.4626057142857202,
+        "slope_ci_95": [
+          -8.553729999999996,
+          8.093566666666662
+        ],
+        "kendall_tau": -0.018357487922705317,
+        "p_value": 0.8572350913490248,
+        "significant": false,
+        "direction": "decreasing"
+      },
+      "rain_fraction": {
+        "units": "share",
+        "n_years": 46,
+        "first_year": 1980,
+        "last_year": 2025,
+        "slope_per_year": -0.0005923076923076954,
+        "slope_ci_95": [
+          -0.0020000000000000018,
+          0.0007941176470588243
+        ],
+        "kendall_tau": -0.08405797101449276,
+        "p_value": 0.4100934398126739,
+        "significant": false,
+        "direction": "decreasing"
+      }
+    },
+    "snow_runoff_relationship": {
+      "n_years": 46,
+      "correlation": -0.040255374301972915,
+      "p_value": 0.7905326044702695,
+      "significant": false,
+      "note": "Same-year association; correlation does not establish causation."
+    }
+  }
+}

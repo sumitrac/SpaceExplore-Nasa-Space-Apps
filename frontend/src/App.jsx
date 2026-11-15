@@ -19,11 +19,11 @@ export default function App() {
       <Header />
       <main id="main">
         <Hero />
+        <Explore />
         <DataMountain />
         <Glance />
         <WaterPath />
         <Story />
-        <Explore />
         <Impact />
         <SnowBank />
         <Trends />
