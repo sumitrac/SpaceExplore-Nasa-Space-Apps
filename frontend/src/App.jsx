@@ -30,8 +30,8 @@ export default function App() {
       </main>
       <footer className="site-footer">
         <p>
-          Built by team SpaceExplore for the 2026 NASA Space Apps Challenge in Seattle, for the “Be an
-          Earth System Trend Detective” challenge. Open source under the MIT License.
+          Built by team CascadeWatch for the 2026 NASA Space Apps Challenge in Seattle, for the "Be an Earth System Trend Detective" challenge.
+          Open source under the MIT License.
         </p>
       </footer>
     </AppStateProvider>

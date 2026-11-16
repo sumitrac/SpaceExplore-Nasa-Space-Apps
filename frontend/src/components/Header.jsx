@@ -29,7 +29,7 @@ export default function Header() {
     <header className="site-header" ref={ref}>
       <div className="header-inner">
         <a href="#top" className="brand">
-          SpaceExplore
+          CascadeWatch
         </a>
 
         <fieldset className="watershed-switch">
