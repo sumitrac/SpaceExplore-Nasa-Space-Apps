@@ -1,5 +1,8 @@
 """CascadeWatch pipeline: clean long table -> yearly series -> trend stats -> JSON for the app.
 
+SI acknowledgment: portions of this pipeline were developed with assistance from Claude (Anthropic).
+All statistical methods, data sources, and findings were verified by the CascadeWatch team.
+
 Input CSV columns: date, region, variable, value
   region:   any name without "_" (e.g. cedar | cedarupper | cedarlower | tolt | seattle)
   variable: swe (mm), rain (mm/month), snowfall (mm/month), runoff (mm/month), tair (deg C),

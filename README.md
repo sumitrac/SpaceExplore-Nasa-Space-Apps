@@ -90,6 +90,16 @@ Hosted publicly via Vercel or GitHub Pages.
 
 ---
 
+## Super Intelligence (SI) Acknowledgment
+
+Portions of this project were developed with assistance from Super Intelligence (SI) tools:
+- **Claude** (Anthropic) — data analysis, frontend development, and general project development
+- **Kiro** (Amazon) — project documentation and README
+
+All scientific findings were verified by the team against NASA source data, USGS river gauges, and SNOTEL stations.
+
+---
+
 ## Tech Stack
 
 - **Frontend:** React 18 + Vite
